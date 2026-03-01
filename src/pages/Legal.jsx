@@ -5,8 +5,8 @@ export default function Legal() {
     <div className="min-h-screen bg-slate-950 pt-16">
       {/* Hero */}
       <div className="relative py-24 overflow-hidden">
-        <div className="absolute top-10 left-10 w-[400px] h-[400px] bg-orange-500/[0.06] rounded-full blur-[120px] animate-blob" />
-        <div className="absolute bottom-0 right-10 w-[350px] h-[350px] bg-amber-500/[0.05] rounded-full blur-[100px] animate-blob animation-delay-2000" />
+        <div className="absolute top-10 left-10 w-100 h-100 bg-orange-500/6 rounded-full blur-[120px] animate-blob" />
+        <div className="absolute bottom-0 right-10 w-87.5 h-87.5 bg-amber-500/5 rounded-full blur-[100px] animate-blob animation-delay-2000" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <div className="inline-flex items-center gap-2 glass text-orange-400 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ export default function Legal() {
             to="/privacy"
             className="group bg-slate-900/80 border border-slate-800/80 hover:border-orange-500/30 rounded-3xl p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/5 hover:-translate-y-1"
           >
-            <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+            <div className="w-16 h-16 bg-linear-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
@@ -58,7 +58,7 @@ export default function Legal() {
             to="/terms"
             className="group bg-slate-900/80 border border-slate-800/80 hover:border-amber-500/30 rounded-3xl p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/5 hover:-translate-y-1"
           >
-            <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-amber-500/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+            <div className="w-16 h-16 bg-linear-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-amber-500/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
@@ -92,7 +92,7 @@ export default function Legal() {
           </p>
           <a
             href="mailto:support@gascertpal.com"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/20"
+            className="inline-flex items-center gap-2 bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/20"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

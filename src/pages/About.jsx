@@ -75,8 +75,8 @@ export default function About() {
     <div className="min-h-screen bg-slate-950">
       {/* Hero */}
       <div className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-20 left-10 w-[400px] h-[400px] bg-orange-500/[0.06] rounded-full blur-[120px] animate-blob" />
-        <div className="absolute bottom-0 right-10 w-[350px] h-[350px] bg-amber-500/[0.05] rounded-full blur-[100px] animate-blob animation-delay-2000" />
+        <div className="absolute top-20 left-10 w-100 h-100 bg-orange-500/6 rounded-full blur-[120px] animate-blob" />
+        <div className="absolute bottom-0 right-10 w-87.5 h-87.5 bg-amber-500/5 rounded-full blur-[100px] animate-blob animation-delay-2000" />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <span className="inline-flex items-center gap-2 glass text-orange-400 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6">
@@ -95,7 +95,7 @@ export default function About() {
           </p>
           <a
             href="/#download"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white text-lg font-bold py-4 px-10 rounded-2xl shadow-2xl shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.03] transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white text-lg font-bold py-4 px-10 rounded-2xl shadow-2xl shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.03] transition-all duration-300"
           >
             <svg className="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -107,7 +107,7 @@ export default function About() {
 
       {/* App Screenshots */}
       <section className="py-20 sm:py-24 bg-slate-900 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-orange-500/[0.04] rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-0 w-100 h-100 bg-orange-500/4 rounded-full blur-[120px]" />
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 glass text-orange-400 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
@@ -124,10 +124,10 @@ export default function About() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-16">
             {/* Phone 1 - Dashboard */}
-            <div className="relative w-[240px] sm:w-[260px]">
-              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-orange-500/15 rounded-full blur-[80px]" />
+            <div className="relative w-60 sm:w-65">
+              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-75 bg-orange-500/15 rounded-full blur-[80px]" />
               <div className="bg-slate-800 rounded-[2.5rem] p-2 shadow-2xl shadow-orange-500/10 ring-1 ring-white/10 border-2 border-slate-700">
-                <div className="rounded-[2rem] overflow-hidden">
+                <div className="rounded-4xl overflow-hidden">
                   <img src="/IMG_2634.PNG" alt="GasCertPal dashboard" className="w-full h-auto block" />
                 </div>
               </div>
@@ -135,10 +135,10 @@ export default function About() {
             </div>
 
             {/* Phone 2 - CP12 Certificate */}
-            <div className="relative w-[240px] sm:w-[260px]">
-              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-amber-500/15 rounded-full blur-[80px]" />
+            <div className="relative w-60 sm:w-65">
+              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-75 bg-amber-500/15 rounded-full blur-[80px]" />
               <div className="bg-slate-800 rounded-[2.5rem] p-2 shadow-2xl shadow-amber-500/10 ring-1 ring-white/10 border-2 border-slate-700">
-                <div className="rounded-[2rem] overflow-hidden">
+                <div className="rounded-4xl overflow-hidden">
                   <img src="/IMG_2633.PNG" alt="GasCertPal CP12 certificate form" className="w-full h-auto block" />
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function About() {
 
       {/* What You Can Do */}
       <section className="py-20 sm:py-24 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:32px_32px] opacity-40 -z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] bg-size-[32px_32px] opacity-40 -z-10" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" ref={featRef}>
           <div className="text-center mb-20">
@@ -174,7 +174,7 @@ export default function About() {
                   featInView ? `opacity-0 animate-fade-up ${delayClasses[idx]}` : 'opacity-0'
                 }`}
               >
-                <div className={`w-16 h-16 bg-gradient-to-br ${c.accent} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                <div className={`w-16 h-16 bg-linear-to-br ${c.accent} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
                   {c.icon}
                 </div>
                 <h3 className="text-xl font-extrabold text-slate-900 mb-3">{c.title}</h3>
@@ -187,7 +187,7 @@ export default function About() {
 
       {/* Why GasCertPal */}
       <section className="py-24 bg-slate-950 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/[0.04] rounded-full blur-[120px]" />
+        <div className="absolute top-0 right-0 w-125 h-125 bg-orange-500/4 rounded-full blur-[120px]" />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" ref={whyRef}>
           <div className="text-center mb-16">
@@ -211,7 +211,7 @@ export default function About() {
             ].map((item, idx) => (
               <div
                 key={item.title}
-                className={`glass-card rounded-3xl p-7 hover:bg-white/[0.06] transition-all duration-500 ${
+                className={`glass-card rounded-3xl p-7 hover:bg-white/6 transition-all duration-500 ${
                   whyInView ? `opacity-0 animate-fade-up ${delayClasses[idx]}` : 'opacity-0'
                 }`}
               >
@@ -225,7 +225,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-orange-500 via-orange-600 to-amber-600 animate-gradient relative overflow-hidden">
+      <section className="py-24 bg-linear-to-br from-orange-500 via-orange-600 to-amber-600 animate-gradient relative overflow-hidden">
         <div className="absolute top-10 left-10 w-80 h-80 bg-yellow-400/20 rounded-full blur-[100px] animate-blob" />
         <div className="absolute bottom-10 right-10 w-72 h-72 bg-red-500/15 rounded-full blur-[80px] animate-blob animation-delay-2000" />
 

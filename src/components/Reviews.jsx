@@ -65,7 +65,7 @@ function Stars({ count }) {
 
 function ReviewCard({ name, role, avatar, color, rating, text }) {
   return (
-    <div className="bg-white border border-slate-100 rounded-3xl p-6 w-80 shrink-0 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+    <div className="bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 sm:p-6 w-70 sm:w-80 shrink-0 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
       <Stars count={rating} />
       <p className="text-slate-600 text-sm leading-relaxed my-4">&ldquo;{text}&rdquo;</p>
       <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
@@ -85,7 +85,7 @@ export default function Reviews() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="reviews" className="py-28 bg-slate-50 overflow-hidden">
+    <section id="reviews" className="py-16 sm:py-24 lg:py-28 bg-slate-50 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center" ref={ref}>
         <span className="inline-flex items-center gap-2 bg-amber-50 text-amber-600 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -94,13 +94,13 @@ export default function Reviews() {
           Reviews
         </span>
 
-        <h2 className={`text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mt-2 mb-5 tracking-tight ${inView ? 'opacity-0 animate-fade-up' : 'opacity-0'}`}>
+        <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mt-2 mb-5 tracking-tight ${inView ? 'opacity-0 animate-fade-up' : 'opacity-0'}`}>
           Loved by Tradespeople
           <span className="gradient-text"> Across the UK</span>
         </h2>
 
         <div className={`inline-flex flex-col items-center gap-3 mt-4 mb-16 ${inView ? 'opacity-0 animate-fade-up animation-delay-200' : 'opacity-0'}`}>
-          <div className="text-7xl font-black gradient-text">4.9</div>
+          <div className="text-5xl sm:text-7xl font-black gradient-text">4.9</div>
           <div className="flex gap-1">
             {[1,2,3,4,5].map(i => (
               <svg key={i} className="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
@@ -113,7 +113,7 @@ export default function Reviews() {
       </div>
 
       {/* Marquee */}
-      <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_8%,white_92%,transparent)]">
+      <div className="relative overflow-hidden mask-[linear-gradient(to_right,transparent,white_8%,white_92%,transparent)]">
         <div className="flex gap-5 animate-marquee hover:[animation-play-state:paused] w-max px-5">
           {[...reviews, ...reviews].map((r, i) => (
             <ReviewCard key={i} {...r} />

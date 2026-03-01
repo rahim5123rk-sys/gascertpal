@@ -88,44 +88,44 @@ export default function Features() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="features" className="py-28 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:32px_32px] opacity-40 -z-10" />
+    <section id="features" className="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] bg-size-[32px_32px] opacity-40 -z-10" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
-        <div className="text-center mb-20">
-          <span className="inline-flex items-center gap-2 bg-orange-50 text-orange-600 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12" ref={ref}>
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <span className="inline-flex items-center gap-2 bg-orange-50 text-orange-600 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-5">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
             Everything You Need
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mt-2 mb-5 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 mt-2 mb-4 sm:mb-6 tracking-tight">
             One App to Run
             <span className="gradient-text"> Your Whole Business</span>
           </h2>
-          <p className="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="text-slate-500 max-w-2xl mx-auto text-sm sm:text-base lg:text-lg leading-relaxed">
             Stop juggling paper forms, spreadsheets, and WhatsApp. GasCertPal puts jobs, certificates, invoices, and your team in one place.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
           {features.map((f, idx) => (
             <div
               key={f.title}
-              className={`relative bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-2xl ${f.hoverShadow} hover:-translate-y-2 transition-all duration-500 group cursor-default ${
+              className={`relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-8 border border-slate-100 hover:shadow-2xl ${f.hoverShadow} hover:-translate-y-2 transition-all duration-500 group cursor-default ${
                 inView ? `opacity-0 animate-fade-up ${delayClasses[idx]}` : 'opacity-0'
               }`}
             >
               {f.popular && (
-                <div className="absolute top-5 right-5 bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md shadow-orange-500/30">
+                <div className="absolute top-5 right-5 bg-linear-to-r from-orange-500 to-amber-500 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md shadow-orange-500/30">
                   Most Used
                 </div>
               )}
-              <div className={`w-14 h-14 bg-gradient-to-br ${f.accent} rounded-2xl flex items-center justify-center text-white mb-6 ${f.shadow} shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+              <div className={`w-12 h-12 sm:w-14 sm:h-14 bg-linear-to-br ${f.accent} rounded-xl sm:rounded-2xl flex items-center justify-center text-white mb-4 sm:mb-6 ${f.shadow} shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
                 {f.icon}
               </div>
-              <h3 className="text-lg font-extrabold text-slate-900 mb-2">{f.title}</h3>
-              <p className="text-slate-500 text-sm leading-relaxed">{f.description}</p>
+              <h3 className="text-base sm:text-lg font-extrabold text-slate-900 mb-2 sm:mb-3">{f.title}</h3>
+              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">{f.description}</p>
             </div>
           ))}
         </div>

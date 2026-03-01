@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400 pt-20 pb-8">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+    <footer className="bg-slate-950 text-slate-400 pt-14 sm:pt-24 pb-8 sm:pb-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-10 sm:mb-16">
 
           {/* Brand */}
-          <div className="sm:col-span-2 md:col-span-1">
-            <Link to="/" className="flex items-center gap-2.5 mb-5 group w-fit">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
+          <div className="col-span-2 md:col-span-1">
+            <Link to="/" className="flex items-center gap-2.5 mb-6 group w-fit">
+              <div className="w-10 h-10 bg-linear-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
                 </svg>
@@ -18,7 +18,7 @@ export default function Footer() {
                 Gas<span className="gradient-text">CertPal</span>
               </span>
             </Link>
-            <p className="text-sm leading-relaxed mb-6">
+            <p className="text-sm leading-relaxed mb-8">
               The all-in-one trade management app for gas engineers and tradespeople across the UK.
             </p>
             <div className="flex gap-3">
@@ -39,20 +39,19 @@ export default function Footer() {
 
           {/* App */}
           <div>
-            <h4 className="text-white font-bold mb-5 text-sm">The App</h4>
-            <ul className="space-y-3 text-sm">
+            <h4 className="text-white font-bold mb-6 text-sm">The App</h4>
+            <ul className="space-y-4 text-sm">
               <li><Link to="/about" className="hover:text-orange-400 transition-colors duration-300">About</Link></li>
               <li><a href="/#features" className="hover:text-orange-400 transition-colors duration-300">Features</a></li>
               <li><a href="/#how-it-works" className="hover:text-orange-400 transition-colors duration-300">How It Works</a></li>
-              <li><a href="/#reviews" className="hover:text-orange-400 transition-colors duration-300">Reviews</a></li>
               <li><a href="/#download" className="hover:text-orange-400 transition-colors duration-300">Download</a></li>
             </ul>
           </div>
 
           {/* Features */}
           <div>
-            <h4 className="text-white font-bold mb-5 text-sm">Features</h4>
-            <ul className="space-y-3 text-sm">
+            <h4 className="text-white font-bold mb-6 text-sm">Features</h4>
+            <ul className="space-y-4 text-sm">
               <li><a href="/#features" className="hover:text-orange-400 transition-colors duration-300">CP12 Certificates</a></li>
               <li><a href="/#features" className="hover:text-orange-400 transition-colors duration-300">Job Management</a></li>
               <li><a href="/#features" className="hover:text-orange-400 transition-colors duration-300">Invoices &amp; Quotes</a></li>
@@ -62,8 +61,8 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-white font-bold mb-5 text-sm">Company</h4>
-            <ul className="space-y-3 text-sm">
+            <h4 className="text-white font-bold mb-6 text-sm">Company</h4>
+            <ul className="space-y-4 text-sm">
               <li><a href="mailto:support@gascertpal.com" className="hover:text-orange-400 transition-colors duration-300">support@gascertpal.com</a></li>
               <li><Link to="/legal" className="hover:text-orange-400 transition-colors duration-300">Legal</Link></li>
               <li><Link to="/privacy" className="hover:text-orange-400 transition-colors duration-300">Privacy Policy</Link></li>
@@ -73,7 +72,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="bg-gradient-to-r from-orange-500 to-amber-500 h-px w-full mb-8 opacity-20" />
+        <div className="bg-linear-to-r from-orange-500 to-amber-500 h-px w-full mb-8 opacity-20" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
           <p>&copy; {new Date().getFullYear()} GasCertPal. All rights reserved.</p>
