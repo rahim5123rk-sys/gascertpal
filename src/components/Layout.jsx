@@ -10,7 +10,7 @@ export default function Layout() {
   return (
     <>
       <Navbar />
-      <main className="pt-20 sm:pt-24">
+      <main>
         <Outlet />
       </main>
       <Footer />

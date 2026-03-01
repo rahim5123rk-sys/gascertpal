@@ -1,27 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
   const isHome = location.pathname === '/'
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  const solidNav = !isHome || scrolled
-
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
-        solidNav
-          ? 'bg-black/70 backdrop-blur-2xl border-b border-white/5 saturate-150'
-          : 'bg-transparent'
-      }`}
+      className="sticky top-0 left-0 right-0 z-100 bg-black/80 backdrop-blur-2xl border-b border-white/5 saturate-150"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-16 sm:h-20">
@@ -56,7 +43,7 @@ export default function Navbar() {
             )}
             <a
               href={isHome ? '#download' : '/#download'}
-              className="bg-white hover:bg-zinc-200 text-black px-6 py-3 rounded-full font-bold text-sm transition-all duration-300"
+              className="bg-white hover:bg-zinc-200 text-black px-8 py-4 rounded-full font-bold text-base transition-all duration-300"
             >
               Download Free
             </a>
@@ -96,7 +83,7 @@ export default function Navbar() {
           )}
           <a
             href={isHome ? '#download' : '/#download'}
-            className="bg-white text-black px-5 py-3 rounded-full font-bold text-sm text-center"
+            className="bg-white text-black px-8 py-4 rounded-full font-bold text-base text-center"
             onClick={() => setMenuOpen(false)}
           >
             Download Free

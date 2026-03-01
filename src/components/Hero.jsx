@@ -40,7 +40,7 @@ function PhoneMockup() {
 export default function Hero() {
   return (
     <section className="min-h-svh bg-[#000000] flex items-center overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-32 sm:pt-40 lg:pt-48 pb-12 sm:pb-20 lg:pb-24 w-full relative">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-12 sm:pt-16 lg:pt-20 pb-12 sm:pb-20 lg:pb-24 w-full relative">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
 
           {/* Left: content */}
@@ -61,11 +61,11 @@ export default function Hero() {
             <div className="opacity-0 animate-fade-up animation-delay-300 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
               <a
                 href="#download"
-                className="bg-white hover:bg-zinc-200 text-black text-lg font-bold py-5 px-10 rounded-full transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
+                className="bg-white hover:bg-zinc-200 text-black text-xl font-bold py-6 px-12 rounded-full transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
               >
                 Download Free
               </a>
-              <a href="#demo" className="text-white hover:text-zinc-300 text-lg font-bold py-5 px-10 rounded-full transition-all duration-300 flex items-center justify-center border border-white/20 hover:border-white/40 w-full sm:w-auto">
+              <a href="#demo" className="text-white hover:text-zinc-300 text-xl font-bold py-6 px-12 rounded-full transition-all duration-300 flex items-center justify-center border-2 border-white/20 hover:border-white/40 w-full sm:w-auto">
                 Discover Features
               </a>
             </div>
