@@ -40,7 +40,7 @@ function PhoneMockup() {
 export default function Hero() {
   return (
     <section className="min-h-svh bg-[#000000] flex items-center overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-20 lg:pb-24 w-full relative">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-32 sm:pt-40 lg:pt-48 pb-12 sm:pb-20 lg:pb-24 w-full relative">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
 
           {/* Left: content */}
