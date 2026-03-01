@@ -45,23 +45,23 @@ const SECTIONS = [
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-slate-950 pt-16">
+    <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
       {/* Header */}
       <div className="relative py-20 overflow-hidden">
-        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-orange-500/[0.06] rounded-full blur-[120px] animate-blob" />
-        <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-amber-500/[0.05] rounded-full blur-[100px] animate-blob animation-delay-2000" />
+        
+        
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-orange-500/30">
+          <div className="w-16 h-16 bg-white text-black rounded-2xl flex items-center justify-center mx-auto mb-6 ">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
-          <div className="inline-flex items-center gap-1.5 bg-green-500/10 text-green-400 text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 bg-[#111111] text-green-400 text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wider border border-green-500/20">
             <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
             GDPR Compliant
           </div>
-          <h1 className="text-4xl md:text-5xl font-black text-white mb-3 tracking-tight">Privacy Policy</h1>
-          <p className="text-slate-400 text-sm">Last updated: 1 March 2026</p>
+          <h1 className="text-4xl md:text-5xl font-black text-white mb-3 ">Privacy Policy</h1>
+          <p className="text-[#a1a1a6] text-sm">Last updated: 1 March 2026</p>
         </div>
       </div>
 
@@ -69,9 +69,9 @@ export default function Privacy() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="space-y-6">
           {SECTIONS.map((s, i) => (
-            <div key={i} className="bg-slate-900/80 border border-slate-800/80 rounded-2xl p-6 sm:p-8 hover:border-slate-700/80 transition-colors duration-300">
+            <div key={i} className=" rounded-2xl p-6 sm:p-8 hover:-translate-y-1 transition-all duration-300">
               <h2 className="text-lg font-extrabold text-white mb-4">{s.title}</h2>
-              <div className="text-slate-400 text-sm leading-7 whitespace-pre-line">{s.body}</div>
+              <div className="text-[#a1a1a6] text-sm leading-7 whitespace-pre-line">{s.body}</div>
             </div>
           ))}
         </div>
@@ -80,7 +80,7 @@ export default function Privacy() {
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/legal"
-            className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-medium text-sm transition-colors"
+            className="inline-flex items-center gap-2 text-[#a1a1a6] hover:text-white font-medium text-sm transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -89,7 +89,7 @@ export default function Privacy() {
           </Link>
           <Link
             to="/terms"
-            className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-medium text-sm transition-colors"
+            className="inline-flex items-center gap-2 text-[#a1a1a6] hover:text-white font-medium text-sm transition-colors"
           >
             View Terms of Service
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -61,22 +61,22 @@ const SECTIONS = [
 
 export default function Terms() {
   return (
-    <div className="min-h-screen bg-slate-950 pt-16">
+    <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
       {/* Header */}
       <div className="relative py-20 overflow-hidden">
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-amber-500/[0.06] rounded-full blur-[120px] animate-blob" />
-        <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-orange-500/[0.05] rounded-full blur-[100px] animate-blob animation-delay-2000" />
+        
+        
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-amber-500/30">
+          <div className="w-16 h-16 bg-white text-black rounded-2xl flex items-center justify-center mx-auto mb-6 ">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
           </div>
-          <div className="inline-flex items-center gap-1.5 bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 bg-[#111111] text-[#a1a1a6] text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wider border border-[#1d1d1f]">
             Governed by English Law
           </div>
-          <h1 className="text-4xl md:text-5xl font-black text-white mb-3 tracking-tight">Terms of Service</h1>
-          <p className="text-slate-400 text-sm">Last updated: 1 March 2026</p>
+          <h1 className="text-4xl md:text-5xl font-black text-white mb-3 ">Terms of Service</h1>
+          <p className="text-[#a1a1a6] text-sm">Last updated: 1 March 2026</p>
         </div>
       </div>
 
@@ -84,9 +84,9 @@ export default function Terms() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="space-y-6">
           {SECTIONS.map((s, i) => (
-            <div key={i} className="bg-slate-900/80 border border-slate-800/80 rounded-2xl p-6 sm:p-8 hover:border-slate-700/80 transition-colors duration-300">
+            <div key={i} className=" rounded-2xl p-6 sm:p-8 hover:-translate-y-1 transition-all duration-300">
               <h2 className="text-lg font-extrabold text-white mb-4">{s.title}</h2>
-              <div className="text-slate-400 text-sm leading-7 whitespace-pre-line">{s.body}</div>
+              <div className="text-[#a1a1a6] text-sm leading-7 whitespace-pre-line">{s.body}</div>
             </div>
           ))}
         </div>
@@ -95,7 +95,7 @@ export default function Terms() {
         <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/legal"
-            className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-medium text-sm transition-colors"
+            className="inline-flex items-center gap-2 text-[#a1a1a6] hover:text-white font-medium text-sm transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -104,7 +104,7 @@ export default function Terms() {
           </Link>
           <Link
             to="/privacy"
-            className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-medium text-sm transition-colors"
+            className="inline-flex items-center gap-2 text-[#a1a1a6] hover:text-white font-medium text-sm transition-colors"
           >
             View Privacy Policy
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

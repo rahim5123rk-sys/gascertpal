@@ -11,7 +11,7 @@ const capabilities = [
     ),
     title: 'Gas Safety Certificates',
     description: 'Generate fully compliant CP12 certificates on-site. Enter appliance data, capture readings, get a digital signature, and email the certificate to the landlord and tenant instantly. Gas Safe compliant and ready to go.',
-    accent: 'from-red-500 to-orange-500',
+    accent: 'bg-white',
   },
   {
     icon: (
@@ -21,7 +21,7 @@ const capabilities = [
     ),
     title: 'Invoices & Quotes',
     description: 'Create professional invoices and quotes in seconds. Add line items, apply VAT, and send a polished PDF directly to your customer by email. Track what has been paid and what is still outstanding.',
-    accent: 'from-amber-500 to-yellow-500',
+    accent: 'bg-white',
   },
   {
     icon: (
@@ -31,7 +31,7 @@ const capabilities = [
     ),
     title: 'Job Management',
     description: 'Create and track every job from start to finish. Log customer details, attach site photos, update job status on the go, and keep a full history of work completed. Never lose track of a job again.',
-    accent: 'from-orange-500 to-amber-500',
+    accent: 'bg-white',
   },
   {
     icon: (
@@ -41,7 +41,7 @@ const capabilities = [
     ),
     title: 'Pass Jobs to Your Team',
     description: 'Invite workers to your company with a unique code. Assign jobs to specific engineers, manage their schedules, and let them complete work on their own device. Workers only see the jobs assigned to them.',
-    accent: 'from-emerald-500 to-teal-500',
+    accent: 'bg-white',
   },
   {
     icon: (
@@ -51,7 +51,7 @@ const capabilities = [
     ),
     title: 'Calendar & Scheduling',
     description: 'See your full schedule at a glance. View upcoming jobs for yourself or your whole team on a visual calendar. Spot clashes instantly and never double-book a customer again.',
-    accent: 'from-blue-500 to-indigo-500',
+    accent: 'bg-white',
   },
   {
     icon: (
@@ -61,7 +61,7 @@ const capabilities = [
     ),
     title: 'Digital Signatures',
     description: 'Get customers to sign directly on your phone screen. Signatures are captured digitally and locked into your certificates and documents. No printing, no scanning, no paper.',
-    accent: 'from-violet-500 to-purple-500',
+    accent: 'bg-white',
   },
 ]
 
@@ -72,30 +72,30 @@ export default function About() {
   const [whyRef, whyInView] = useInView()
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#000000]">
       {/* Hero */}
       <div className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-20 left-10 w-100 h-100 bg-orange-500/6 rounded-full blur-[120px] animate-blob" />
-        <div className="absolute bottom-0 right-10 w-87.5 h-87.5 bg-amber-500/5 rounded-full blur-[100px] animate-blob animation-delay-2000" />
+        
+        
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <span className="inline-flex items-center gap-2 glass text-orange-400 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6">
+          <span className="inline-flex items-center gap-2 bg-[#111111] text-[#a1a1a6] font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
             About GasCertPal
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight leading-[1.1]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6  leading-snug">
             Everything a Gas Engineer
             <br />
-            <span className="gradient-text">Needs in One App</span>
+            <span className="">Needs in One App</span>
           </h1>
-          <p className="text-slate-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
+          <p className="text-[#a1a1a6] text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
             GasCertPal was built by tradespeople, for tradespeople. We know the hassle of paper forms, chasing invoices, and juggling spreadsheets. So we built an app that puts your entire business in your pocket.
           </p>
           <a
             href="/#download"
-            className="inline-flex items-center gap-3 bg-linear-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white text-lg font-bold py-4 px-10 rounded-2xl shadow-2xl shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.03] transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-white hover:bg-zinc-200 text-black text-lg font-bold py-5 px-12 rounded-full shadow-2xl  hover:scale-[1.03] transition-all duration-300"
           >
             <svg className="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -106,18 +106,18 @@ export default function About() {
       </div>
 
       {/* App Screenshots */}
-      <section className="py-20 sm:py-24 bg-slate-900 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-100 h-100 bg-orange-500/4 rounded-full blur-[120px]" />
+      <section className="py-20 sm:py-24 bg-[#000000] relative overflow-hidden">
+        
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 glass text-orange-400 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
+            <span className="inline-flex items-center gap-2 bg-[#111111] text-[#a1a1a6] font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
               See It In Action
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mt-2 mb-5 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mt-2 mb-5 ">
               Designed for
-              <span className="gradient-text"> Real Engineers</span>
+              <span className=""> Real Engineers</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            <p className="text-[#a1a1a6] max-w-2xl mx-auto text-lg leading-relaxed">
               Clean, simple, and built for the job site. Here is what GasCertPal looks like on your phone.
             </p>
           </div>
@@ -125,43 +125,42 @@ export default function About() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-16">
             {/* Phone 1 - Dashboard */}
             <div className="relative w-60 sm:w-65">
-              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-75 bg-orange-500/15 rounded-full blur-[80px]" />
-              <div className="bg-slate-800 rounded-[2.5rem] p-2 shadow-2xl shadow-orange-500/10 ring-1 ring-white/10 border-2 border-slate-700">
+              
+              <div className="bg-[#000000] rounded-[2.5rem] p-2 shadow-2xl  border border-[#1d1d1f]">
                 <div className="rounded-4xl overflow-hidden">
-                  <img src="/IMG_2634.PNG" alt="GasCertPal dashboard" className="w-full h-auto block" />
+                  <img src="/IMG_2634.PNG" alt="GasCertPal dashboard" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
                 </div>
               </div>
-              <p className="text-center text-slate-400 text-sm font-medium mt-4">Dashboard &amp; Quick Actions</p>
+              <p className="text-center text-[#a1a1a6] text-sm font-medium mt-4">Dashboard &amp; Quick Actions</p>
             </div>
 
             {/* Phone 2 - CP12 Certificate */}
             <div className="relative w-60 sm:w-65">
-              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-75 bg-amber-500/15 rounded-full blur-[80px]" />
-              <div className="bg-slate-800 rounded-[2.5rem] p-2 shadow-2xl shadow-amber-500/10 ring-1 ring-white/10 border-2 border-slate-700">
+              
+              <div className="bg-[#000000] rounded-[2.5rem] p-2 shadow-2xl  border border-[#1d1d1f]">
                 <div className="rounded-4xl overflow-hidden">
-                  <img src="/IMG_2633.PNG" alt="GasCertPal CP12 certificate form" className="w-full h-auto block" />
+                  <img src="/IMG_2633.PNG" alt="GasCertPal CP12 certificate form" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
                 </div>
               </div>
-              <p className="text-center text-slate-400 text-sm font-medium mt-4">CP12 Gas Safety Certificate</p>
+              <p className="text-center text-[#a1a1a6] text-sm font-medium mt-4">CP12 Gas Safety Certificate</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* What You Can Do */}
-      <section className="py-20 sm:py-24 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] bg-size-[32px_32px] opacity-40 -z-10" />
-
+      <section className="py-20 sm:py-24 bg-[#000000] relative overflow-hidden">
+        
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" ref={featRef}>
           <div className="text-center mb-20">
-            <span className="inline-flex items-center gap-2 bg-orange-50 text-orange-600 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
+            <span className="inline-flex items-center gap-2 bg-[#111111] border border-[#1d1d1f] text-[#a1a1a6] font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
               Capabilities
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mt-2 mb-5 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mt-2 mb-5 ">
               What You Can Do
-              <span className="gradient-text"> With GasCertPal</span>
+              <span className=""> With GasCertPal</span>
             </h2>
-            <p className="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed">
+            <p className="text-[#a1a1a6] max-w-2xl mx-auto text-lg leading-relaxed">
               From generating certificates to managing your whole team, here is everything the app handles for you.
             </p>
           </div>
@@ -170,15 +169,15 @@ export default function About() {
             {capabilities.map((c, idx) => (
               <div
                 key={c.title}
-                className={`bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group ${
+                className={` rounded-3xl p-8 hover:-translate-y-2 transition-all duration-500 group ${
                   featInView ? `opacity-0 animate-fade-up ${delayClasses[idx]}` : 'opacity-0'
                 }`}
               >
-                <div className={`w-16 h-16 bg-linear-to-br ${c.accent} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                <div className={`w-16 h-16 bg-[#111111] ${c.accent} rounded-2xl flex items-center justify-center text-white mb-6  group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
                   {c.icon}
                 </div>
-                <h3 className="text-xl font-extrabold text-slate-900 mb-3">{c.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{c.description}</p>
+                <h3 className="text-xl font-extrabold text-white mb-3">{c.title}</h3>
+                <p className="text-[#a1a1a6] text-sm leading-relaxed">{c.description}</p>
               </div>
             ))}
           </div>
@@ -186,17 +185,17 @@ export default function About() {
       </section>
 
       {/* Why GasCertPal */}
-      <section className="py-24 bg-slate-950 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-125 h-125 bg-orange-500/4 rounded-full blur-[120px]" />
+      <section className="py-24 bg-[#000000] relative overflow-hidden">
+        
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" ref={whyRef}>
           <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 glass text-orange-400 font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
+            <span className="inline-flex items-center gap-2 bg-[#111111] text-[#a1a1a6] font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-4">
               Why Us
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mt-2 mb-5 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mt-2 mb-5 ">
               Built for the
-              <span className="gradient-text"> Real World</span>
+              <span className=""> Real World</span>
             </h2>
           </div>
 
@@ -211,13 +210,13 @@ export default function About() {
             ].map((item, idx) => (
               <div
                 key={item.title}
-                className={`glass-card rounded-3xl p-7 hover:bg-white/6 transition-all duration-500 ${
+                className={` rounded-3xl p-7 hover:bg-[#111111] transition-all duration-500 ${
                   whyInView ? `opacity-0 animate-fade-up ${delayClasses[idx]}` : 'opacity-0'
                 }`}
               >
                 <div className="text-3xl mb-4">{item.icon}</div>
                 <h3 className="text-lg font-extrabold text-white mb-2">{item.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-[#a1a1a6] text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -225,12 +224,12 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-linear-to-br from-orange-500 via-orange-600 to-amber-600 animate-gradient relative overflow-hidden">
-        <div className="absolute top-10 left-10 w-80 h-80 bg-yellow-400/20 rounded-full blur-[100px] animate-blob" />
-        <div className="absolute bottom-10 right-10 w-72 h-72 bg-red-500/15 rounded-full blur-[80px] animate-blob animation-delay-2000" />
+      <section className="py-24 bg-[#000000] border-t border-[#1d1d1f] relative overflow-hidden">
+        
+        
 
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-5 tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-5 ">
             Ready to Simplify Your Business?
           </h2>
           <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
@@ -238,7 +237,7 @@ export default function About() {
           </p>
           <a
             href="/#download"
-            className="inline-flex items-center gap-4 bg-white hover:bg-orange-50 text-orange-600 text-xl font-black px-10 py-6 rounded-2xl shadow-2xl hover:scale-105 transition-all duration-300"
+            className="inline-flex items-center gap-4 bg-white hover:bg-zinc-200 text-black text-xl font-black px-10 py-6 rounded-2xl  hover:scale-105 transition-all duration-300"
           >
             <svg className="w-7 h-7 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
