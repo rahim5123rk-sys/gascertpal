@@ -1,15 +1,12 @@
 function PhoneMockup() {
   return (
-    <div className="relative mx-auto w-55 sm:w-65 lg:w-75">
-      {/* Subtle glow instead of multi-color blob */}
-      <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-white/5 rounded-full blur-[100px]" />
+    <div className="relative mx-auto w-56 sm:w-64 lg:w-72">
+      {/* Accent glow behind phone */}
+      <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-[var(--accent)]/10 rounded-full blur-[80px]" />
 
       {/* Phone shell */}
-      <div className="relative bg-black rounded-[2.8rem] p-2.5 shadow-[0_0_40px_rgba(255,255,255,0.05)] ring-1 ring-white/10 border-[3px] border-[#1d1d1f]">
-        {/* Notch */}
-        <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-full z-10" />
-
-        {/* Screen - real screenshot */}
+      <div className="relative bg-[#0a0c10] rounded-[2.8rem] p-2.5 shadow-[0_32px_80px_rgba(0,0,0,0.5)] ring-1 ring-white/5">
+        <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#0a0c10] rounded-full z-10" />
         <div className="rounded-[2.2rem] overflow-hidden bg-white">
           <img
             src="/IMG_2634.PNG"
@@ -23,15 +20,24 @@ function PhoneMockup() {
         </div>
       </div>
 
-      {/* Floating: Rating - ultra minimal */}
-      <div className="hidden lg:block absolute -right-12 bottom-24 bg-[#1d1d1f] backdrop-blur-2xl rounded-2xl shadow-xl p-3 border border-white/5 opacity-0 animate-slide-right animation-delay-500">
-        <div className="text-[12px] font-bold text-white flex items-center gap-1.5 mb-0.5">
-          <svg aria-hidden="true" className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+      {/* Floating: Rating */}
+      <div className="hidden lg:block absolute -right-20 bottom-28 glass-card rounded-xl px-4 py-3 opacity-0 animate-slide-right animation-delay-600">
+        <div className="text-xs font-600 text-[var(--fg)] flex items-center gap-1.5 mb-0.5">
+          <svg aria-hidden="true" className="w-3.5 h-3.5 text-[var(--accent)]" fill="currentColor" viewBox="0 0 20 20">
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
           </svg>
           4.9 / 5
         </div>
-        <div className="text-[10px] text-[#86868b] font-medium">2,400+ ratings</div>
+        <div className="text-[10px] text-[var(--fg-muted)]">2,400+ ratings</div>
+      </div>
+
+      {/* Floating: Gas Safe */}
+      <div className="hidden lg:block absolute -left-16 top-24 glass-card rounded-xl px-4 py-3 opacity-0 animate-slide-left animation-delay-700">
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 rounded-full bg-[var(--cyan)] animate-ping-accent" style={{ animationDuration: '2.5s', boxShadow: `0 0 0 0 ${('var(--cyan-glow)')}` }} />
+          <span className="text-[11px] font-600 text-[var(--cyan)] uppercase tracking-wider">Gas Safe</span>
+        </div>
+        <div className="text-[10px] text-[var(--fg-muted)] mt-0.5">Fully Compliant</div>
       </div>
     </div>
   )
@@ -39,44 +45,69 @@ function PhoneMockup() {
 
 export default function Hero() {
   return (
-    <section className="min-h-svh bg-[#000000] flex items-center overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-12 sm:pt-16 lg:pt-20 pb-12 sm:pb-20 lg:pb-24 w-full relative">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
+    <section className="min-h-svh flex items-center overflow-hidden relative grid-bg noise">
+      {/* Top-right radial glow */}
+      <div className="absolute top-0 right-0 w-[50%] h-[60%] bg-gradient-to-bl from-[var(--accent)]/6 via-transparent to-transparent pointer-events-none" />
+      {/* Bottom-left subtle cyan */}
+      <div className="absolute bottom-0 left-0 w-[30%] h-[40%] bg-gradient-to-tr from-[var(--cyan)]/3 via-transparent to-transparent pointer-events-none" />
 
-          {/* Left: content */}
-          <div className="text-center lg:text-left w-full lg:w-1/2 flex flex-col items-center lg:items-start">
-            
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-10 sm:pt-14 lg:pt-16 pb-16 sm:pb-24 lg:pb-28 w-full relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-12">
+
+          {/* Left */}
+          <div className="text-center lg:text-left w-full lg:w-[55%] flex flex-col items-center lg:items-start">
+
+            {/* Status badge */}
+            <div className="opacity-0 animate-fade-up inline-flex items-center gap-2.5 bg-[var(--accent-subtle)] border border-[var(--accent)]/15 text-[var(--accent)] font-600 text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-8">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75 animate-ping" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
+              </span>
+              Free on iOS & Android
+            </div>
+
             {/* Heading */}
-            <h1 className="opacity-0 animate-fade-up text-5xl sm:text-7xl lg:text-[5.5rem] font-bold text-white leading-snug mb-6 ">
-              Manage your <br className="hidden lg:block"/> business. <br/>
-              <span className="text-[#86868b]">From your phone.</span>
+            <h1 className="opacity-0 animate-fade-up animation-delay-75 text-[2.75rem] sm:text-[3.5rem] lg:text-[4.25rem] font-700 text-[var(--fg)] leading-[1.05] mb-6">
+              Your trade business,<br />
+              <span className="text-[var(--accent)]">precision-engineered.</span>
             </h1>
 
+            {/* Accent bar */}
+            <div className="opacity-0 animate-fade-up animation-delay-150 accent-bar mb-6" />
+
             {/* Subtitle */}
-            <p className="opacity-0 animate-fade-up animation-delay-150 text-[#a1a1a6] text-lg sm:text-xl lg:text-2xl mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium">
-              Create CP12 certificates, send invoices, and track jobs effortlessly. The premium tool for modern gas engineers.
+            <p className="opacity-0 animate-fade-up animation-delay-200 text-[var(--fg-muted)] text-base sm:text-lg mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
+              CP12 certificates, PDF invoices, job scheduling, and client management. One app built for gas engineers who refuse to waste time.
             </p>
 
-            {/* Download CTA */}
-            <div className="opacity-0 animate-fade-up animation-delay-300 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <a
-                href="#download"
-                className="bg-white hover:bg-zinc-200 text-black text-xl font-bold py-6 px-12 rounded-full transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
-              >
-                Download Free
+            {/* CTAs */}
+            <div className="opacity-0 animate-fade-up animation-delay-300 flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto">
+              <a href="#download" className="btn-primary text-base px-8 py-4 w-full sm:w-auto">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download Now
               </a>
-              <a href="#demo" className="text-white hover:text-zinc-300 text-xl font-bold py-6 px-12 rounded-full transition-all duration-300 flex items-center justify-center border-2 border-white/20 hover:border-white/40 w-full sm:w-auto">
-                Discover Features
+              <a href="#features" className="btn-ghost text-base px-8 py-4 w-full sm:w-auto">
+                See Features
               </a>
             </div>
-            
-            <p className="opacity-0 animate-fade-up animation-delay-400 mt-6 text-sm text-[#86868b] font-medium">
-              iOS &amp; Android &middot; Gas Safe Compliant
-            </p>
+
+            {/* Trust line */}
+            <div className="opacity-0 animate-fade-up animation-delay-400 mt-8 flex items-center gap-4 text-xs text-[var(--fg-dim)] font-500 uppercase tracking-wider">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1 h-1 rounded-full bg-[var(--cyan)]" />
+                Gas Safe Compliant
+              </span>
+              <span className="w-px h-3 bg-[var(--border-hover)]" />
+              <span>Works Offline</span>
+              <span className="w-px h-3 bg-[var(--border-hover)]" />
+              <span>No Subscription</span>
+            </div>
           </div>
 
-          {/* Right: phone with real screenshot */}
-          <div className="w-full lg:w-1/2 flex justify-center opacity-0 animate-fade-in animation-delay-500">
+          {/* Right: phone */}
+          <div className="w-full lg:w-[45%] flex justify-center opacity-0 animate-scale-in animation-delay-400">
             <PhoneMockup />
           </div>
         </div>
