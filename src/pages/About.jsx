@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useInView } from '../hooks/useInView'
+import SEO from '../components/SEO'
 
 const capabilities = [
   {
@@ -76,6 +77,11 @@ export default function About() {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="About GasCertPal — CP12 Certificates, Invoices & Job Management for Gas Engineers"
+        description="GasCertPal was built by tradespeople, for tradespeople. Create CP12 gas safety certificates, professional invoices, manage jobs, schedule work, and run your gas engineering business from your phone."
+        path="/about"
+      />
       {/* Hero */}
       <div className="relative pt-28 sm:pt-32 pb-20 overflow-hidden grid-bg noise">
         <div className="absolute top-0 right-0 w-[40%] h-[60%] bg-gradient-to-bl from-[var(--accent)]/5 to-transparent pointer-events-none" />

@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 export default function Legal() {
   return (
     <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
+      <SEO
+        title="Legal Information — GasCertPal Privacy & Terms"
+        description="Legal hub for GasCertPal. Access our privacy policy, terms of service, and GDPR compliance information for Gas Safe registered engineers."
+        path="/legal"
+      />
       {/* Hero */}
       <div className="relative py-24 overflow-hidden">
         

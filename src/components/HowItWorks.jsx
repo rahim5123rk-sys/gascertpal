@@ -49,7 +49,7 @@ export default function HowItWorks() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="how-it-works" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden">
+    <section id="how-it-works" aria-label="How to get started with GasCertPal in four steps" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10" ref={ref}>
         {/* Header */}
         <div className="text-center mb-20 sm:mb-28">

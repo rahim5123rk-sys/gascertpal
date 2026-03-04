@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const SECTIONS = [
   {
@@ -46,6 +47,11 @@ const SECTIONS = [
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
+      <SEO
+        title="Privacy Policy — GasCertPal GDPR Compliant Data Protection"
+        description="GasCertPal privacy policy. Learn how we collect, use, and protect your personal data. GDPR compliant with full data export and deletion rights for Gas Safe engineers."
+        path="/privacy"
+      />
       {/* Header */}
       <div className="relative py-20 overflow-hidden">
         

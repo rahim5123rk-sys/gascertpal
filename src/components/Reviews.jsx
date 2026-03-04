@@ -79,7 +79,7 @@ export default function Reviews() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="reviews" className="py-32 sm:py-40 lg:py-48 overflow-hidden relative border-t border-[var(--border)]">
+    <section id="reviews" aria-label="Gas engineer reviews and testimonials for GasCertPal" className="py-32 sm:py-40 lg:py-48 overflow-hidden relative border-t border-[var(--border)]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 text-left sm:text-center relative z-10" ref={ref}>
         <div className="inline-flex items-center gap-3 text-[var(--accent)] font-600 text-xs uppercase tracking-[0.2em] mb-5">
           <span className="w-6 h-px bg-[var(--accent)]" />

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const SECTIONS = [
   {
@@ -62,6 +63,11 @@ const SECTIONS = [
 export default function Terms() {
   return (
     <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
+      <SEO
+        title="Terms of Service — GasCertPal Usage Terms for Gas Engineers"
+        description="Terms of service for GasCertPal. Covers acceptable use, CP12 certificate responsibilities, Gas Safe compliance, data handling, and liability for gas engineers using the app."
+        path="/terms"
+      />
       {/* Header */}
       <div className="relative py-20 overflow-hidden">
         
