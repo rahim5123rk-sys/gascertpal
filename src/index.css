@@ -30,6 +30,7 @@ html {
 body {
   font-family: 'Switzer', system-ui, -apple-system, sans-serif;
   letter-spacing: -0.01em;
+  line-height: 1.7;
   color: var(--fg);
   background: var(--bg-base);
   -webkit-font-smoothing: antialiased;

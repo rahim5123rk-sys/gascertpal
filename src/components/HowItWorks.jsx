@@ -49,16 +49,16 @@ export default function HowItWorks() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="how-it-works" className="py-24 sm:py-32 lg:py-36 relative overflow-hidden">
+    <section id="how-it-works" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10" ref={ref}>
         {/* Header */}
-        <div className="text-center mb-16 sm:mb-20">
+        <div className="text-center mb-20 sm:mb-28">
           <div className="inline-flex items-center gap-3 text-[var(--cyan)] font-600 text-xs uppercase tracking-[0.2em] mb-5">
             <span className="w-6 h-px bg-[var(--cyan)]" />
             Process
             <span className="w-6 h-px bg-[var(--cyan)]" />
           </div>
-          <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--fg)] mb-5 leading-tight ${
+          <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--fg)] mb-6 leading-tight ${
             inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
           }`}>
             Up and running.<br className="hidden sm:block" />
@@ -67,7 +67,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Steps — horizontal on desktop, vertical on mobile */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 relative">
           {/* Connector line — desktop only */}
           <div className="hidden lg:block absolute top-[52px] left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-[var(--border-hover)] to-transparent z-0" />
 
@@ -79,8 +79,8 @@ export default function HowItWorks() {
               }`}
             >
               {/* Step number + icon */}
-              <div className="relative mb-6">
-                <div className="w-[72px] h-[72px] sm:w-20 sm:h-20 bg-[var(--bg-surface)] rounded-2xl flex items-center justify-center text-[var(--fg-muted)] border border-[var(--border)] transition-all duration-200 hover:border-[var(--accent)]/30 hover:text-[var(--accent)]">
+              <div className="relative mb-8">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-[var(--bg-surface)] rounded-2xl flex items-center justify-center text-[var(--fg-muted)] border border-[var(--border)] transition-all duration-200 hover:border-[var(--accent)]/30 hover:text-[var(--accent)]">
                   {step.icon}
                 </div>
                 <div className="absolute -top-2 -right-2 w-7 h-7 bg-[var(--accent)] rounded-lg flex items-center justify-center">
@@ -88,14 +88,14 @@ export default function HowItWorks() {
                 </div>
               </div>
 
-              <h3 className="font-display text-lg font-600 text-[var(--fg)] mb-2">{step.title}</h3>
-              <p className="text-[var(--fg-muted)] text-sm leading-relaxed max-w-[240px]">{step.description}</p>
+              <h3 className="font-display text-xl font-600 text-[var(--fg)] mb-3">{step.title}</h3>
+              <p className="text-[var(--fg-muted)] text-sm leading-[1.75] max-w-[260px]">{step.description}</p>
             </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className={`text-center mt-16 sm:mt-20 ${inView ? 'opacity-0 animate-fade-up animation-delay-500' : 'opacity-0'}`}>
+        <div className={`text-center mt-20 sm:mt-28 ${inView ? 'opacity-0 animate-fade-up animation-delay-500' : 'opacity-0'}`}>
           <a href="#download" className="btn-primary text-base px-8 py-4">
             Get Started Free
           </a>

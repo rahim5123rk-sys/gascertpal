@@ -51,14 +51,14 @@ export default function Hero() {
       {/* Bottom-left subtle cyan */}
       <div className="absolute bottom-0 left-0 w-[30%] h-[40%] bg-gradient-to-tr from-[var(--cyan)]/3 via-transparent to-transparent pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-10 sm:pt-14 lg:pt-16 pb-16 sm:pb-24 lg:pb-28 w-full relative z-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-14 sm:pt-20 lg:pt-24 pb-20 sm:pb-28 lg:pb-36 w-full relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-12">
 
           {/* Left */}
           <div className="text-center lg:text-left w-full lg:w-[55%] flex flex-col items-center lg:items-start">
 
             {/* Status badge */}
-            <div className="opacity-0 animate-fade-up inline-flex items-center gap-2.5 bg-[var(--accent-subtle)] border border-[var(--accent)]/15 text-[var(--accent)] font-600 text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-8">
+            <div className="opacity-0 animate-fade-up inline-flex items-center gap-2.5 bg-[var(--accent-subtle)] border border-[var(--accent)]/15 text-[var(--accent)] font-600 text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-10">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75 animate-ping" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
@@ -67,16 +67,16 @@ export default function Hero() {
             </div>
 
             {/* Heading */}
-            <h1 className="opacity-0 animate-fade-up animation-delay-75 text-[2.75rem] sm:text-[3.5rem] lg:text-[4.25rem] font-700 text-[var(--fg)] leading-[1.05] mb-6">
+            <h1 className="opacity-0 animate-fade-up animation-delay-75 text-[2.75rem] sm:text-[3.5rem] lg:text-[4.25rem] font-700 text-[var(--fg)] leading-[1.08] mb-8">
               Your trade business,<br />
               <span className="text-[var(--accent)]">precision-engineered.</span>
             </h1>
 
             {/* Accent bar */}
-            <div className="opacity-0 animate-fade-up animation-delay-150 accent-bar mb-6" />
+            <div className="opacity-0 animate-fade-up animation-delay-150 accent-bar mb-8" />
 
             {/* Subtitle */}
-            <p className="opacity-0 animate-fade-up animation-delay-200 text-[var(--fg-muted)] text-base sm:text-lg mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
+            <p className="opacity-0 animate-fade-up animation-delay-200 text-[var(--fg-muted)] text-base sm:text-lg mb-12 leading-[1.75] max-w-lg mx-auto lg:mx-0">
               CP12 certificates, PDF invoices, job scheduling, and client management. One app built for gas engineers who refuse to waste time.
             </p>
 
@@ -94,7 +94,7 @@ export default function Hero() {
             </div>
 
             {/* Trust line */}
-            <div className="opacity-0 animate-fade-up animation-delay-400 mt-8 flex items-center gap-4 text-xs text-[var(--fg-dim)] font-500 uppercase tracking-wider">
+            <div className="opacity-0 animate-fade-up animation-delay-400 mt-10 flex items-center gap-5 text-xs text-[var(--fg-dim)] font-500 uppercase tracking-wider">
               <span className="flex items-center gap-1.5">
                 <span className="w-1 h-1 rounded-full bg-[var(--cyan)]" />
                 Gas Safe Compliant

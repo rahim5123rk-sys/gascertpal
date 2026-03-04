@@ -70,19 +70,19 @@ export default function Features() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="features" className="py-24 sm:py-32 lg:py-36 relative overflow-hidden noise">
+    <section id="features" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden noise">
       {/* Subtle gradient backdrop */}
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-base)] via-[var(--bg-surface)]/50 to-[var(--bg-base)]" />
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10" ref={ref}>
         {/* Section header */}
-        <div className="text-center mb-16 lg:mb-20">
-          <div className="inline-flex items-center gap-3 text-[var(--accent)] font-600 text-xs uppercase tracking-[0.2em] mb-5">
+        <div className="text-center mb-20 lg:mb-28">
+          <div className="inline-flex items-center gap-3 text-[var(--accent)] font-600 text-xs uppercase tracking-[0.2em] mb-6">
             <span className="w-6 h-px bg-[var(--accent)]" />
             Capabilities
             <span className="w-6 h-px bg-[var(--accent)]" />
           </div>
-          <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--fg)] mb-5 leading-tight ${
+          <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--fg)] mb-6 leading-tight ${
             inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
           }`}>
             Built for the job site.<br className="hidden sm:block" />
@@ -96,11 +96,11 @@ export default function Features() {
         </div>
 
         {/* Feature grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {features.map((f, idx) => (
             <div
               key={f.title}
-              className={`glass-card rounded-2xl p-7 sm:p-8 group relative overflow-hidden ${
+              className={`glass-card rounded-3xl p-10 sm:p-12 group relative overflow-hidden ${
                 inView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
               }`}
             >
@@ -109,8 +109,8 @@ export default function Features() {
                 <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[var(--accent)] via-[var(--accent-warm,var(--accent))] to-transparent" />
               )}
 
-              <div className="flex items-center justify-between mb-5">
-                <div className={`w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-200 ${
+              <div className="flex items-center justify-between mb-8">
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
                   f.accent
                     ? 'bg-[var(--accent)]/12 text-[var(--accent)] group-hover:bg-[var(--accent)] group-hover:text-white'
                     : 'bg-[var(--bg-elevated)] text-[var(--fg-muted)] group-hover:bg-[var(--fg)] group-hover:text-[var(--bg-base)]'
@@ -124,8 +124,8 @@ export default function Features() {
                 )}
               </div>
 
-              <h3 className="font-display text-lg font-600 text-[var(--fg)] mb-2">{f.title}</h3>
-              <p className="text-[var(--fg-muted)] text-sm leading-relaxed">{f.description}</p>
+              <h3 className="font-display text-xl font-600 text-[var(--fg)] mb-3">{f.title}</h3>
+              <p className="text-[var(--fg-muted)] text-sm leading-[1.75]">{f.description}</p>
             </div>
           ))}
         </div>

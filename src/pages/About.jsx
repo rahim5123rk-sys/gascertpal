@@ -103,9 +103,9 @@ export default function About() {
       </div>
 
       {/* App Screenshots */}
-      <section className="py-20 sm:py-24 relative overflow-hidden border-t border-[var(--border)]">
+      <section className="py-28 sm:py-36 relative overflow-hidden border-t border-[var(--border)]">
         <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-10 relative">
-          <div className="text-center mb-14">
+          <div className="text-center mb-20">
             <div className="inline-flex items-center gap-3 text-[var(--cyan)] font-600 text-xs uppercase tracking-[0.2em] mb-4">
               <span className="w-6 h-px bg-[var(--cyan)]" />
               Preview
@@ -138,9 +138,9 @@ export default function About() {
       </section>
 
       {/* Capabilities */}
-      <section className="py-20 sm:py-24 relative overflow-hidden noise">
+      <section className="py-28 sm:py-36 relative overflow-hidden noise">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10" ref={featRef}>
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <div className="inline-flex items-center gap-3 text-[var(--accent)] font-600 text-xs uppercase tracking-[0.2em] mb-4">
               <span className="w-6 h-px bg-[var(--accent)]" />
               Capabilities
@@ -151,19 +151,19 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {capabilities.map((c, idx) => (
               <div
                 key={c.title}
-                className={`glass-card rounded-2xl p-7 group ${
+                className={`glass-card rounded-3xl p-10 group ${
                   featInView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
                 }`}
               >
-                <div className="w-12 h-12 bg-[var(--bg-elevated)] rounded-xl flex items-center justify-center text-[var(--fg-muted)] mb-5 group-hover:bg-[var(--accent)] group-hover:text-white transition-all duration-200">
+                <div className="w-14 h-14 bg-[var(--bg-elevated)] rounded-xl flex items-center justify-center text-[var(--fg-muted)] mb-7 group-hover:bg-[var(--accent)] group-hover:text-white transition-all duration-200">
                   {c.icon}
                 </div>
-                <h3 className="font-display text-lg font-600 text-[var(--fg)] mb-2">{c.title}</h3>
-                <p className="text-[var(--fg-muted)] text-sm leading-relaxed">{c.description}</p>
+                <h3 className="font-display text-xl font-600 text-[var(--fg)] mb-3">{c.title}</h3>
+                <p className="text-[var(--fg-muted)] text-sm leading-[1.75]">{c.description}</p>
               </div>
             ))}
           </div>
@@ -171,9 +171,9 @@ export default function About() {
       </section>
 
       {/* Why GasCertPal */}
-      <section className="py-20 sm:py-24 relative overflow-hidden border-t border-[var(--border)]">
+      <section className="py-28 sm:py-36 relative overflow-hidden border-t border-[var(--border)]">
         <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-10" ref={whyRef}>
-          <div className="text-center mb-14">
+          <div className="text-center mb-20">
             <div className="inline-flex items-center gap-3 text-[var(--cyan)] font-600 text-xs uppercase tracking-[0.2em] mb-4">
               <span className="w-6 h-px bg-[var(--cyan)]" />
               Why Us
@@ -188,13 +188,13 @@ export default function About() {
             {whyItems.map((item, idx) => (
               <div
                 key={item.title}
-                className={`glass-card rounded-2xl p-6 hover:border-[var(--border-hover)] ${
+                className={`glass-card rounded-3xl p-8 sm:p-10 hover:border-[var(--border-hover)] ${
                   whyInView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
                 }`}
               >
-                <span className="text-[10px] font-600 text-[var(--cyan)] bg-[var(--cyan-glow)] px-2.5 py-1 rounded-md uppercase tracking-wider font-display mb-4 inline-block">{item.tag}</span>
-                <h3 className="font-display text-base font-600 text-[var(--fg)] mb-2">{item.title}</h3>
-                <p className="text-[var(--fg-muted)] text-sm leading-relaxed">{item.desc}</p>
+                <span className="text-[10px] font-600 text-[var(--cyan)] bg-[var(--cyan-glow)] px-2.5 py-1 rounded-md uppercase tracking-wider font-display mb-5 inline-block">{item.tag}</span>
+                <h3 className="font-display text-lg font-600 text-[var(--fg)] mb-3">{item.title}</h3>
+                <p className="text-[var(--fg-muted)] text-sm leading-[1.75]">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -202,7 +202,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 sm:py-24 border-t border-[var(--border)] relative overflow-hidden grid-bg noise">
+      <section className="py-28 sm:py-36 border-t border-[var(--border)] relative overflow-hidden grid-bg noise">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[var(--accent)]/5 rounded-full blur-[100px] pointer-events-none" />
         <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10 text-center relative z-10">
           <h2 className="text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-4">

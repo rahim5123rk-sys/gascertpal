@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--bg-surface)] text-[var(--fg-muted)] pt-16 sm:pt-20 pb-8 sm:pb-10 border-t border-[var(--border)] relative overflow-hidden">
+    <footer className="bg-[var(--bg-surface)] text-[var(--fg-muted)] pt-20 sm:pt-28 pb-10 sm:pb-12 border-t border-[var(--border)] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 mb-12 sm:mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-14 mb-16 sm:mb-20">
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
@@ -37,7 +37,7 @@ export default function Footer() {
           {/* App */}
           <div>
             <h4 className="font-display text-[var(--fg)] font-600 mb-4 text-sm tracking-wide uppercase">The App</h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-3.5 text-sm">
               <li><Link to="/about" className="hover:text-[var(--fg)] transition-colors duration-200">About</Link></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors duration-200">Features</a></li>
               <li><a href="/#how-it-works" className="hover:text-[var(--fg)] transition-colors duration-200">Process</a></li>
@@ -48,7 +48,7 @@ export default function Footer() {
           {/* Features */}
           <div>
             <h4 className="font-display text-[var(--fg)] font-600 mb-4 text-sm tracking-wide uppercase">Features</h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-3.5 text-sm">
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors duration-200">CP12 Certificates</a></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors duration-200">Job Tracking</a></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors duration-200">Invoices & Quotes</a></li>
@@ -59,7 +59,7 @@ export default function Footer() {
           {/* Company */}
           <div>
             <h4 className="font-display text-[var(--fg)] font-600 mb-4 text-sm tracking-wide uppercase">Company</h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-3.5 text-sm">
               <li><a href="mailto:support@gascertpal.com" className="hover:text-[var(--fg)] transition-colors duration-200">support@gascertpal.com</a></li>
               <li><Link to="/legal" className="hover:text-[var(--fg)] transition-colors duration-200">Legal</Link></li>
               <li><Link to="/privacy" className="hover:text-[var(--fg)] transition-colors duration-200">Privacy</Link></li>
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="bg-[var(--border)] h-px w-full mb-6" />
+        <div className="bg-[var(--border)] h-px w-full mb-8" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
           <p>&copy; {new Date().getFullYear()} GasCertPal. All rights reserved.</p>

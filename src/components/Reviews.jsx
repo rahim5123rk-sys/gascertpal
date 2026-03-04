@@ -59,11 +59,11 @@ function Stars({ count }) {
 
 function ReviewCard({ name, role, avatar, rating, text }) {
   return (
-    <div className="glass-card rounded-2xl p-6 sm:p-7 w-[300px] sm:w-[340px] shrink-0">
+    <div className="glass-card rounded-3xl p-8 sm:p-10 w-[320px] sm:w-[380px] shrink-0">
       <Stars count={rating} />
-      <p className="text-[var(--fg-muted)] text-sm leading-relaxed mb-5">&ldquo;{text}&rdquo;</p>
-      <div className="flex items-center gap-3">
-        <div className="w-9 h-9 bg-[var(--bg-elevated)] border border-[var(--border)] rounded-lg flex items-center justify-center text-[var(--fg-muted)] text-xs font-display font-700 shrink-0">
+      <p className="text-[var(--fg-muted)] text-sm leading-[1.75] mb-8">&ldquo;{text}&rdquo;</p>
+      <div className="flex items-center gap-3.5">
+        <div className="w-10 h-10 bg-[var(--bg-elevated)] border border-[var(--border)] rounded-lg flex items-center justify-center text-[var(--fg-muted)] text-xs font-display font-700 shrink-0">
           {avatar}
         </div>
         <div>
@@ -79,7 +79,7 @@ export default function Reviews() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="reviews" className="py-24 sm:py-32 lg:py-36 overflow-hidden relative border-t border-[var(--border)]">
+    <section id="reviews" className="py-32 sm:py-40 lg:py-48 overflow-hidden relative border-t border-[var(--border)]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 text-left sm:text-center relative z-10" ref={ref}>
         <div className="inline-flex items-center gap-3 text-[var(--accent)] font-600 text-xs uppercase tracking-[0.2em] mb-5">
           <span className="w-6 h-px bg-[var(--accent)]" />
@@ -87,14 +87,14 @@ export default function Reviews() {
           <span className="w-6 h-px bg-[var(--accent)]" />
         </div>
 
-        <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--fg)] mb-5 leading-tight ${
+        <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--fg)] mb-6 leading-tight ${
           inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
         }`}>
           Trusted by tradespeople.<br className="hidden sm:block" />
           <span className="text-[var(--fg-muted)]">Rated 4.9/5.</span>
         </h2>
 
-        <p className={`text-[var(--fg-muted)] text-base sm:text-lg mb-12 sm:mb-16 max-w-lg mx-auto ${
+        <p className={`text-[var(--fg-muted)] text-base sm:text-lg mb-16 sm:mb-20 max-w-lg mx-auto ${
           inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
         }`}>
           Over 2,400 independent ratings across the UK.

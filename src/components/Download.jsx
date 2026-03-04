@@ -25,7 +25,7 @@ export default function Download() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="download" className="py-24 sm:py-32 lg:py-36 relative overflow-hidden noise grid-bg">
+    <section id="download" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden noise grid-bg">
       {/* Accent glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[var(--accent)]/6 rounded-full blur-[120px] pointer-events-none" />
 
@@ -37,21 +37,21 @@ export default function Download() {
           <span className="w-6 h-px bg-[var(--accent)]" />
         </div>
 
-        <h2 className={`text-3xl sm:text-4xl lg:text-[3.5rem] font-700 text-[var(--fg)] mb-5 leading-tight ${
+        <h2 className={`text-3xl sm:text-4xl lg:text-[3.5rem] font-700 text-[var(--fg)] mb-6 leading-tight ${
           inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
         }`}>
           Ready to save hours<br className="hidden sm:block" />
           <span className="text-[var(--fg-muted)]">every single week?</span>
         </h2>
 
-        <p className={`text-[var(--fg-muted)] text-base sm:text-lg mb-10 sm:mb-12 max-w-lg mx-auto ${
+        <p className={`text-[var(--fg-muted)] text-base sm:text-lg leading-[1.75] mb-12 sm:mb-16 max-w-lg mx-auto ${
           inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
         }`}>
           Download GasCertPal free. No subscription. No hidden costs. The sharpest tool in your kit.
         </p>
 
         {/* Store badges */}
-        <div className={`flex flex-col sm:flex-row gap-3 justify-center mb-8 ${
+        <div className={`flex flex-col sm:flex-row gap-4 justify-center mb-10 ${
           inView ? 'opacity-0 animate-fade-up animation-delay-200' : 'opacity-0'
         }`}>
           <StoreBadge type="apple" />
