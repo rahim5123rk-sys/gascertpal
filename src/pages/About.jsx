@@ -93,8 +93,8 @@ export default function About() {
           <p className="text-[var(--fg-muted)] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
             GasCertPal was built by tradespeople, for tradespeople. We know the hassle of paper forms, chasing invoices, and juggling spreadsheets. So we built an app that puts your entire business in your pocket.
           </p>
-          <a href="/#download" className="btn-primary text-base px-8 py-4">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+          <a href="/#download" className="btn-primary btn-lg">
+            <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             Download Free
@@ -211,8 +211,8 @@ export default function About() {
           <p className="text-[var(--fg-muted)] text-base sm:text-lg mb-8 max-w-lg mx-auto">
             Join thousands of gas engineers already using GasCertPal to save time and look professional.
           </p>
-          <a href="/#download" className="btn-primary text-lg px-10 py-5">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+          <a href="/#download" className="btn-primary btn-lg">
+            <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             Download Now — Free

@@ -50,7 +50,7 @@ export default function Navbar() {
                 <Link to="/terms" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-500 transition-colors duration-200 tracking-wide uppercase">Terms</Link>
               </>
             )}
-            <a href={isHome ? '#download' : '/#download'} className="btn-primary text-sm px-6 py-2.5">
+            <a href={isHome ? '#download' : '/#download'} className="btn-primary btn-sm">
               Download Free
             </a>
           </div>
@@ -85,7 +85,7 @@ export default function Navbar() {
               <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-500" onClick={() => setMenuOpen(false)}>About</Link>
             </>
           )}
-          <a href={isHome ? '#download' : '/#download'} className="btn-primary text-sm px-6 py-3 w-full" onClick={() => setMenuOpen(false)}>
+          <a href={isHome ? '#download' : '/#download'} className="btn-primary btn-sm w-full" onClick={() => setMenuOpen(false)}>
             Download Free
           </a>
         </div>

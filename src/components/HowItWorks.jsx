@@ -96,7 +96,7 @@ export default function HowItWorks() {
 
         {/* CTA */}
         <div className={`text-center mt-20 sm:mt-28 ${inView ? 'opacity-0 animate-fade-up animation-delay-500' : 'opacity-0'}`}>
-          <a href="#download" className="btn-primary text-base px-8 py-4">
+          <a href="#download" className="btn-primary btn-lg">
             Get Started Free
           </a>
           <p className="text-[var(--fg-dim)] text-xs font-500 mt-4 uppercase tracking-wider">iOS & Android</p>
