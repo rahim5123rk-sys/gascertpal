@@ -61,11 +61,11 @@ const capabilities = [
 ]
 
 const whyItems = [
-  { title: 'Works Offline', desc: 'No signal on site? No problem. GasCertPal works without internet and syncs when you\'re back online.', tag: 'Reliability' },
+  { title: 'Works Offline', desc: 'No signal on site? No problem. PilotLight works without internet and syncs when you\'re back online.', tag: 'Reliability' },
   { title: 'Free to Use', desc: 'Download and use every feature for free. No subscriptions, no hidden charges.', tag: 'Pricing' },
   { title: 'Gas Safe Compliant', desc: 'CP12 certificates meet all legal requirements under the Gas Safety Regulations 1998.', tag: 'Compliance' },
   { title: 'GDPR Compliant', desc: 'Your data is encrypted, securely stored, and exportable or deletable at any time.', tag: 'Security' },
-  { title: 'Dead Simple', desc: 'No training needed. If you can use a phone, you can use GasCertPal. Set up in under 3 minutes.', tag: 'Ease' },
+  { title: 'Dead Simple', desc: 'No training needed. If you can use a phone, you can use PilotLight. Set up in under 3 minutes.', tag: 'Ease' },
   { title: 'UK Focused', desc: 'Built specifically for UK gas engineers and tradespeople. VAT, HMRC, Gas Safe — we get it.', tag: 'Local' },
 ]
 
@@ -78,8 +78,8 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="About GasCertPal — CP12 Certificates, Invoices & Job Management for Gas Engineers"
-        description="GasCertPal was built by tradespeople, for tradespeople. Create CP12 gas safety certificates, professional invoices, manage jobs, schedule work, and run your gas engineering business from your phone."
+        title="About PilotLight — CP12 Certificates, Invoices & Job Management for Gas Engineers"
+        description="PilotLight was built by tradespeople, for tradespeople. Create CP12 gas safety certificates, professional invoices, manage jobs, schedule work, and run your gas engineering business from your phone."
         path="/about"
       />
       {/* Hero */}
@@ -97,7 +97,7 @@ export default function About() {
             <span className="text-[var(--fg-muted)]">Needs in One App</span>
           </h1>
           <p className="text-[var(--fg-muted)] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-            GasCertPal was built by tradespeople, for tradespeople. We know the hassle of paper forms, chasing invoices, and juggling spreadsheets. So we built an app that puts your entire business in your pocket.
+            PilotLight was built by tradespeople, for tradespeople. We know the hassle of paper forms, chasing invoices, and juggling spreadsheets. So we built an app that puts your entire business in your pocket.
           </p>
           <a href="/#download" className="btn-primary btn-lg">
             <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
@@ -126,7 +126,7 @@ export default function About() {
             <div className="relative w-56 sm:w-60">
               <div className="bg-[#0a0c10] rounded-[2.5rem] p-2 shadow-[0_24px_64px_rgba(0,0,0,0.4)] ring-1 ring-white/5">
                 <div className="rounded-[2rem] overflow-hidden">
-                  <img src="/IMG_2634.PNG" alt="GasCertPal dashboard" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
+                  <img src="/IMG_2634.PNG" alt="PilotLight dashboard" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
                 </div>
               </div>
               <p className="text-center text-[var(--fg-muted)] text-sm font-500 mt-4">Dashboard & Quick Actions</p>
@@ -134,7 +134,7 @@ export default function About() {
             <div className="relative w-56 sm:w-60">
               <div className="bg-[#0a0c10] rounded-[2.5rem] p-2 shadow-[0_24px_64px_rgba(0,0,0,0.4)] ring-1 ring-white/5">
                 <div className="rounded-[2rem] overflow-hidden">
-                  <img src="/IMG_2633.PNG" alt="GasCertPal CP12 certificate form" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
+                  <img src="/IMG_2633.PNG" alt="PilotLight CP12 certificate form" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
                 </div>
               </div>
               <p className="text-center text-[var(--fg-muted)] text-sm font-500 mt-4">CP12 Gas Safety Certificate</p>
@@ -153,7 +153,7 @@ export default function About() {
               <span className="w-6 h-px bg-[var(--accent)]" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-4">
-              What You Can Do<br /><span className="text-[var(--fg-muted)]">With GasCertPal</span>
+              What You Can Do<br /><span className="text-[var(--fg-muted)]">With PilotLight</span>
             </h2>
           </div>
 
@@ -176,7 +176,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Why GasCertPal */}
+      {/* Why PilotLight */}
       <section className="py-28 sm:py-36 relative overflow-hidden border-t border-[var(--border)]">
         <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-10" ref={whyRef}>
           <div className="text-center mb-20">
@@ -215,7 +215,7 @@ export default function About() {
             Ready to Simplify<br /><span className="text-[var(--fg-muted)]">Your Business?</span>
           </h2>
           <p className="text-[var(--fg-muted)] text-base sm:text-lg mb-8 max-w-lg mx-auto">
-            Join thousands of gas engineers already using GasCertPal to save time and look professional.
+            Join thousands of gas engineers already using PilotLight to save time and look professional.
           </p>
           <a href="/#download" className="btn-primary btn-lg">
             <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>

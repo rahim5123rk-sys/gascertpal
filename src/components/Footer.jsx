@@ -15,7 +15,7 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="font-display text-base font-600 text-[var(--fg)]">
-                GasCertPal
+                PilotLight
               </span>
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-[240px]">
@@ -60,7 +60,7 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-[var(--fg)] font-600 mb-4 text-sm tracking-wide uppercase">Company</h4>
             <ul className="space-y-3.5 text-sm">
-              <li><a href="mailto:support@gascertpal.com" className="hover:text-[var(--fg)] transition-colors duration-200">support@gascertpal.com</a></li>
+              <li><a href="mailto:support@pilotlight.com" className="hover:text-[var(--fg)] transition-colors duration-200">support@pilotlight.com</a></li>
               <li><Link to="/legal" className="hover:text-[var(--fg)] transition-colors duration-200">Legal</Link></li>
               <li><Link to="/privacy" className="hover:text-[var(--fg)] transition-colors duration-200">Privacy</Link></li>
               <li><Link to="/terms" className="hover:text-[var(--fg)] transition-colors duration-200">Terms</Link></li>
@@ -72,7 +72,7 @@ export default function Footer() {
         <div className="bg-[var(--border)] h-px w-full mb-8" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
-          <p>&copy; {new Date().getFullYear()} GasCertPal. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} PilotLight. All rights reserved.</p>
           <p className="text-[var(--fg-dim)]">Made for Gas Safe Registered Engineers &middot; UK</p>
         </div>
       </div>

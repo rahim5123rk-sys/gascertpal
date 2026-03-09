@@ -70,7 +70,7 @@ export default function Features() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="features" aria-label="GasCertPal features — CP12 certificates, scheduling, invoicing, job tracking" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden noise">
+    <section id="features" aria-label="PilotLight features — CP12 certificates, scheduling, invoicing, job tracking" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden noise">
       {/* Subtle gradient backdrop */}
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-base)] via-[var(--bg-surface)]/50 to-[var(--bg-base)]" />
 

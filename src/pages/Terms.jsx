@@ -4,11 +4,11 @@ import SEO from '../components/SEO'
 const SECTIONS = [
   {
     title: '1. Acceptance of Terms',
-    body: `By creating an account and using GasCertPal ("the App"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the App.`,
+    body: `By creating an account and using PilotLight ("the App"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the App.`,
   },
   {
     title: '2. Description of Service',
-    body: `GasCertPal is a trade management application that allows tradespeople to manage customers, jobs, invoices, quotes, workers, and gas safety certificates (CP12), and send documents via email. The service is provided "as is" for business use by qualified tradespeople and their teams.`,
+    body: `PilotLight is a trade management application that allows tradespeople to manage customers, jobs, invoices, quotes, workers, and gas safety certificates (CP12), and send documents via email. The service is provided "as is" for business use by qualified tradespeople and their teams.`,
   },
   {
     title: '3. Account Responsibilities',
@@ -16,19 +16,19 @@ const SECTIONS = [
   },
   {
     title: '4. Acceptable Use',
-    body: `You agree to use GasCertPal only for lawful business purposes. You must not:\n\n• Use the App to store or process data in violation of applicable laws.\n• Share access credentials with unauthorised individuals.\n• Attempt to reverse engineer, decompile, or hack the App.\n• Use the App to harass, defame, or infringe on the rights of others.\n• Upload malicious content, viruses, or harmful code.`,
+    body: `You agree to use PilotLight only for lawful business purposes. You must not:\n\n• Use the App to store or process data in violation of applicable laws.\n• Share access credentials with unauthorised individuals.\n• Attempt to reverse engineer, decompile, or hack the App.\n• Use the App to harass, defame, or infringe on the rights of others.\n• Upload malicious content, viruses, or harmful code.`,
   },
   {
     title: '5. Data & Privacy',
-    body: `Your use of GasCertPal is also governed by our Privacy Policy. By using the App, you acknowledge that you have read and understood our Privacy Policy, which explains how we collect, use, and protect your personal data.\n\nAs a company administrator, you are responsible for ensuring that you have appropriate consent or legal basis to store customer, tenant, and landlord personal data in the App.`,
+    body: `Your use of PilotLight is also governed by our Privacy Policy. By using the App, you acknowledge that you have read and understood our Privacy Policy, which explains how we collect, use, and protect your personal data.\n\nAs a company administrator, you are responsible for ensuring that you have appropriate consent or legal basis to store customer, tenant, and landlord personal data in the App.`,
   },
   {
     title: '6. Gas Safety Certificates (CP12)',
-    body: `CP12 gas safety certificates generated through GasCertPal are provided as a digital tool to assist qualified Gas Safe registered engineers.\n\n• You are solely responsible for the accuracy of all data entered into certificates.\n• GasCertPal does not verify your Gas Safe registration, qualifications, or ID card number.\n• Certificates must comply with the Gas Safety (Installation & Use) Regulations 1998.\n• You must retain records for a minimum of 2 years as required by law.\n• GasCertPal is not liable for any errors or omissions in certificates you generate.\n• By entering your Gas Safe registration number and Gas Safe ID card number you warrant that these are your own genuine credentials and that your registration is current and unrestricted.\n• The Gas Safe Register logo is displayed on certificates solely on your authority as a registered gas engineer. GasCertPal does not claim any affiliation with, endorsement by, or licence from Gas Safe Register, Capita, or the HSE. You accept full legal responsibility for the use of Gas Safe Register branding on any certificate you generate.\n• You agree to indemnify and hold harmless GasCertPal, its directors, employees, and affiliates against any claims, losses, fines, or enforcement actions arising from your use of Gas Safe branding, generation of fraudulent or inaccurate certificates, or any breach of Gas Safety regulations.`,
+    body: `CP12 gas safety certificates generated through PilotLight are provided as a digital tool to assist qualified Gas Safe registered engineers.\n\n• You are solely responsible for the accuracy of all data entered into certificates.\n• PilotLight does not verify your Gas Safe registration, qualifications, or ID card number.\n• Certificates must comply with the Gas Safety (Installation & Use) Regulations 1998.\n• You must retain records for a minimum of 2 years as required by law.\n• PilotLight is not liable for any errors or omissions in certificates you generate.\n• By entering your Gas Safe registration number and Gas Safe ID card number you warrant that these are your own genuine credentials and that your registration is current and unrestricted.\n• The Gas Safe Register logo is displayed on certificates solely on your authority as a registered gas engineer. PilotLight does not claim any affiliation with, endorsement by, or licence from Gas Safe Register, Capita, or the HSE. You accept full legal responsibility for the use of Gas Safe Register branding on any certificate you generate.\n• You agree to indemnify and hold harmless PilotLight, its directors, employees, and affiliates against any claims, losses, fines, or enforcement actions arising from your use of Gas Safe branding, generation of fraudulent or inaccurate certificates, or any breach of Gas Safety regulations.`,
   },
   {
     title: '7. Invoices & Documents',
-    body: `Invoices, quotes, and other documents generated through GasCertPal are tools provided for your convenience. You are responsible for ensuring they comply with applicable tax and business regulations (e.g., HMRC requirements for VAT invoices).\n\nWhen you send documents via email through the App, emails are delivered using Resend (resend.com), a third-party transactional email service. Emails are sent from the gascertpal.com domain on your behalf. You are responsible for ensuring you have appropriate permission or legal basis to email documents to the recipients you specify.`,
+    body: `Invoices, quotes, and other documents generated through PilotLight are tools provided for your convenience. You are responsible for ensuring they comply with applicable tax and business regulations (e.g., HMRC requirements for VAT invoices).\n\nWhen you send documents via email through the App, emails are delivered using Resend (resend.com), a third-party transactional email service. Emails are sent from the pilotlight.com domain on your behalf. You are responsible for ensuring you have appropriate permission or legal basis to email documents to the recipients you specify.`,
   },
   {
     title: '8. Team & Worker Accounts',
@@ -36,11 +36,11 @@ const SECTIONS = [
   },
   {
     title: '9. Intellectual Property',
-    body: `GasCertPal and all associated branding, logos, and software are the intellectual property of GasCertPal. You retain ownership of all data you enter into the App. By using the App, you grant us a limited licence to process your data solely for the purpose of providing the service.`,
+    body: `PilotLight and all associated branding, logos, and software are the intellectual property of PilotLight. You retain ownership of all data you enter into the App. By using the App, you grant us a limited licence to process your data solely for the purpose of providing the service.`,
   },
   {
     title: '10. Limitation of Liability',
-    body: `To the maximum extent permitted by law:\n\n• GasCertPal is provided "as is" without warranties of any kind.\n• We are not liable for any loss of data, business interruption, or damages arising from your use of the App.\n• We do not guarantee uninterrupted or error-free service.\n• Our total liability shall not exceed the amount you have paid for the service in the 12 months preceding the claim.`,
+    body: `To the maximum extent permitted by law:\n\n• PilotLight is provided "as is" without warranties of any kind.\n• We are not liable for any loss of data, business interruption, or damages arising from your use of the App.\n• We do not guarantee uninterrupted or error-free service.\n• Our total liability shall not exceed the amount you have paid for the service in the 12 months preceding the claim.`,
   },
   {
     title: '11. Account Termination',
@@ -56,7 +56,7 @@ const SECTIONS = [
   },
   {
     title: '14. Contact',
-    body: `For questions about these terms, contact us at support@gascertpal.com.`,
+    body: `For questions about these terms, contact us at support@pilotlight.com.`,
   },
 ]
 
@@ -64,8 +64,8 @@ export default function Terms() {
   return (
     <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
       <SEO
-        title="Terms of Service — GasCertPal Usage Terms for Gas Engineers"
-        description="Terms of service for GasCertPal. Covers acceptable use, CP12 certificate responsibilities, Gas Safe compliance, data handling, and liability for gas engineers using the app."
+        title="Terms of Service — PilotLight Usage Terms for Gas Engineers"
+        description="Terms of service for PilotLight. Covers acceptable use, CP12 certificate responsibilities, Gas Safe compliance, data handling, and liability for gas engineers using the app."
         path="/terms"
       />
       {/* Header */}

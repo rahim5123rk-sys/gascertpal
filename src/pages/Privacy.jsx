@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 const SECTIONS = [
   {
     title: '1. Data Controller',
-    body: `GasCertPal is a trade management application. When you create a company account, your company acts as the data controller for customer and job data processed through the app. GasCertPal (the software) acts as a data processor on your behalf.`,
+    body: `PilotLight is a trade management application. When you create a company account, your company acts as the data controller for customer and job data processed through the app. PilotLight (the software) acts as a data processor on your behalf.`,
   },
   {
     title: '2. What Data We Collect',
@@ -24,7 +24,7 @@ const SECTIONS = [
   },
   {
     title: '6. Your Rights (GDPR)',
-    body: `Under the General Data Protection Regulation, you have the right to:\n\n• Access: Request a copy of all personal data we hold about you. Use "Export My Data" in Settings.\n• Rectification: Correct inaccurate data via your profile or customer records.\n• Erasure: Delete your account and all associated data via "Delete My Account" in Settings.\n• Portability: Export your data in a machine-readable format (JSON).\n• Restriction: Request that we limit processing of your data.\n• Object: Object to processing based on legitimate interests.\n• Withdraw Consent: Where processing is based on consent, withdraw at any time.\n\nTo exercise any of these rights, use the relevant feature in Settings or contact us at support@gascertpal.com.`,
+    body: `Under the General Data Protection Regulation, you have the right to:\n\n• Access: Request a copy of all personal data we hold about you. Use "Export My Data" in Settings.\n• Rectification: Correct inaccurate data via your profile or customer records.\n• Erasure: Delete your account and all associated data via "Delete My Account" in Settings.\n• Portability: Export your data in a machine-readable format (JSON).\n• Restriction: Request that we limit processing of your data.\n• Object: Object to processing based on legitimate interests.\n• Withdraw Consent: Where processing is based on consent, withdraw at any time.\n\nTo exercise any of these rights, use the relevant feature in Settings or contact us at support@pilotlight.com.`,
   },
   {
     title: '7. Data Security',
@@ -32,7 +32,7 @@ const SECTIONS = [
   },
   {
     title: "8. Children's Privacy",
-    body: `GasCertPal is not intended for use by anyone under the age of 16. We do not knowingly collect personal data from children.`,
+    body: `PilotLight is not intended for use by anyone under the age of 16. We do not knowingly collect personal data from children.`,
   },
   {
     title: '9. Changes to This Policy',
@@ -40,7 +40,7 @@ const SECTIONS = [
   },
   {
     title: '10. Contact',
-    body: `If you have questions about this privacy policy or wish to exercise your data rights, please contact us at support@gascertpal.com.`,
+    body: `If you have questions about this privacy policy or wish to exercise your data rights, please contact us at support@pilotlight.com.`,
   },
 ]
 
@@ -48,8 +48,8 @@ export default function Privacy() {
   return (
     <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
       <SEO
-        title="Privacy Policy — GasCertPal GDPR Compliant Data Protection"
-        description="GasCertPal privacy policy. Learn how we collect, use, and protect your personal data. GDPR compliant with full data export and deletion rights for Gas Safe engineers."
+        title="Privacy Policy — PilotLight GDPR Compliant Data Protection"
+        description="PilotLight privacy policy. Learn how we collect, use, and protect your personal data. GDPR compliant with full data export and deletion rights for Gas Safe engineers."
         path="/privacy"
       />
       {/* Header */}

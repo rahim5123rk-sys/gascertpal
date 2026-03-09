@@ -5,8 +5,8 @@ export default function Legal() {
   return (
     <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
       <SEO
-        title="Legal Information — GasCertPal Privacy & Terms"
-        description="Legal hub for GasCertPal. Access our privacy policy, terms of service, and GDPR compliance information for Gas Safe registered engineers."
+        title="Legal Information — PilotLight Privacy & Terms"
+        description="Legal hub for PilotLight. Access our privacy policy, terms of service, and GDPR compliance information for Gas Safe registered engineers."
         path="/legal"
       />
       {/* Hero */}
@@ -24,7 +24,7 @@ export default function Legal() {
             Legal Information
           </h1>
           <p className="text-[#a1a1a6] text-lg max-w-2xl mx-auto leading-relaxed">
-            GasCertPal is committed to transparency. Everything you need to know about how we handle your data and the terms governing your use of the app.
+            PilotLight is committed to transparency. Everything you need to know about how we handle your data and the terms governing your use of the app.
           </p>
         </div>
       </div>
@@ -74,7 +74,7 @@ export default function Legal() {
             </div>
             <h2 className="text-xl font-extrabold text-white mb-2">Terms of Service</h2>
             <p className="text-[#a1a1a6] text-sm leading-relaxed mb-6">
-              The rules and agreements governing your use of GasCertPal, including acceptable use, CP12 responsibilities, and liability.
+              The rules and agreements governing your use of PilotLight, including acceptable use, CP12 responsibilities, and liability.
             </p>
             <div className="flex items-center gap-2 text-[#a1a1a6] font-bold text-sm group-hover:gap-3 transition-all duration-200">
               Read Terms of Service
@@ -97,13 +97,13 @@ export default function Legal() {
             If you have questions about your data, want to exercise your GDPR rights, or have any legal queries, contact us directly.
           </p>
           <a
-            href="mailto:support@gascertpal.com"
+            href="mailto:support@pilotlight.com"
             className="inline-flex items-center gap-2 bg-white hover:bg-zinc-200 text-black px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 hover:scale-105  hover:"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            support@gascertpal.com
+            support@pilotlight.com
           </a>
         </div>
       </div>

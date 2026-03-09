@@ -4,7 +4,7 @@ const steps = [
   {
     num: '01',
     title: 'Download',
-    description: 'Get GasCertPal free on the App Store or Google Play. Set up your profile and Gas Safe credentials in under 3 minutes.',
+    description: 'Get PilotLight free on the App Store or Google Play. Set up your profile and Gas Safe credentials in under 3 minutes.',
     icon: (
       <svg aria-hidden="true" className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -49,7 +49,7 @@ export default function HowItWorks() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="how-it-works" aria-label="How to get started with GasCertPal in four steps" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden">
+    <section id="how-it-works" aria-label="How to get started with PilotLight in four steps" className="py-32 sm:py-40 lg:py-48 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10" ref={ref}>
         {/* Header */}
         <div className="text-center mb-20 sm:mb-28">

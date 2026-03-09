@@ -30,7 +30,7 @@ export default function Navbar() {
               </svg>
             </div>
             <span className="font-display text-lg font-600 text-[var(--fg)] tracking-tight">
-              GasCertPal
+              PilotLight
             </span>
           </Link>
 
