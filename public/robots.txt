@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
 
-Sitemap: https://gascertpal.com/sitemap.xml
+Sitemap: https://pilotlight.com/sitemap.xml

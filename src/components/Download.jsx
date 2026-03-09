@@ -47,7 +47,7 @@ export default function Download() {
         <p className={`text-[var(--fg-muted)] text-base sm:text-lg leading-[1.75] mb-12 sm:mb-16 max-w-lg mx-auto ${
           inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
         }`}>
-          Download GasCertPal free. No subscription. No hidden costs. The sharpest tool in your kit.
+          Download PilotLight free. No subscription. No hidden costs. The sharpest tool in your kit.
         </p>
 
         {/* Store badges */}

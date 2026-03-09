@@ -10,7 +10,7 @@ function PhoneMockup() {
         <div className="rounded-[2.2rem] overflow-hidden bg-white">
           <img
             src="/IMG_2634.PNG"
-            alt="GasCertPal app dashboard showing jobs, quotes, invoices and schedule"
+            alt="PilotLight app dashboard showing jobs, quotes, invoices and schedule"
             className="w-full h-auto block"
             fetchPriority="high"
             loading="eager"
@@ -45,7 +45,7 @@ function PhoneMockup() {
 
 export default function Hero() {
   return (
-    <section aria-label="GasCertPal — CP12 gas safety certificate app for gas engineers" className="min-h-svh flex items-center overflow-hidden relative grid-bg noise">
+    <section aria-label="PilotLight — CP12 gas safety certificate app for gas engineers" className="min-h-svh flex items-center overflow-hidden relative grid-bg noise">
       {/* Top-right radial glow */}
       <div className="absolute top-0 right-0 w-[50%] h-[60%] bg-gradient-to-bl from-[var(--accent)]/6 via-transparent to-transparent pointer-events-none" />
       {/* Bottom-left subtle cyan */}

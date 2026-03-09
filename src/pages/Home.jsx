@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="GasCertPal | CP12 Gas Safety Certificates App for Gas Engineers UK"
+        title="PilotLight | CP12 Gas Safety Certificates App for Gas Engineers UK"
         description="Free mobile app for Gas Safe registered engineers. Create CP12 gas safety certificates, send professional invoices and quotes, manage jobs and customers, schedule work — all from your phone. Available on iOS and Android."
         path="/"
       />

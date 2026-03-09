@@ -5,54 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary SEO -->
-    <title>GasCertPal | CP12 Gas Safety Certificates App for Gas Engineers UK</title>
-    <meta name="description" content="GasCertPal is the free mobile app for Gas Safe registered engineers. Create CP12 gas safety certificates, invoices, quotes, and manage jobs — all from your phone. Available on iOS and Android." />
+    <title>PilotLight — Free CP12 Certificate App for Gas Engineers</title>
+    <meta name="description" content="Free app for Gas Safe engineers. Create CP12 certificates, invoices, quotes, and manage jobs from your phone. iOS & Android." />
     <meta name="keywords" content="CP12 certificate app, gas safety certificate, gas engineer app, Gas Safe certificate, landlord gas safety record, CP12 app, gas certificate app UK, gas engineer software, plumber app, heating engineer app, LGSR app, gas safety record app" />
-    <meta name="author" content="GasCertPal" />
+    <meta name="author" content="PilotLight" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <link rel="canonical" href="https://gascertpal.com/" />
+    <link rel="canonical" href="https://pilotlight.com/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="GasCertPal" />
-    <meta property="og:title" content="GasCertPal | CP12 Gas Safety Certificates App for Gas Engineers" />
-    <meta property="og:description" content="Free mobile app for Gas Safe engineers. Create CP12 certificates, send invoices, manage jobs and customers — all from your phone." />
-    <meta property="og:url" content="https://gascertpal.com/" />
-    <meta property="og:image" content="https://gascertpal.com/og-image.png" />
+    <meta property="og:site_name" content="PilotLight" />
+    <meta property="og:title" content="PilotLight — Free CP12 Certificate App for Gas Engineers" />
+    <meta property="og:description" content="Free app for Gas Safe engineers. Create CP12 certificates, invoices, quotes, and manage jobs from your phone." />
+    <meta property="og:url" content="https://pilotlight.com/" />
+    <meta property="og:image" content="https://pilotlight.com/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="GasCertPal app showing CP12 gas safety certificate on a phone screen" />
+    <meta property="og:image:alt" content="PilotLight — CP12 certificates, invoices and job management for gas engineers" />
     <meta property="og:locale" content="en_GB" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="GasCertPal | CP12 Gas Safety Certificates App" />
+    <meta name="twitter:site" content="@pilotlight" />
+    <meta name="twitter:title" content="PilotLight — Free CP12 Certificate App" />
     <meta name="twitter:description" content="Free app for Gas Safe engineers. CP12 certificates, invoices, job management — from your phone." />
-    <meta name="twitter:image" content="https://gascertpal.com/og-image.png" />
-    <meta name="twitter:image:alt" content="GasCertPal app interface" />
+    <meta name="twitter:image" content="https://pilotlight.com/og-image.png" />
+    <meta name="twitter:image:alt" content="PilotLight app interface showing CP12 certificate workflow" />
 
     <!-- Geo targeting -->
     <meta name="geo.region" content="GB" />
     <meta name="geo.placename" content="United Kingdom" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-    <!-- Fonts -->
+    <!-- Fonts — non-render-blocking with swap -->
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=switzer@400,500,600&display=swap" />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=switzer@400,500,600&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=switzer@400,500,600&display=swap" />
+    </noscript>
+
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PilotLight",
+      "url": "https://pilotlight.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pilotlight.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 
     <!-- Structured Data: SoftwareApplication -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "GasCertPal",
+      "name": "PilotLight",
       "operatingSystem": "iOS, Android",
       "applicationCategory": "BusinessApplication",
-      "description": "Free mobile app for Gas Safe registered engineers. Create CP12 gas safety certificates, send professional invoices and quotes, manage jobs and customers, schedule work, and get digital signatures — all from your phone.",
-      "url": "https://gascertpal.com",
+      "description": "Free mobile app for Gas Safe registered engineers. Create CP12 gas safety certificates, send invoices and quotes, manage jobs and customers — all from your phone.",
+      "url": "https://pilotlight.com/",
+      "downloadUrl": [
+        "https://apps.apple.com/app/pilotlight/id6504737325",
+        "https://play.google.com/store/apps/details?id=com.pilotlight.app"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -75,11 +100,11 @@
         "Team Management",
         "Works Offline"
       ],
-      "screenshot": "https://gascertpal.com/IMG_2634.PNG",
+      "screenshot": "https://pilotlight.com/IMG_2634.PNG",
       "author": {
         "@type": "Organization",
-        "name": "GasCertPal",
-        "url": "https://gascertpal.com"
+        "name": "PilotLight",
+        "url": "https://pilotlight.com/"
       }
     }
     </script>
@@ -89,21 +114,25 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "GasCertPal",
-      "url": "https://gascertpal.com",
-      "logo": "https://gascertpal.com/vite.svg",
+      "name": "PilotLight",
+      "url": "https://pilotlight.com/",
+      "logo": "https://pilotlight.com/favicon.svg",
       "contactPoint": {
         "@type": "ContactPoint",
-        "email": "support@gascertpal.com",
+        "email": "support@pilotlight.com",
         "contactType": "customer service",
         "areaServed": "GB",
         "availableLanguage": "English"
       },
-      "sameAs": []
+      "sameAs": [
+        "https://www.linkedin.com/company/pilotlight",
+        "https://twitter.com/pilotlight",
+        "https://www.instagram.com/pilotlight"
+      ]
     }
     </script>
 
-    <!-- Structured Data: FAQPage (common search queries) -->
+    <!-- Structured Data: FAQPage -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -119,26 +148,34 @@
         },
         {
           "@type": "Question",
-          "name": "Is GasCertPal free to use?",
+          "name": "Is PilotLight free to use?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, GasCertPal is completely free to download and use. There are no subscriptions, no hidden costs, and no premium tiers. All features including CP12 certificates, invoices, quotes, and job management are available for free."
+            "text": "Yes, PilotLight is completely free to download and use. There are no subscriptions, no hidden costs, and no premium tiers. All features including CP12 certificates, invoices, quotes, and job management are available for free."
           }
         },
         {
           "@type": "Question",
-          "name": "Is GasCertPal Gas Safe compliant?",
+          "name": "Is PilotLight Gas Safe compliant?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, CP12 certificates generated through GasCertPal meet all legal requirements under the Gas Safety (Installation and Use) Regulations 1998. The app is designed specifically for Gas Safe registered engineers in the UK."
+            "text": "Yes, CP12 certificates generated through PilotLight meet all legal requirements under the Gas Safety (Installation and Use) Regulations 1998. The app is designed specifically for Gas Safe registered engineers in the UK."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I use GasCertPal offline?",
+          "name": "Can I use PilotLight offline?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, GasCertPal works without an internet connection. You can create certificates, invoices, and manage jobs on site even with no signal. Your data syncs automatically when you're back online."
+            "text": "Yes, PilotLight works without an internet connection. You can create certificates, invoices, and manage jobs on site even with no signal. Your data syncs automatically when you're back online."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I download PilotLight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PilotLight is available as a free download on the Apple App Store for iPhone and iPad, and on Google Play for Android devices. Search for 'PilotLight' or visit pilotlight.com to find the download links."
           }
         }
       ]
