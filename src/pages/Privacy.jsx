@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 const SECTIONS = [
   {
     title: '1. Data Controller',
-    body: `PilotLight is a trade management application. When you create a company account, your company acts as the data controller for customer and job data processed through the app. PilotLight (the software) acts as a data processor on your behalf.`,
+    body: `GasPilot is a trade management application. When you create a company account, your company acts as the data controller for customer and job data processed through the app. GasPilot (the software) acts as a data processor on your behalf.`,
   },
   {
     title: '2. What Data We Collect',
@@ -24,7 +24,7 @@ const SECTIONS = [
   },
   {
     title: '6. Your Rights (GDPR)',
-    body: `Under the General Data Protection Regulation, you have the right to:\n\n• Access: Request a copy of all personal data we hold about you. Use "Export My Data" in Settings.\n• Rectification: Correct inaccurate data via your profile or customer records.\n• Erasure: Delete your account and all associated data via "Delete My Account" in Settings.\n• Portability: Export your data in a machine-readable format (JSON).\n• Restriction: Request that we limit processing of your data.\n• Object: Object to processing based on legitimate interests.\n• Withdraw Consent: Where processing is based on consent, withdraw at any time.\n\nTo exercise any of these rights, use the relevant feature in Settings or contact us at support@pilotlight.com.`,
+    body: `Under the General Data Protection Regulation, you have the right to:\n\n• Access: Request a copy of all personal data we hold about you. Use "Export My Data" in Settings.\n• Rectification: Correct inaccurate data via your profile or customer records.\n• Erasure: Delete your account and all associated data via "Delete My Account" in Settings.\n• Portability: Export your data in a machine-readable format (JSON).\n• Restriction: Request that we limit processing of your data.\n• Object: Object to processing based on legitimate interests.\n• Withdraw Consent: Where processing is based on consent, withdraw at any time.\n\nTo exercise any of these rights, use the relevant feature in Settings or contact us at support@gascertpal.com.`,
   },
   {
     title: '7. Data Security',
@@ -32,7 +32,7 @@ const SECTIONS = [
   },
   {
     title: "8. Children's Privacy",
-    body: `PilotLight is not intended for use by anyone under the age of 16. We do not knowingly collect personal data from children.`,
+    body: `GasPilot is not intended for use by anyone under the age of 16. We do not knowingly collect personal data from children.`,
   },
   {
     title: '9. Changes to This Policy',
@@ -40,67 +40,43 @@ const SECTIONS = [
   },
   {
     title: '10. Contact',
-    body: `If you have questions about this privacy policy or wish to exercise your data rights, please contact us at support@pilotlight.com.`,
+    body: `If you have questions about this privacy policy or wish to exercise your data rights, please contact us at support@gascertpal.com.`,
   },
 ]
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-[#000000] pt-8 sm:pt-12">
+    <div className="min-h-screen pt-8 sm:pt-12">
       <SEO
-        title="Privacy Policy — PilotLight GDPR Compliant Data Protection"
-        description="PilotLight privacy policy. Learn how we collect, use, and protect your personal data. GDPR compliant with full data export and deletion rights for Gas Safe engineers."
+        title="Privacy Policy — GasPilot GDPR Compliant Data Protection"
+        description="GasPilot privacy policy. Learn how we collect, use, and protect your personal data. GDPR compliant with full data export and deletion rights for Gas Safe engineers."
         path="/privacy"
       />
-      {/* Header */}
-      <div className="relative py-20 overflow-hidden">
-        
-        
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <div className="w-16 h-16 bg-white text-black rounded-2xl flex items-center justify-center mx-auto mb-6 ">
-            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-          </div>
-          <div className="inline-flex items-center gap-1.5 bg-[#111111] text-green-400 text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wider border border-green-500/20">
-            <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
-            GDPR Compliant
-          </div>
-          <h1 className="text-4xl md:text-5xl font-black text-white mb-3 ">Privacy Policy</h1>
-          <p className="text-[#a1a1a6] text-sm">Last updated: 1 March 2026</p>
+
+      <div className="py-16 sm:py-20">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
+          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">GDPR Compliant</p>
+          <h1 className="text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-3">Privacy Policy</h1>
+          <p className="text-[var(--fg-muted)] text-sm">Last updated: 1 March 2026</p>
         </div>
       </div>
 
-      {/* Content */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="space-y-6">
+      <div className="max-w-3xl mx-auto px-5 sm:px-8 pb-20">
+        <div className="space-y-8">
           {SECTIONS.map((s, i) => (
-            <div key={i} className=" rounded-2xl p-6 sm:p-8 hover:-translate-y-1 transition-all duration-300">
-              <h2 className="text-lg font-extrabold text-white mb-4">{s.title}</h2>
-              <div className="text-[#a1a1a6] text-sm leading-7 whitespace-pre-line">{s.body}</div>
+            <div key={i}>
+              <h2 className="text-base font-600 text-[var(--fg)] mb-3">{s.title}</h2>
+              <div className="text-[var(--fg-muted)] text-sm leading-7 whitespace-pre-line">{s.body}</div>
             </div>
           ))}
         </div>
 
-        {/* Back / Other links */}
-        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            to="/legal"
-            className="inline-flex items-center gap-2 text-[#a1a1a6] hover:text-white font-medium text-sm transition-colors"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to Legal Hub
+        <div className="mt-12 pt-8 border-t border-[var(--border)] flex flex-col sm:flex-row gap-4 justify-center">
+          <Link to="/legal" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm transition-colors">
+            Back to Legal
           </Link>
-          <Link
-            to="/terms"
-            className="inline-flex items-center gap-2 text-[#a1a1a6] hover:text-white font-medium text-sm transition-colors"
-          >
-            View Terms of Service
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
+          <Link to="/terms" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm transition-colors">
+            Terms of Service
           </Link>
         </div>
       </div>
