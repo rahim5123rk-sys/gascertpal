@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pilotlight.com/sitemap.xml
+Sitemap: https://gascertpal.com/sitemap.xml
