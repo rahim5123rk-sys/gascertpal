@@ -1,6 +1,7 @@
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Features from '../components/Features'
+import Screenshots from '../components/Screenshots'
 import HowItWorks from '../components/HowItWorks'
 import Reviews from '../components/Reviews'
 import Download from '../components/Download'
@@ -15,6 +16,7 @@ export default function Home() {
       />
       <Hero />
       <Features />
+      <Screenshots />
       <HowItWorks />
       <Reviews />
       <Download />
