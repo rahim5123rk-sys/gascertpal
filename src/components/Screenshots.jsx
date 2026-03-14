@@ -34,8 +34,8 @@ export default function Screenshots() {
           {/* Phone mockup — bigger */}
           <div className="flex-shrink-0 w-64 sm:w-72 lg:w-80">
             <div className="relative">
-              <div className="bg-[var(--bg-elevated)] rounded-[2.5rem] p-2.5 ring-1 ring-[var(--border)]">
-                <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-[var(--bg-elevated)] rounded-full z-10" />
+              <div className="relative bg-[var(--bg-elevated)] rounded-[2.5rem] p-2.5 ring-1 ring-[var(--border)]">
+                <div className="absolute top-5 left-1/2 -translate-x-1/2 w-20 h-5 bg-black rounded-full z-10" />
                 <div className="rounded-[2rem] overflow-hidden bg-white">
                   <img
                     key={active}

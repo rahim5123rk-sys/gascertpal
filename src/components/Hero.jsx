@@ -24,7 +24,7 @@ export default function Hero() {
               <a href="#download" className="btn-primary btn-lg btn-block-mobile">
                 Join the Waitlist
               </a>
-              <a href="#features" className="btn-ghost btn-lg btn-block-mobile">
+              <a href="/features" className="btn-ghost btn-lg btn-block-mobile">
                 See Features
               </a>
             </div>
@@ -41,8 +41,8 @@ export default function Hero() {
           {/* Right: phone */}
           <div className="w-full lg:w-1/2 flex justify-center opacity-0 animate-fade-up animation-delay-300">
             <div className="relative w-56 sm:w-64 lg:w-72">
-              <div className="bg-[var(--bg-elevated)] rounded-[2.5rem] p-2.5 ring-1 ring-[var(--border)]">
-                <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-5 bg-[var(--bg-elevated)] rounded-full z-10" />
+              <div className="relative bg-[var(--bg-elevated)] rounded-[2.5rem] p-2.5 ring-1 ring-[var(--border)]">
+                <div className="absolute top-5 left-1/2 -translate-x-1/2 w-20 h-5 bg-black rounded-full z-10" />
                 <div className="rounded-[2rem] overflow-hidden bg-white">
                   <img
                     src="/screen-dashboard.png"

@@ -32,20 +32,8 @@ export default function Navbar() {
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-6">
-            {isHome ? (
-              <>
-                <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">About</Link>
-                <a href="#features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Features</a>
-                <a href="#how-it-works" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Process</a>
-              </>
-            ) : (
-              <>
-                <Link to="/" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Home</Link>
-                <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">About</Link>
-                <Link to="/privacy" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Privacy</Link>
-                <Link to="/terms" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Terms</Link>
-              </>
-            )}
+            <Link to="/features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Features</Link>
+            <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">About</Link>
             <a href={isHome ? '#download' : '/#download'} className="btn-primary btn-sm">
               Download
             </a>
@@ -69,18 +57,9 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="bg-[var(--bg-surface)] border-t border-[var(--border)] px-6 py-4 flex flex-col gap-3">
-          {isHome ? (
-            <>
-              <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>About</Link>
-              <a href="#features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Features</a>
-              <a href="#how-it-works" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Process</a>
-            </>
-          ) : (
-            <>
-              <Link to="/" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Home</Link>
-              <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>About</Link>
-            </>
-          )}
+          <Link to="/" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Features</Link>
+          <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>About</Link>
           <a href={isHome ? '#download' : '/#download'} className="btn-primary btn-sm w-full text-center" onClick={() => setMenuOpen(false)}>
             Download
           </a>
