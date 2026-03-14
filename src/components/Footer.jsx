@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--border)] text-[var(--fg-muted)] py-14 sm:py-18">
-      <div className="max-w-5xl mx-auto px-5 sm:px-8">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-12 mb-14">
 
           {/* Brand */}

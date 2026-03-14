@@ -11,7 +11,7 @@ export default function Legal() {
       />
 
       <div className="py-16 sm:py-20">
-        <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">Legal</p>
           <h1 className="text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-4">
             Legal Information
@@ -22,7 +22,7 @@ export default function Legal() {
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-5 sm:px-8 pb-20">
+      <div className="max-w-3xl mx-auto px-6 sm:px-8 pb-20">
         <div className="grid sm:grid-cols-2 gap-px bg-[var(--border)] rounded-2xl overflow-hidden mb-10">
           <Link to="/privacy" className="bg-[var(--bg-base)] p-8 group">
             <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-3">GDPR Compliant</p>

@@ -19,12 +19,12 @@ export default function Navbar() {
         ? 'bg-[var(--bg-base)]/90 backdrop-blur-xl border-b border-[var(--border)]'
         : 'bg-transparent'
     }`}>
-      <div className="max-w-5xl mx-auto px-5 sm:px-8">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <img src="/logowebsite.png" alt="GasPilot" className="w-10 h-10" />
+            <img src="/logowebsite.png" alt="GasPilot" className="h-10 w-auto object-contain" />
             <span className="font-display text-[22px] font-700 text-[var(--fg)] tracking-tight">
               GasPilot
             </span>

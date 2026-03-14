@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="min-h-svh flex items-center relative">
-      <div className="max-w-5xl mx-auto px-5 sm:px-8 pt-20 sm:pt-28 pb-24 sm:pb-32 w-full">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8 pt-20 sm:pt-28 pb-24 sm:pb-32 w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-12">
 
           {/* Left */}

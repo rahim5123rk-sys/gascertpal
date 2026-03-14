@@ -85,7 +85,7 @@ export default function About() {
 
       {/* Hero */}
       <div className="pt-24 sm:pt-28 pb-16">
-        <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">About</p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--fg)] mb-5 leading-tight">
             Everything a gas engineer needs in one app
@@ -101,7 +101,7 @@ export default function About() {
 
       {/* Screenshots */}
       <section className="py-20 sm:py-28 border-t border-[var(--border)]">
-        <div className="max-w-4xl mx-auto px-5 sm:px-8">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8">
           <div className="text-center mb-14">
             <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-3">Preview</p>
             <h2 className="text-2xl sm:text-3xl font-700 text-[var(--fg)]">
@@ -132,7 +132,7 @@ export default function About() {
 
       {/* Capabilities */}
       <section className="py-20 sm:py-28 border-t border-[var(--border)]">
-        <div className="max-w-5xl mx-auto px-5 sm:px-8" ref={featRef}>
+        <div className="max-w-5xl mx-auto px-6 sm:px-8" ref={featRef}>
           <div className="text-center mb-14">
             <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-3">Capabilities</p>
             <h2 className="text-2xl sm:text-3xl font-700 text-[var(--fg)]">
@@ -161,7 +161,7 @@ export default function About() {
 
       {/* Why GasPilot */}
       <section className="py-20 sm:py-28 border-t border-[var(--border)]">
-        <div className="max-w-4xl mx-auto px-5 sm:px-8" ref={whyRef}>
+        <div className="max-w-4xl mx-auto px-6 sm:px-8" ref={whyRef}>
           <div className="text-center mb-14">
             <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-3">Why Us</p>
             <h2 className="text-2xl sm:text-3xl font-700 text-[var(--fg)]">
@@ -187,7 +187,7 @@ export default function About() {
 
       {/* CTA */}
       <section className="py-20 sm:py-28 border-t border-[var(--border)]">
-        <div className="max-w-2xl mx-auto px-5 sm:px-8 text-center">
+        <div className="max-w-2xl mx-auto px-6 sm:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-700 text-[var(--fg)] mb-4">
             Ready to simplify your business?
           </h2>

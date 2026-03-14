@@ -54,14 +54,14 @@ export default function Privacy() {
       />
 
       <div className="py-16 sm:py-20">
-        <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">GDPR Compliant</p>
           <h1 className="text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-3">Privacy Policy</h1>
           <p className="text-[var(--fg-muted)] text-sm">Last updated: 1 March 2026</p>
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-5 sm:px-8 pb-20">
+      <div className="max-w-3xl mx-auto px-6 sm:px-8 pb-20">
         <div className="space-y-8">
           {SECTIONS.map((s, i) => (
             <div key={i}>
