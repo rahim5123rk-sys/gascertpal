@@ -24,7 +24,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <img src="/icon.png" alt="GasPilot" className="w-11 h-11 rounded-xl" />
+            <img src="/logowebsite.png" alt="GasPilot" className="w-10 h-10" />
             <span className="font-display text-[22px] font-700 text-[var(--fg)] tracking-tight">
               GasPilot
             </span>

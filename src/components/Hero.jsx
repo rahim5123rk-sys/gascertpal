@@ -45,7 +45,7 @@ export default function Hero() {
                 <div className="absolute top-2 left-1/2 -translate-x-1/2 w-20 h-5 bg-[var(--bg-elevated)] rounded-full z-10" />
                 <div className="rounded-[2rem] overflow-hidden bg-white">
                   <img
-                    src="/IMG_2634.PNG"
+                    src="/screen-dashboard.png"
                     alt="GasPilot app dashboard"
                     className="w-full h-auto block"
                     fetchPriority="high"
