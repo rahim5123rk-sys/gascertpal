@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--border)] text-[var(--fg-muted)] py-14 sm:py-18">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-12 mb-14">
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="font-display text-[15px] font-600 text-[var(--fg)] mb-4 block">
+            <Link to="/" className="font-display text-[15px] font-semibold text-[var(--fg)] mb-4 block">
               GasPilot
             </Link>
             <p className="text-sm leading-relaxed max-w-[220px]">
@@ -18,7 +18,7 @@ export default function Footer() {
 
           {/* App */}
           <div>
-            <h4 className="text-[var(--fg)] font-500 mb-4 text-sm">App</h4>
+            <h4 className="text-[var(--fg)] font-medium mb-4 text-sm">App</h4>
             <ul className="space-y-3 text-sm">
               <li><Link to="/about" className="hover:text-[var(--fg)] transition-colors">About</Link></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">Features</a></li>
@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* Features */}
           <div>
-            <h4 className="text-[var(--fg)] font-500 mb-4 text-sm">Features</h4>
+            <h4 className="text-[var(--fg)] font-medium mb-4 text-sm">Features</h4>
             <ul className="space-y-3 text-sm">
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">Gas Certificates</a></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">Job Tracking</a></li>
@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-[var(--fg)] font-500 mb-4 text-sm">Company</h4>
+            <h4 className="text-[var(--fg)] font-medium mb-4 text-sm">Company</h4>
             <ul className="space-y-3 text-sm">
               <li><a href="mailto:support@gascertpal.com" className="hover:text-[var(--fg)] transition-colors">support@gascertpal.com</a></li>
               <li><Link to="/legal" className="hover:text-[var(--fg)] transition-colors">Legal</Link></li>

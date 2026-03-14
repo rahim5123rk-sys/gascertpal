@@ -65,10 +65,10 @@ export default function Features() {
 
   return (
     <section id="features" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20" ref={ref}>
+      <div className="max-w-5xl mx-auto px-6 sm:px-8" ref={ref}>
         <div className="text-center mb-20 lg:mb-24">
-          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-5">Features</p>
-          <h2 className={`text-3xl sm:text-[2.75rem] font-700 text-[var(--fg)] mb-6 leading-tight ${
+          <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-5">Features</p>
+          <h2 className={`text-3xl sm:text-[2.75rem] font-bold text-[var(--fg)] mb-6 leading-tight ${
             inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
           }`}>
             Built for the job site
@@ -91,7 +91,7 @@ export default function Features() {
               <div className="w-12 h-12 rounded-xl bg-[var(--bg-elevated)] flex items-center justify-center text-[var(--fg-muted)] mb-6">
                 {f.icon}
               </div>
-              <h3 className="font-display text-lg font-600 text-[var(--fg)] mb-3">{f.title}</h3>
+              <h3 className="font-display text-lg font-semibold text-[var(--fg)] mb-3">{f.title}</h3>
               <p className="text-[var(--fg-muted)] text-sm sm:text-base leading-relaxed">{f.description}</p>
             </div>
           ))}

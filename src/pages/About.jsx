@@ -86,8 +86,8 @@ export default function About() {
       {/* Hero */}
       <div className="pt-24 sm:pt-28 pb-16">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
-          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">About</p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--fg)] mb-5 leading-tight">
+          <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-4">About</p>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--fg)] mb-5 leading-tight">
             Everything a gas engineer needs in one app
           </h1>
           <p className="text-[var(--fg-muted)] text-base sm:text-lg max-w-xl mx-auto leading-relaxed mb-8">
@@ -103,8 +103,8 @@ export default function About() {
       <section className="py-20 sm:py-28 border-t border-[var(--border)]">
         <div className="max-w-4xl mx-auto px-6 sm:px-8">
           <div className="text-center mb-14">
-            <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-3">Preview</p>
-            <h2 className="text-2xl sm:text-3xl font-700 text-[var(--fg)]">
+            <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-3">Preview</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[var(--fg)]">
               Designed for real engineers
             </h2>
           </div>
@@ -116,7 +116,7 @@ export default function About() {
                   <img src="/IMG_2634.PNG" alt="GasPilot dashboard" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
                 </div>
               </div>
-              <p className="text-center text-[var(--fg-dim)] text-xs font-500 mt-3">Dashboard</p>
+              <p className="text-center text-[var(--fg-dim)] text-xs font-medium mt-3">Dashboard</p>
             </div>
             <div className="w-48 sm:w-56">
               <div className="bg-[var(--bg-elevated)] rounded-[2.2rem] p-2 ring-1 ring-[var(--border)]">
@@ -124,7 +124,7 @@ export default function About() {
                   <img src="/IMG_2633.PNG" alt="GasPilot CP12 certificate" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
                 </div>
               </div>
-              <p className="text-center text-[var(--fg-dim)] text-xs font-500 mt-3">CP12 Certificate</p>
+              <p className="text-center text-[var(--fg-dim)] text-xs font-medium mt-3">CP12 Certificate</p>
             </div>
           </div>
         </div>
@@ -134,8 +134,8 @@ export default function About() {
       <section className="py-20 sm:py-28 border-t border-[var(--border)]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8" ref={featRef}>
           <div className="text-center mb-14">
-            <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-3">Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl font-700 text-[var(--fg)]">
+            <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-3">Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[var(--fg)]">
               What you can do with GasPilot
             </h2>
           </div>
@@ -151,7 +151,7 @@ export default function About() {
                 <div className="w-10 h-10 bg-[var(--bg-elevated)] rounded-lg flex items-center justify-center text-[var(--fg-muted)] mb-5">
                   {c.icon}
                 </div>
-                <h3 className="font-display text-base font-600 text-[var(--fg)] mb-2">{c.title}</h3>
+                <h3 className="font-display text-base font-semibold text-[var(--fg)] mb-2">{c.title}</h3>
                 <p className="text-[var(--fg-muted)] text-sm leading-relaxed">{c.description}</p>
               </div>
             ))}
@@ -163,8 +163,8 @@ export default function About() {
       <section className="py-20 sm:py-28 border-t border-[var(--border)]">
         <div className="max-w-4xl mx-auto px-6 sm:px-8" ref={whyRef}>
           <div className="text-center mb-14">
-            <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-3">Why Us</p>
-            <h2 className="text-2xl sm:text-3xl font-700 text-[var(--fg)]">
+            <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-3">Why Us</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[var(--fg)]">
               Built for the real world
             </h2>
           </div>
@@ -177,7 +177,7 @@ export default function About() {
                   whyInView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
                 }`}
               >
-                <h3 className="font-display text-base font-600 text-[var(--fg)] mb-2">{item.title}</h3>
+                <h3 className="font-display text-base font-semibold text-[var(--fg)] mb-2">{item.title}</h3>
                 <p className="text-[var(--fg-muted)] text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -188,7 +188,7 @@ export default function About() {
       {/* CTA */}
       <section className="py-20 sm:py-28 border-t border-[var(--border)]">
         <div className="max-w-2xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-700 text-[var(--fg)] mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--fg)] mb-4">
             Ready to simplify your business?
           </h2>
           <p className="text-[var(--fg-muted)] text-base mb-8 max-w-md mx-auto">

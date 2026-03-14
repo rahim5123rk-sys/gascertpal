@@ -30,10 +30,10 @@ export default function HowItWorks() {
 
   return (
     <section id="how-it-works" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20" ref={ref}>
+      <div className="max-w-5xl mx-auto px-6 sm:px-8" ref={ref}>
         <div className="text-center mb-20 sm:mb-24">
-          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-5">Process</p>
-          <h2 className={`text-3xl sm:text-[2.75rem] font-700 text-[var(--fg)] leading-tight ${
+          <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-5">Process</p>
+          <h2 className={`text-3xl sm:text-[2.75rem] font-bold text-[var(--fg)] leading-tight ${
             inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
           }`}>
             Up and running in four steps
@@ -48,8 +48,8 @@ export default function HowItWorks() {
                 inView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
               }`}
             >
-              <span className="font-display text-sm font-700 text-[var(--fg-dim)] mb-4">{step.num}</span>
-              <h3 className="font-display text-xl font-600 text-[var(--fg)] mb-3">{step.title}</h3>
+              <span className="font-display text-sm font-bold text-[var(--fg-dim)] mb-4">{step.num}</span>
+              <h3 className="font-display text-xl font-semibold text-[var(--fg)] mb-3">{step.title}</h3>
               <p className="text-[var(--fg-muted)] text-base leading-relaxed">{step.description}</p>
             </div>
           ))}

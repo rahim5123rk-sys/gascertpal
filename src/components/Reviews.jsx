@@ -42,8 +42,8 @@ export default function Reviews() {
     <section id="reviews" className="py-24 sm:py-32 lg:py-40 border-t border-[var(--border)]">
       <div className="max-w-5xl mx-auto px-5 sm:px-8" ref={ref}>
         <div className="text-center mb-16 lg:mb-20">
-          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">Reviews</p>
-          <h2 className={`text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-4 leading-tight ${
+          <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-4">Reviews</p>
+          <h2 className={`text-3xl sm:text-4xl font-bold text-[var(--fg)] mb-4 leading-tight ${
             inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
           }`}>
             Rated 4.9/5
@@ -65,7 +65,7 @@ export default function Reviews() {
             >
               <p className="text-[var(--fg-muted)] text-sm leading-relaxed mb-6">&ldquo;{r.text}&rdquo;</p>
               <div>
-                <div className="font-500 text-[var(--fg)] text-sm">{r.name}</div>
+                <div className="font-medium text-[var(--fg)] text-sm">{r.name}</div>
                 <div className="text-[var(--fg-dim)] text-xs">{r.role}</div>
               </div>
             </div>

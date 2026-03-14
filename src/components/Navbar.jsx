@@ -19,13 +19,13 @@ export default function Navbar() {
         ? 'bg-[var(--bg-base)]/90 backdrop-blur-xl border-b border-[var(--border)]'
         : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <img src="/logowebsite.png" alt="GasPilot" className="h-10 w-auto object-contain" />
-            <span className="font-display text-[22px] font-700 text-[var(--fg)] tracking-tight">
+          <Link to="/" className="flex items-center gap-2 group shrink-0">
+            <img src="/logowebsite.png" alt="GasPilot" className="h-7 w-auto object-contain" />
+            <span className="font-display text-[22px] font-bold text-[var(--fg)] tracking-tight">
               GasPilot
             </span>
           </Link>
@@ -34,16 +34,16 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-6">
             {isHome ? (
               <>
-                <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-500 transition-colors">About</Link>
-                <a href="#features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-500 transition-colors">Features</a>
-                <a href="#how-it-works" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-500 transition-colors">Process</a>
+                <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">About</Link>
+                <a href="#features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Features</a>
+                <a href="#how-it-works" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Process</a>
               </>
             ) : (
               <>
-                <Link to="/" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-500 transition-colors">Home</Link>
-                <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-500 transition-colors">About</Link>
-                <Link to="/privacy" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-500 transition-colors">Privacy</Link>
-                <Link to="/terms" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-500 transition-colors">Terms</Link>
+                <Link to="/" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Home</Link>
+                <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">About</Link>
+                <Link to="/privacy" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Privacy</Link>
+                <Link to="/terms" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Terms</Link>
               </>
             )}
             <a href={isHome ? '#download' : '/#download'} className="btn-primary btn-sm">
@@ -71,14 +71,14 @@ export default function Navbar() {
         <div className="bg-[var(--bg-surface)] border-t border-[var(--border)] px-6 py-4 flex flex-col gap-3">
           {isHome ? (
             <>
-              <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-500" onClick={() => setMenuOpen(false)}>About</Link>
-              <a href="#features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-500" onClick={() => setMenuOpen(false)}>Features</a>
-              <a href="#how-it-works" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-500" onClick={() => setMenuOpen(false)}>Process</a>
+              <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>About</Link>
+              <a href="#features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Features</a>
+              <a href="#how-it-works" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Process</a>
             </>
           ) : (
             <>
-              <Link to="/" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-500" onClick={() => setMenuOpen(false)}>Home</Link>
-              <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-500" onClick={() => setMenuOpen(false)}>About</Link>
+              <Link to="/" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Home</Link>
+              <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>About</Link>
             </>
           )}
           <a href={isHome ? '#download' : '/#download'} className="btn-primary btn-sm w-full text-center" onClick={() => setMenuOpen(false)}>

@@ -16,12 +16,12 @@ export default function Screenshots() {
 
   return (
     <section id="screenshots" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20" ref={ref}>
+      <div className="max-w-6xl mx-auto px-6 sm:px-8" ref={ref}>
 
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
-          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-5">App Preview</p>
-          <h2 className={`text-3xl sm:text-[2.75rem] font-700 text-[var(--fg)] mb-6 leading-tight ${inView ? 'opacity-0 animate-fade-up' : 'opacity-0'}`}>
+          <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-5">App Preview</p>
+          <h2 className={`text-3xl sm:text-[2.75rem] font-bold text-[var(--fg)] mb-6 leading-tight ${inView ? 'opacity-0 animate-fade-up' : 'opacity-0'}`}>
             See it in action
           </h2>
           <p className={`text-[var(--fg-muted)] max-w-lg mx-auto text-base sm:text-lg leading-relaxed ${inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'}`}>
@@ -63,7 +63,7 @@ export default function Screenshots() {
                       : 'border-transparent hover:border-[var(--border)] hover:bg-[var(--bg-elevated)]'
                   }`}
                 >
-                  <p className={`text-base font-600 mb-1.5 ${active === i ? 'text-[var(--fg)]' : 'text-[var(--fg-muted)]'}`}>
+                  <p className={`text-base font-semibold mb-1.5 ${active === i ? 'text-[var(--fg)]' : 'text-[var(--fg-muted)]'}`}>
                     {s.label}
                   </p>
                   <p className={`text-sm leading-relaxed ${active === i ? 'text-[var(--fg-muted)]' : 'text-[var(--fg-dim)]'}`}>

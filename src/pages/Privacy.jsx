@@ -4,43 +4,47 @@ import SEO from '../components/SEO'
 const SECTIONS = [
   {
     title: '1. Data Controller',
-    body: `GasPilot is a trade management application. When you create a company account, your company acts as the data controller for customer and job data processed through the app. GasPilot (the software) acts as a data processor on your behalf.`,
+    body: `GasPilot is a trade management application operated by Mohammed Khan (trading as Blue Flame Studios). When you create a company account, your company acts as the data controller for customer, job and document data processed through the app. GasPilot acts as a data processor on your behalf except where we process limited account, billing, support and security data for our own legitimate business purposes.`,
   },
   {
     title: '2. What Data We Collect',
-    body: `We collect and process the following categories of personal data:\n\n• Account Data: Name, email address, password (hashed), company name, business address, phone number, trade type.\n• Professional Data: Gas Safe Register number, gas licence number, OFTEC number (where applicable).\n• Customer Data: Customer name, company name, address, postcode, email, phone number.\n• Tenant & Landlord Data: Name, address, email, phone number (for CP12 gas safety certificates).\n• Job Data: Job descriptions, notes, photos, site addresses.\n• Document Data: Invoices, quotes, CP12 certificates including customer/landlord/tenant details.\n• Digital Signatures: Handwritten signatures captured digitally for certificates and documents.\n• Device Data: Push notification tokens, device type (for notifications only).\n• Email Communication Data: Recipient email addresses, email subject lines, and document attachments when you send documents via email from the app.`,
+    body: `We collect and process the following categories of personal data and related business data:\n\n• Account Data: Name, email address, password (hashed), company name, trading address, phone number, trade type and account settings.\n• Professional & Compliance Data: Gas Safe Register number, gas licence number, OFTEC number, engineer ID details and related competency information that you choose to enter.\n• Customer, Tenant & Landlord Data: Names, company names, service addresses, postcodes, email addresses, telephone numbers and occupancy details.\n• Job & Scheduling Data: Job descriptions, notes, appointments, status history, assigned workers, calendar entries, site notes and photos.\n• Property & Appliance Data: Appliance make/model details, flue and ventilation details, commissioning values, service readings, combustion/FGA readings, warning notices, defect notes, breakdown details and installation information.\n• Document Data: Quotes, invoices, gas safety records, service records, warning notices, commissioning records, decommissioning records, breakdown reports, installation certificates, supporting forms, document references, renewal dates and related snapshots.\n• Signature Data: Handwritten signatures captured digitally for documents, acknowledgements and certificates.\n• Communication Data: Recipient email addresses, subject lines, message content, reminder settings, reminder send history, push notification tokens and notification content needed to deliver reminders and workflow updates.\n• Toolbox & Resource Usage Data: Inputs you type into calculators or lookup tools may be processed in-app to show results. Where those values are then copied into a job, form or document, they become stored record data. Boiler manual lookups may open third-party websites outside GasPilot.\n• Device & Diagnostic Data: Device type, app version, crash diagnostics, authentication logs and security events used to protect and improve the service.`,
   },
   {
     title: '3. Why We Process Your Data',
-    body: `We process personal data for the following purposes and legal bases:\n\n• Contract Performance: To provide the trade management service you signed up for — managing jobs, customers, invoices, quotes and gas safety certificates.\n• Legal Obligation: Gas Safety (Installation & Use) Regulations 1998 require gas safety records to be retained for at least 2 years.\n• Legitimate Interest: To send job-related push notifications, to maintain audit trails of work carried out.\n• Consent: For any optional processing — you may withdraw consent at any time via Settings.`,
+    body: `We process personal data for the following purposes and legal bases:\n\n• Contract Performance: To provide the trade management service you signed up for, including customers, jobs, documents, forms, reminders, worker management, calendar scheduling, certificate generation and document delivery.\n• Legal Obligation: To support compliance workflows where records must be retained or produced under applicable law or regulation, including gas safety documentation where relevant.\n• Legitimate Interests: To secure the app, maintain audit trails, prevent misuse, improve features, send operational notifications and provide customer support.\n• Consent: For optional communications or optional features where consent is the appropriate basis. You may withdraw consent at any time where consent is relied upon.`,
   },
   {
     title: '4. Data Sharing',
-    body: `We share personal data with the following third parties:\n\n• Supabase (Database & Authentication): Your data is stored securely in Supabase's cloud infrastructure. Supabase acts as our data processor under a Data Processing Agreement.\n• Expo Push Notification Service: Device push tokens are sent to Expo's servers to deliver notifications. No personal data beyond the token and notification content is shared.\n• Resend (Email Delivery): When you send documents via email through the app, we use Resend (resend.com) as our transactional email provider. Resend processes recipient email addresses, email content, and any PDF attachments solely to deliver the email on your behalf.\n• PDF Recipients: When you share a PDF (invoice, quote, CP12 certificate), the document may contain personal data. You control who receives these documents.\n\nWe do not sell your data to third parties. We do not use your data for advertising or profiling.`,
+    body: `We share personal data only where necessary to operate the service:\n\n• Supabase (database, authentication and file storage): Stores account data, structured records and generated document files.\n• Expo Push Notification Service: Processes device push tokens and notification payloads to deliver app notifications.\n• Resend (transactional email): Processes recipient email addresses, email content and attachments when you send documents or reminders by email through the app.\n• PDF and Email Recipients: Documents you send or share may contain personal data, technical readings and signatures. You control the recipients.\n• Third-Party Websites Opened by You: Toolbox resources such as boiler manual sites or supplier links are external services with their own terms and privacy policies.\n\nWe do not sell personal data and we do not use personal data for advertising or profiling.`,
   },
   {
     title: '5. Data Retention',
-    body: `• Account data is retained for as long as your account is active.\n• Customer and job data is retained until you delete it or delete your account.\n• CP12 gas safety certificates are retained for a minimum of 2 years as required by law (Regulation 36).\n• When you delete your account, all personal data is permanently removed within 30 days, except where retention is required by law.\n• Document snapshots (locked certificates) are anonymised when the associated customer is deleted.`,
+    body: `• Account data is retained for as long as your account remains active and for a reasonable period afterwards where needed for security, dispute handling or legal compliance.\n• Customer, job, scheduling and worker records are retained until deleted by your company or removed as part of account deletion, subject to any legal retention requirement.\n• Gas safety and related compliance records are retained for at least the minimum period required by applicable law where such retention obligations apply.\n• Reminder logs, email delivery records and audit events may be retained for evidential, fraud-prevention and support purposes.\n• Generated PDFs and document snapshots stored in cloud storage follow the retention period of the underlying record unless deleted earlier where permitted.\n• If you delete your account, personal data is deleted or anonymised within a reasonable operational period except where longer retention is required by law, to resolve disputes or to enforce our terms.`,
   },
   {
-    title: '6. Your Rights (GDPR)',
-    body: `Under the General Data Protection Regulation, you have the right to:\n\n• Access: Request a copy of all personal data we hold about you. Use "Export My Data" in Settings.\n• Rectification: Correct inaccurate data via your profile or customer records.\n• Erasure: Delete your account and all associated data via "Delete My Account" in Settings.\n• Portability: Export your data in a machine-readable format (JSON).\n• Restriction: Request that we limit processing of your data.\n• Object: Object to processing based on legitimate interests.\n• Withdraw Consent: Where processing is based on consent, withdraw at any time.\n\nTo exercise any of these rights, use the relevant feature in Settings or contact us at support@gascertpal.com.`,
+    title: '6. Your Rights',
+    body: `Depending on your location and applicable law, you may have rights to access, rectify, erase, export, restrict or object to certain processing of your personal data, and to withdraw consent where consent is relied upon. Company administrators are responsible for handling requests relating to customer, tenant, landlord and worker data they control. You can use the app settings where available or contact support for assistance. You also have the right to lodge a complaint with your local data protection authority, such as the Information Commissioner's Office (ICO) in the UK.`,
   },
   {
     title: '7. Data Security',
-    body: `We implement appropriate technical and organisational measures to protect your personal data:\n\n• All data in transit is encrypted using TLS/SSL.\n• Authentication tokens are stored in encrypted device storage (Secure Store).\n• Passwords are hashed and never stored in plain text.\n• Access to customer data is restricted by company membership.\n• Row-level security policies are enforced at the database level.`,
+    body: `We implement technical and organisational safeguards designed to protect personal data, including encrypted transport, access controls, authentication protections, company-level segregation, row-level security and controlled access to stored files. No method of transmission, storage or processing is completely secure, so we cannot guarantee absolute security. You are responsible for maintaining the confidentiality of devices, login credentials and any exported or shared documents. In the event of a personal data breach affecting your account, we will notify you without undue delay as required by law.`,
   },
   {
-    title: "8. Children's Privacy",
-    body: `GasPilot is not intended for use by anyone under the age of 16. We do not knowingly collect personal data from children.`,
+    title: '8. International Transfers',
+    body: `Where service providers process data outside your jurisdiction, we take reasonable steps to ensure appropriate safeguards are in place, such as contractual protections and vendor security commitments, where required by applicable law.`,
   },
   {
-    title: '9. Changes to This Policy',
-    body: `We may update this privacy policy from time to time. We will notify you of significant changes via in-app notification or email. Continued use of the app after changes constitutes acceptance of the updated policy.`,
+    title: "9. Children's Privacy",
+    body: `GasPilot is intended for business use by tradespeople and their teams and is not directed to children. We do not knowingly collect personal data from children for consumer use.`,
   },
   {
-    title: '10. Contact',
-    body: `If you have questions about this privacy policy or wish to exercise your data rights, please contact us at support@gascertpal.com.`,
+    title: '10. Changes to This Policy',
+    body: `We may update this privacy policy from time to time to reflect legal, technical or product changes, including new forms, workflows, calculators or document types. We may notify you of material changes through the app, by email or by updating the date shown on this page.`,
+  },
+  {
+    title: '11. Contact',
+    body: `If you have questions about this privacy policy or need help with data protection requests, please contact Mohammed Khan (trading as Blue Flame Studios) through the app Settings or by emailing support@gaspilot.app.`,
   },
 ]
 
@@ -48,16 +52,16 @@ export default function Privacy() {
   return (
     <div className="min-h-screen pt-8 sm:pt-12">
       <SEO
-        title="Privacy Policy — GasPilot GDPR Compliant Data Protection"
-        description="GasPilot privacy policy. Learn how we collect, use, and protect your personal data. GDPR compliant with full data export and deletion rights for Gas Safe engineers."
+        title="Privacy Policy — GasPilot Data Protection"
+        description="GasPilot privacy policy. Learn how we collect, use, and protect your personal data. GDPR compliant with full data export and deletion rights."
         path="/privacy"
       />
 
       <div className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
-          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">GDPR Compliant</p>
-          <h1 className="text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-3">Privacy Policy</h1>
-          <p className="text-[var(--fg-muted)] text-sm">Last updated: 1 March 2026</p>
+          <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-4">GDPR Compliant</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[var(--fg)] mb-3">Privacy Policy</h1>
+          <p className="text-[var(--fg-muted)] text-sm">Last updated: 12 March 2026</p>
         </div>
       </div>
 
@@ -65,7 +69,7 @@ export default function Privacy() {
         <div className="space-y-8">
           {SECTIONS.map((s, i) => (
             <div key={i}>
-              <h2 className="text-base font-600 text-[var(--fg)] mb-3">{s.title}</h2>
+              <h2 className="text-base font-semibold text-[var(--fg)] mb-3">{s.title}</h2>
               <div className="text-[var(--fg-muted)] text-sm leading-7 whitespace-pre-line">{s.body}</div>
             </div>
           ))}
