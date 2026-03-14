@@ -12,7 +12,7 @@
   --border-hover: rgba(255, 255, 255, 0.12);
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* Tailwind v4 preflight handles margin/padding/box-sizing reset */
 
 html {
   scroll-behavior: smooth;
