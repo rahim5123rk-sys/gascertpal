@@ -16,7 +16,7 @@ export default function Screenshots() {
 
   return (
     <section id="screenshots" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8" ref={ref}>
+      <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16" ref={ref}>
 
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">

@@ -26,7 +26,7 @@ export default function Download() {
 
   return (
     <section id="download" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
-      <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center" ref={ref}>
+      <div className="max-w-3xl mx-auto px-8 sm:px-12 lg:px-16 text-center" ref={ref}>
 
         <h2 className={`text-3xl sm:text-[2.75rem] font-700 text-[var(--fg)] mb-6 leading-tight ${
           inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
