@@ -65,7 +65,7 @@ export default function Features() {
 
   return (
     <section id="features" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
-      <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16" ref={ref}>
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20" ref={ref}>
         <div className="text-center mb-20 lg:mb-24">
           <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-5">Features</p>
           <h2 className={`text-3xl sm:text-[2.75rem] font-700 text-[var(--fg)] mb-6 leading-tight ${

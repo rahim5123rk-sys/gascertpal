@@ -19,7 +19,7 @@ export default function Navbar() {
         ? 'bg-[var(--bg-base)]/90 backdrop-blur-xl border-b border-[var(--border)]'
         : 'bg-transparent'
     }`}>
-      <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
         <div className="flex items-center justify-between h-16 sm:h-20">
 
           {/* Logo */}

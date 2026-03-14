@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
     <section className="min-h-svh flex items-center relative">
-      <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 pt-20 sm:pt-28 pb-24 sm:pb-32 w-full">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-16">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 pt-20 sm:pt-28 pb-24 sm:pb-32 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20">
 
           {/* Left */}
-          <div className="text-center lg:text-left w-full lg:w-[52%] flex flex-col items-center lg:items-start">
+          <div className="text-center lg:text-left w-full lg:w-1/2 flex flex-col items-center lg:items-start">
 
             <p className="opacity-0 animate-fade-up text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-8">
               30-day free trial
@@ -39,10 +39,10 @@ export default function Hero() {
           </div>
 
           {/* Right: phone */}
-          <div className="w-full lg:w-[44%] flex justify-center opacity-0 animate-fade-up animation-delay-300">
-            <div className="relative w-56 sm:w-64 lg:w-72">
-              <div className="bg-[var(--bg-elevated)] rounded-[2.5rem] p-2 ring-1 ring-[var(--border)]">
-                <div className="absolute top-2 left-1/2 -translate-x-1/2 w-20 h-5 bg-[var(--bg-elevated)] rounded-full z-10" />
+          <div className="w-full lg:w-1/2 flex justify-center opacity-0 animate-fade-up animation-delay-300">
+            <div className="relative w-60 sm:w-72 lg:w-80">
+              <div className="bg-[var(--bg-elevated)] rounded-[2.5rem] p-2.5 ring-1 ring-[var(--border)]">
+                <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-5 bg-[var(--bg-elevated)] rounded-full z-10" />
                 <div className="rounded-[2rem] overflow-hidden bg-white">
                   <img
                     src="/screen-dashboard.png"
