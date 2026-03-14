@@ -25,34 +25,44 @@ export default function Download() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="download" className="py-24 sm:py-32 lg:py-40 border-t border-[var(--border)]">
-      <div className="max-w-2xl mx-auto px-5 sm:px-8 text-center" ref={ref}>
+    <section id="download" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
+      <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center" ref={ref}>
 
-        <h2 className={`text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-4 leading-tight ${
+        <h2 className={`text-3xl sm:text-[2.75rem] font-700 text-[var(--fg)] mb-6 leading-tight ${
           inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
         }`}>
-          Ready to save hours every week?
+          Ditch the paperwork. Go digital.
         </h2>
 
-        <p className={`text-[var(--fg-muted)] text-base leading-relaxed mb-10 ${
+        <p className={`text-[var(--fg-muted)] text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto ${
           inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
         }`}>
-          Download GasPilot free. No subscription. No hidden costs.
+          Start your 30-day free trial today. Then just £20/month to run your entire business from your phone. Cancel anytime.
         </p>
 
-        <div className={`flex flex-col sm:flex-row gap-3 justify-center mb-8 ${
+        {/* Pricing highlight */}
+        <div className={`inline-flex items-baseline gap-1 mb-10 ${
+          inView ? 'opacity-0 animate-fade-up animation-delay-150' : 'opacity-0'
+        }`}>
+          <span className="font-display text-5xl sm:text-6xl font-700 text-[var(--fg)]">£20</span>
+          <span className="text-[var(--fg-muted)] text-base font-500">/month</span>
+        </div>
+
+        <div className={`flex flex-col sm:flex-row gap-4 justify-center mb-10 ${
           inView ? 'opacity-0 animate-fade-up animation-delay-200' : 'opacity-0'
         }`}>
           <StoreBadge type="apple" />
           <StoreBadge type="google" />
         </div>
 
-        <div className={`flex items-center justify-center gap-5 text-xs text-[var(--fg-dim)] font-500 tracking-wide ${
+        <div className={`flex items-center justify-center gap-6 text-xs text-[var(--fg-dim)] font-500 tracking-wide ${
           inView ? 'opacity-0 animate-fade-up animation-delay-300' : 'opacity-0'
         }`}>
-          <span>Gas Safe</span>
-          <span>GDPR</span>
-          <span>Offline Ready</span>
+          <span>30-Day Free Trial</span>
+          <span className="w-px h-3 bg-[var(--border-hover)]" />
+          <span>Gas Safe Compliant</span>
+          <span className="w-px h-3 bg-[var(--border-hover)]" />
+          <span>Cancel Anytime</span>
         </div>
       </div>
     </section>

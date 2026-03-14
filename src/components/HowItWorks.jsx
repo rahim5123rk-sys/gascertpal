@@ -4,22 +4,22 @@ const steps = [
   {
     num: '01',
     title: 'Download',
-    description: 'Get GasPilot free on the App Store or Google Play. Set up in under 3 minutes.',
+    description: 'Get GasPilot on the App Store or Google Play. Set up your account in under 3 minutes.',
   },
   {
     num: '02',
     title: 'Add Jobs',
-    description: 'Log your first job in seconds. Import customers or add manually.',
+    description: 'Log your first job in seconds. Import customers or add them manually as you go.',
   },
   {
     num: '03',
     title: 'Generate Docs',
-    description: 'Create a CP12, invoice, or quote on the spot. Get a digital signature and send.',
+    description: 'Create gas safety certificates, invoices, or quotes on the spot. Digital signature and send.',
   },
   {
     num: '04',
     title: 'Scale Up',
-    description: 'Track revenue, monitor your team, never miss a renewal.',
+    description: 'Track revenue, manage your team, never miss a renewal. Your business, on autopilot.',
   },
 ]
 
@@ -29,18 +29,18 @@ export default function HowItWorks() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="how-it-works" className="py-24 sm:py-32 lg:py-40 border-t border-[var(--border)]">
+    <section id="how-it-works" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
       <div className="max-w-5xl mx-auto px-5 sm:px-8" ref={ref}>
-        <div className="text-center mb-16 sm:mb-20">
-          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">Process</p>
-          <h2 className={`text-3xl sm:text-4xl font-700 text-[var(--fg)] leading-tight ${
+        <div className="text-center mb-20 sm:mb-24">
+          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-5">Process</p>
+          <h2 className={`text-3xl sm:text-[2.75rem] font-700 text-[var(--fg)] leading-tight ${
             inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
           }`}>
             Up and running in four steps
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
           {steps.map((step, idx) => (
             <div
               key={step.num}
@@ -48,16 +48,16 @@ export default function HowItWorks() {
                 inView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
               }`}
             >
-              <span className="font-display text-sm font-700 text-[var(--fg-dim)] mb-3">{step.num}</span>
-              <h3 className="font-display text-lg font-600 text-[var(--fg)] mb-2">{step.title}</h3>
-              <p className="text-[var(--fg-muted)] text-sm leading-relaxed">{step.description}</p>
+              <span className="font-display text-sm font-700 text-[var(--fg-dim)] mb-4">{step.num}</span>
+              <h3 className="font-display text-xl font-600 text-[var(--fg)] mb-3">{step.title}</h3>
+              <p className="text-[var(--fg-muted)] text-base leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
 
-        <div className={`text-center mt-16 sm:mt-20 ${inView ? 'opacity-0 animate-fade-up animation-delay-500' : 'opacity-0'}`}>
+        <div className={`text-center mt-20 sm:mt-24 ${inView ? 'opacity-0 animate-fade-up animation-delay-500' : 'opacity-0'}`}>
           <a href="#download" className="btn-primary btn-lg">
-            Get Started Free
+            Start Your Free Trial
           </a>
         </div>
       </div>

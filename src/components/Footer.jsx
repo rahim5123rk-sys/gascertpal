@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[var(--border)] text-[var(--fg-muted)] py-12 sm:py-16">
+    <footer className="border-t border-[var(--border)] text-[var(--fg-muted)] py-14 sm:py-18">
       <div className="max-w-5xl mx-auto px-5 sm:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-12 mb-14">
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
@@ -12,14 +12,14 @@ export default function Footer() {
               GasPilot
             </Link>
             <p className="text-sm leading-relaxed max-w-[220px]">
-              Professional tools for gas engineers.
+              Professional tools for gas engineers. No more paperwork.
             </p>
           </div>
 
           {/* App */}
           <div>
-            <h4 className="text-[var(--fg)] font-500 mb-3 text-sm">App</h4>
-            <ul className="space-y-2.5 text-sm">
+            <h4 className="text-[var(--fg)] font-500 mb-4 text-sm">App</h4>
+            <ul className="space-y-3 text-sm">
               <li><Link to="/about" className="hover:text-[var(--fg)] transition-colors">About</Link></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">Features</a></li>
               <li><a href="/#how-it-works" className="hover:text-[var(--fg)] transition-colors">Process</a></li>
@@ -29,9 +29,9 @@ export default function Footer() {
 
           {/* Features */}
           <div>
-            <h4 className="text-[var(--fg)] font-500 mb-3 text-sm">Features</h4>
-            <ul className="space-y-2.5 text-sm">
-              <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">CP12 Certificates</a></li>
+            <h4 className="text-[var(--fg)] font-500 mb-4 text-sm">Features</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">Gas Certificates</a></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">Job Tracking</a></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">Invoices & Quotes</a></li>
               <li><a href="/#features" className="hover:text-[var(--fg)] transition-colors">Scheduling</a></li>
@@ -40,8 +40,8 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-[var(--fg)] font-500 mb-3 text-sm">Company</h4>
-            <ul className="space-y-2.5 text-sm">
+            <h4 className="text-[var(--fg)] font-500 mb-4 text-sm">Company</h4>
+            <ul className="space-y-3 text-sm">
               <li><a href="mailto:support@gascertpal.com" className="hover:text-[var(--fg)] transition-colors">support@gascertpal.com</a></li>
               <li><Link to="/legal" className="hover:text-[var(--fg)] transition-colors">Legal</Link></li>
               <li><Link to="/privacy" className="hover:text-[var(--fg)] transition-colors">Privacy</Link></li>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[var(--border)] pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-[var(--fg-dim)]">
+        <div className="border-t border-[var(--border)] pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-[var(--fg-dim)]">
           <p>&copy; {new Date().getFullYear()} GasPilot. All rights reserved.</p>
           <p>Made for Gas Safe Registered Engineers</p>
         </div>

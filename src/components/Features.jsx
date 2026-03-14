@@ -8,8 +8,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
       </svg>
     ),
-    title: 'CP12 Certificates',
-    description: 'Generate fully compliant gas safety certificates on-site. Digital signatures, emailed instantly.',
+    title: 'Gas Safety Certificates',
+    description: 'Generate fully compliant gas safety certificates on-site. Digital signatures, emailed to your customer instantly.',
   },
   {
     icon: (
@@ -18,7 +18,7 @@ const features = [
       </svg>
     ),
     title: 'Smart Scheduling',
-    description: 'Visual calendar for your team. Spot clashes and never double-book a customer.',
+    description: 'Visual calendar for your team. Spot clashes and never double-book a customer again.',
   },
   {
     icon: (
@@ -27,7 +27,7 @@ const features = [
       </svg>
     ),
     title: 'PDF Invoices & Quotes',
-    description: 'Professional invoices in seconds. Add line items, apply VAT, send polished PDFs.',
+    description: 'Professional invoices in seconds. Add line items, apply VAT, send polished PDFs straight from the app.',
   },
   {
     icon: (
@@ -36,7 +36,7 @@ const features = [
       </svg>
     ),
     title: 'Client Management',
-    description: 'Full customer database. Contact details, job history, certificates at your fingertips.',
+    description: 'Full customer database. Contact details, job history, and certificates all at your fingertips.',
   },
   {
     icon: (
@@ -45,7 +45,7 @@ const features = [
       </svg>
     ),
     title: 'Job Tracking',
-    description: 'Track every job from quote to completion. Update status on-site, attach photos.',
+    description: 'Track every job from quote to completion. Update status on-site, keep your whole team in sync.',
   },
   {
     icon: (
@@ -54,7 +54,7 @@ const features = [
       </svg>
     ),
     title: 'Digital Signatures',
-    description: 'Customers sign on your screen. Locked into certificates immediately. Zero paper.',
+    description: 'Customers sign on your screen. Locked into certificates immediately. Zero paper, zero hassle.',
   },
 ]
 
@@ -64,19 +64,19 @@ export default function Features() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="features" className="py-24 sm:py-32 lg:py-40 border-t border-[var(--border)]">
+    <section id="features" className="py-28 sm:py-36 lg:py-44 border-t border-[var(--border)]">
       <div className="max-w-5xl mx-auto px-5 sm:px-8" ref={ref}>
-        <div className="text-center mb-16 lg:mb-20">
-          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-4">Features</p>
-          <h2 className={`text-3xl sm:text-4xl font-700 text-[var(--fg)] mb-4 leading-tight ${
+        <div className="text-center mb-20 lg:mb-24">
+          <p className="text-[var(--fg-dim)] text-xs font-500 uppercase tracking-widest mb-5">Features</p>
+          <h2 className={`text-3xl sm:text-[2.75rem] font-700 text-[var(--fg)] mb-6 leading-tight ${
             inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
           }`}>
             Built for the job site
           </h2>
-          <p className={`text-[var(--fg-muted)] max-w-md mx-auto text-base ${
+          <p className={`text-[var(--fg-muted)] max-w-lg mx-auto text-base sm:text-lg leading-relaxed ${
             inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
           }`}>
-            Six core tools. Everything a gas engineer needs.
+            Everything a gas engineer needs. No bloat, no learning curve.
           </p>
         </div>
 
@@ -84,15 +84,15 @@ export default function Features() {
           {features.map((f, idx) => (
             <div
               key={f.title}
-              className={`bg-[var(--bg-base)] p-8 sm:p-10 ${
+              className={`bg-[var(--bg-base)] p-10 sm:p-12 ${
                 inView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
               }`}
             >
-              <div className="w-10 h-10 rounded-lg bg-[var(--bg-elevated)] flex items-center justify-center text-[var(--fg-muted)] mb-5">
+              <div className="w-12 h-12 rounded-xl bg-[var(--bg-elevated)] flex items-center justify-center text-[var(--fg-muted)] mb-6">
                 {f.icon}
               </div>
-              <h3 className="font-display text-base font-600 text-[var(--fg)] mb-2">{f.title}</h3>
-              <p className="text-[var(--fg-muted)] text-sm leading-relaxed">{f.description}</p>
+              <h3 className="font-display text-lg font-600 text-[var(--fg)] mb-3">{f.title}</h3>
+              <p className="text-[var(--fg-muted)] text-sm sm:text-base leading-relaxed">{f.description}</p>
             </div>
           ))}
         </div>
