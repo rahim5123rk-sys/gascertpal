@@ -51,7 +51,7 @@ export default function Team() {
     try {
       const { data: prof, error: pErr } = await supabase
         .from('profiles')
-        .select('id, company_id, role, email, full_name')
+        .select('id, company_id, role, email, display_name')
         .eq('id', session.user.id)
         .maybeSingle()
       if (pErr) throw pErr
@@ -69,7 +69,7 @@ export default function Team() {
 
       const { data: ws, error: wErr } = await supabase
         .from('profiles')
-        .select('id, email, full_name, created_at')
+        .select('id, email, display_name, created_at')
         .eq('company_id', prof.company_id)
         .eq('role', 'worker')
         .order('created_at', { ascending: true })
@@ -83,7 +83,7 @@ export default function Team() {
   }
 
   async function removeWorker(worker) {
-    const label = worker.full_name || worker.email
+    const label = worker.display_name || worker.email
     if (!window.confirm(`Remove ${label} from your team? They'll lose access until re-invited.`)) return
     setActionBusy(`remove-${worker.id}`)
     setError(null)
@@ -290,7 +290,7 @@ export default function Team() {
                   {workers.map((w) => (
                     <li key={w.id} className="py-3 flex items-center justify-between">
                       <div>
-                        <p className="text-sm font-medium text-neutral-900">{w.full_name || '(no name)'}</p>
+                        <p className="text-sm font-medium text-neutral-900">{w.display_name || '(no name)'}</p>
                         <p className="text-xs text-neutral-500">{w.email}</p>
                       </div>
                       <button
