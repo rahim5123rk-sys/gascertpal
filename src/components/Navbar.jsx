@@ -34,6 +34,9 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-6">
             <Link to="/features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">Features</Link>
             <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-[13px] font-medium transition-colors">About</Link>
+            <Link to="/team" className="rounded-full border border-[var(--border)] px-4 py-1.5 text-[13px] font-medium text-[var(--fg)] hover:bg-[var(--bg-surface)] transition-colors">
+              Sign in
+            </Link>
             <a href={isHome ? '#download' : '/#download'} className="btn-primary btn-sm">
               Download
             </a>
@@ -60,6 +63,9 @@ export default function Navbar() {
           <Link to="/" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/features" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>Features</Link>
           <Link to="/about" className="text-[var(--fg-muted)] hover:text-[var(--fg)] text-sm font-medium" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/team" className="rounded-full border border-[var(--border)] px-4 py-2 text-sm font-medium text-[var(--fg)] text-center" onClick={() => setMenuOpen(false)}>
+            Sign in
+          </Link>
           <a href={isHome ? '#download' : '/#download'} className="btn-primary btn-sm w-full text-center" onClick={() => setMenuOpen(false)}>
             Download
           </a>

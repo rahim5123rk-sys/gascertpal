@@ -14,7 +14,10 @@ export default function Team() {
   const [authBusy, setAuthBusy] = useState(false)
   const [error, setError] = useState(null)
 
+  const [profile, setProfile] = useState(null)
   const [company, setCompany] = useState(null)
+  const [workers, setWorkers] = useState([])
+  const [notice, setNotice] = useState(null)
   const [loading, setLoading] = useState(false)
   const [actionBusy, setActionBusy] = useState(null) // tier id being processed
 
@@ -46,26 +49,65 @@ export default function Team() {
     setLoading(true)
     setError(null)
     try {
-      const { data: profile, error: pErr } = await supabase
+      const { data: prof, error: pErr } = await supabase
         .from('profiles')
-        .select('company_id, role, email')
+        .select('id, company_id, role, email, full_name')
         .eq('id', session.user.id)
         .maybeSingle()
       if (pErr) throw pErr
-      if (!profile?.company_id) throw new Error('No company on your profile.')
-      if (profile.role !== 'admin') throw new Error('Only the company admin can manage billing.')
+      if (!prof?.company_id) throw new Error('No company on your profile.')
+      if (prof.role !== 'admin') throw new Error('Only the company admin can manage billing.')
+      setProfile(prof)
 
       const { data: co, error: cErr } = await supabase
         .from('companies')
-        .select('id, name, worker_seat_limit, stripe_customer_id, stripe_seat_tier, stripe_status, stripe_current_period_end')
-        .eq('id', profile.company_id)
+        .select('id, name, invite_code, worker_seat_limit, stripe_customer_id, stripe_seat_tier, stripe_status, stripe_current_period_end')
+        .eq('id', prof.company_id)
         .maybeSingle()
       if (cErr) throw cErr
       setCompany(co)
+
+      const { data: ws, error: wErr } = await supabase
+        .from('profiles')
+        .select('id, email, full_name, created_at')
+        .eq('company_id', prof.company_id)
+        .eq('role', 'worker')
+        .order('created_at', { ascending: true })
+      if (wErr) throw wErr
+      setWorkers(ws ?? [])
     } catch (e) {
       setError(e.message ?? 'Failed to load company')
     } finally {
       setLoading(false)
+    }
+  }
+
+  async function removeWorker(worker) {
+    const label = worker.full_name || worker.email
+    if (!window.confirm(`Remove ${label} from your team? They'll lose access until re-invited.`)) return
+    setActionBusy(`remove-${worker.id}`)
+    setError(null)
+    setNotice(null)
+    try {
+      const { error: rpcErr } = await supabase.rpc('remove_worker_from_company', { p_worker_id: worker.id })
+      if (rpcErr) throw rpcErr
+      setWorkers((prev) => prev.filter((w) => w.id !== worker.id))
+      setNotice('Worker removed. The seat is now free.')
+    } catch (e) {
+      setError(e.message ?? 'Could not remove worker')
+    } finally {
+      setActionBusy(null)
+    }
+  }
+
+  async function copyInvite() {
+    if (!company?.invite_code) return
+    try {
+      await navigator.clipboard.writeText(company.invite_code)
+      setNotice('Invite code copied.')
+      setTimeout(() => setNotice(null), 2500)
+    } catch {
+      setError('Could not copy to clipboard')
     }
   }
 
@@ -94,6 +136,8 @@ export default function Team() {
     await supabase.auth.signOut()
     setSession(null)
     setCompany(null)
+    setProfile(null)
+    setWorkers([])
   }
 
   async function checkout(tierId) {
@@ -141,6 +185,11 @@ export default function Team() {
         {error && (
           <div className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-800 mb-6">
             {error}
+          </div>
+        )}
+        {notice && (
+          <div className="rounded-lg bg-blue-50 border border-blue-200 px-4 py-3 text-sm text-blue-800 mb-6">
+            {notice}
           </div>
         )}
 
@@ -209,6 +258,56 @@ export default function Team() {
                 </button>
               )}
             </div>
+
+            {/* Workers */}
+            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm mb-8 text-neutral-900">
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="text-lg font-semibold">
+                  Workers ({workers.length}/{company.worker_seat_limit ?? 0})
+                </h2>
+              </div>
+
+              {company.invite_code && workers.length < (company.worker_seat_limit ?? 0) && (
+                <div className="rounded-lg bg-neutral-50 border border-neutral-200 px-4 py-3 mb-4 flex items-center justify-between">
+                  <div>
+                    <p className="text-xs text-neutral-500 uppercase tracking-wide">Invite code (single-use)</p>
+                    <p className="text-lg font-mono font-bold text-neutral-900 tracking-wider">{company.invite_code}</p>
+                  </div>
+                  <button
+                    onClick={copyInvite}
+                    className="rounded-lg border border-neutral-300 bg-white px-3 py-1.5 text-xs font-medium text-neutral-900 hover:bg-neutral-50"
+                  >Copy</button>
+                </div>
+              )}
+              {(company.worker_seat_limit ?? 0) > 0 && workers.length >= (company.worker_seat_limit ?? 0) && (
+                <p className="text-sm text-amber-700 mb-4">All seats in use — remove a worker or upgrade your plan below to add more.</p>
+              )}
+
+              {workers.length === 0 ? (
+                <p className="text-sm text-neutral-500">No workers yet. Share your invite code so a worker can join from the mobile app.</p>
+              ) : (
+                <ul className="divide-y divide-neutral-100">
+                  {workers.map((w) => (
+                    <li key={w.id} className="py-3 flex items-center justify-between">
+                      <div>
+                        <p className="text-sm font-medium text-neutral-900">{w.full_name || '(no name)'}</p>
+                        <p className="text-xs text-neutral-500">{w.email}</p>
+                      </div>
+                      <button
+                        onClick={() => removeWorker(w)}
+                        disabled={actionBusy === `remove-${w.id}`}
+                        className="text-xs text-red-600 hover:text-red-700 font-medium disabled:opacity-50"
+                      >
+                        {actionBusy === `remove-${w.id}` ? 'Removing…' : 'Remove'}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            <h2 className="text-lg font-semibold text-white mb-1">{company.stripe_seat_tier ? 'Change plan' : 'Add worker seats'}</h2>
+            <p className="text-sm text-neutral-400 mb-4">Billed monthly. Cancel anytime. Additional workers only — the admin seat is included with £20/mo Pro on iOS.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {TEAM_PLANS.map((tier) => {
