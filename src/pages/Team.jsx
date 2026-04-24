@@ -4,6 +4,8 @@ import SEO from '../components/SEO'
 import { supabase, callFunction } from '../lib/supabase'
 import { TEAM_PLANS, getMonthlyPriceId } from '../lib/teamPlans'
 
+const TEAM_WEB_URL = 'https://gaspilotapp.com/team'
+
 export default function Team() {
   const [params] = useSearchParams()
   const [session, setSession] = useState(null)
@@ -74,7 +76,10 @@ export default function Team() {
     try {
       const { error } = await supabase.auth.signInWithOtp({
         email: email.trim(),
-        options: { emailRedirectTo: `${window.location.origin}/team` },
+        options: {
+          emailRedirectTo: TEAM_WEB_URL,
+          shouldCreateUser: false,
+        },
       })
       if (error) throw error
       setLinkSent(true)
@@ -123,7 +128,7 @@ export default function Team() {
 
       <section className="max-w-3xl mx-auto px-6 py-20">
         <Link to="/" className="text-sm text-neutral-500 hover:text-neutral-800">&larr; Back to home</Link>
-        <h1 className="text-4xl font-bold mt-4 mb-2">Manage Your Team</h1>
+        <h1 className="text-4xl font-bold text-white mt-4 mb-2">Manage Your Team</h1>
         <p className="text-neutral-600 mb-8">
           Add additional worker seats to your GasPilot company. Admin only. You keep your £20/month Pro subscription on iOS — this page adds team capacity on top of it.
         </p>
@@ -140,8 +145,8 @@ export default function Team() {
         )}
 
         {!session && (
-          <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold mb-2">Sign in to manage your team</h2>
+          <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm text-neutral-900">
+            <h2 className="text-xl font-semibold text-neutral-900 mb-2">Sign in to manage your team</h2>
             <p className="text-sm text-neutral-600 mb-4">
               Use the same email as your GasPilot admin account. We&rsquo;ll send you a one-time link.
             </p>
@@ -155,7 +160,7 @@ export default function Team() {
                   placeholder="you@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 rounded-lg border border-neutral-300 px-3 py-2 text-sm"
+                  className="flex-1 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder:text-neutral-400"
                 />
                 <button
                   type="submit"
@@ -173,13 +178,13 @@ export default function Team() {
 
         {session && !loading && company && (
           <>
-            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm mb-8">
+            <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm mb-8 text-neutral-900">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs text-neutral-500 uppercase tracking-wide">Signed in as</p>
                   <p className="text-sm text-neutral-800">{session.user.email}</p>
                 </div>
-                <button onClick={signOut} className="text-sm text-neutral-500 hover:text-neutral-800 underline">Sign out</button>
+                <button onClick={signOut} className="text-sm text-neutral-700 hover:text-neutral-900 underline">Sign out</button>
               </div>
 
               <hr className="my-4 border-neutral-100" />
@@ -198,7 +203,7 @@ export default function Team() {
                 <button
                   onClick={openPortal}
                   disabled={actionBusy === 'portal'}
-                  className="mt-4 inline-flex rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-medium hover:bg-neutral-50 disabled:opacity-50"
+                  className="mt-4 inline-flex rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-50 disabled:opacity-50"
                 >
                   {actionBusy === 'portal' ? 'Opening…' : 'Manage billing (change card, cancel, invoices)'}
                 </button>
@@ -211,10 +216,10 @@ export default function Team() {
                 const priceId = getMonthlyPriceId(tier.id)
                 const unavailable = !priceId
                 return (
-                  <div key={tier.id} className={`rounded-2xl border p-5 ${isCurrent ? 'border-[#1d1d1f] bg-neutral-50' : 'border-neutral-200 bg-white'}`}>
+                  <div key={tier.id} className={`rounded-2xl border p-5 text-neutral-900 ${isCurrent ? 'border-[#1d1d1f] bg-neutral-50' : 'border-neutral-200 bg-white'}`}>
                     <div className="flex items-baseline justify-between">
-                      <h3 className="text-lg font-semibold">{tier.name}</h3>
-                      <p className="text-xl font-bold">{tier.monthly}</p>
+                      <h3 className="text-lg font-semibold text-neutral-900">{tier.name}</h3>
+                      <p className="text-xl font-bold text-neutral-900">{tier.monthly}</p>
                     </div>
                     <p className="text-sm text-neutral-600 mt-1">
                       +{tier.seats} worker seat{tier.seats === 1 ? '' : 's'} per month
