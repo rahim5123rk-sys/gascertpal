@@ -1,4 +1,4 @@
-const env = typeof import.meta !== 'undefined' ? (import.meta.env ?? {}) : {}
+import { PUBLIC_MONTHLY_PRICE_IDS, getPublicEnvValue } from './publicConfig.js'
 
 export const TEAM_PLANS = [
   { id: 'duo', seats: 1, name: 'Single', monthly: '£10' },
@@ -8,18 +8,18 @@ export const TEAM_PLANS = [
 ]
 
 const MONTHLY_PRICE_IDS = {
-  duo: env.VITE_STRIPE_PRICE_DUO_MONTHLY,
-  team: env.VITE_STRIPE_PRICE_TEAM_MONTHLY,
-  crew: env.VITE_STRIPE_PRICE_CREW_MONTHLY,
-  fleet: env.VITE_STRIPE_PRICE_FLEET_MONTHLY,
+  duo: getPublicEnvValue('VITE_STRIPE_PRICE_DUO_MONTHLY', PUBLIC_MONTHLY_PRICE_IDS.duo),
+  team: getPublicEnvValue('VITE_STRIPE_PRICE_TEAM_MONTHLY', PUBLIC_MONTHLY_PRICE_IDS.team),
+  crew: getPublicEnvValue('VITE_STRIPE_PRICE_CREW_MONTHLY', PUBLIC_MONTHLY_PRICE_IDS.crew),
+  fleet: getPublicEnvValue('VITE_STRIPE_PRICE_FLEET_MONTHLY', PUBLIC_MONTHLY_PRICE_IDS.fleet),
 }
 
-export function getMonthlyPriceId(tierId, source = env) {
+export function getMonthlyPriceId(tierId, source = MONTHLY_PRICE_IDS) {
   const monthlyPriceIds = {
-    duo: source.VITE_STRIPE_PRICE_DUO_MONTHLY,
-    team: source.VITE_STRIPE_PRICE_TEAM_MONTHLY,
-    crew: source.VITE_STRIPE_PRICE_CREW_MONTHLY,
-    fleet: source.VITE_STRIPE_PRICE_FLEET_MONTHLY,
+    duo: source.VITE_STRIPE_PRICE_DUO_MONTHLY ?? source.duo ?? MONTHLY_PRICE_IDS.duo,
+    team: source.VITE_STRIPE_PRICE_TEAM_MONTHLY ?? source.team ?? MONTHLY_PRICE_IDS.team,
+    crew: source.VITE_STRIPE_PRICE_CREW_MONTHLY ?? source.crew ?? MONTHLY_PRICE_IDS.crew,
+    fleet: source.VITE_STRIPE_PRICE_FLEET_MONTHLY ?? source.fleet ?? MONTHLY_PRICE_IDS.fleet,
   }
 
   return monthlyPriceIds[tierId]

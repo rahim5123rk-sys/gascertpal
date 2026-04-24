@@ -34,3 +34,10 @@ test('monthly price id lookup only uses monthly env vars', () => {
   assert.equal(getMonthlyPriceId('fleet', env), 'price_fleet')
   assert.equal(getMonthlyPriceId('missing', env), undefined)
 })
+
+test('monthly price ids fall back to committed public values when env vars are missing', () => {
+  assert.equal(getMonthlyPriceId('duo', {}), 'price_1TPkCn2eWOUK2niI3uVgkGYf')
+  assert.equal(getMonthlyPriceId('team', {}), 'price_1TPkEW2eWOUK2niIyXP9OGmr')
+  assert.equal(getMonthlyPriceId('crew', {}), 'price_1TPkGJ2eWOUK2niImWPOHnV9')
+  assert.equal(getMonthlyPriceId('fleet', {}), 'price_1TPkHE2eWOUK2niIoo1bxkdD')
+})

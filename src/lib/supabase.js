@@ -1,12 +1,16 @@
 import { createClient } from '@supabase/supabase-js'
+import {
+  PUBLIC_FUNCTIONS_URL,
+  PUBLIC_SUPABASE_ANON_KEY,
+  PUBLIC_SUPABASE_URL,
+  getPublicEnvValue,
+} from './publicConfig.js'
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+const supabaseUrl = getPublicEnvValue('VITE_SUPABASE_URL', PUBLIC_SUPABASE_URL)
+const supabaseAnonKey = getPublicEnvValue('VITE_SUPABASE_ANON_KEY', PUBLIC_SUPABASE_ANON_KEY)
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  // Surface this early during build/dev — Cloudflare Pages env vars must be
-  // set for the /team page to function.
-  console.warn('[supabase] VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY not set')
+if (supabaseUrl === PUBLIC_SUPABASE_URL && supabaseAnonKey === PUBLIC_SUPABASE_ANON_KEY) {
+  console.info('[supabase] Using committed public config fallback for static deploy')
 }
 
 export const supabase = createClient(supabaseUrl ?? '', supabaseAnonKey ?? '', {
@@ -18,8 +22,7 @@ export const supabase = createClient(supabaseUrl ?? '', supabaseAnonKey ?? '', {
   },
 })
 
-export const FUNCTIONS_URL = import.meta.env.VITE_SUPABASE_FUNCTIONS_URL
-  ?? (supabaseUrl ? `${supabaseUrl.replace('.supabase.co', '.functions.supabase.co')}` : '')
+export const FUNCTIONS_URL = getPublicEnvValue('VITE_SUPABASE_FUNCTIONS_URL', PUBLIC_FUNCTIONS_URL)
 
 export async function callFunction(name, body) {
   const { data: { session } } = await supabase.auth.getSession()
