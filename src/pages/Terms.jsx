@@ -43,35 +43,39 @@ const SECTIONS = [
     body: `Company administrators control company workspaces and are responsible for worker access, permission management and data shared with team members. Workers act on behalf of the company account that grants them access. Administrators must promptly remove access that is no longer authorised.`,
   },
   {
-    title: '11. Intellectual Property',
+    title: '11. Subscriptions and In-App Purchases',
+    body: `GasPilot offers an optional auto-renewable Pro subscription that unlocks features beyond the free Starter tier (such as unlimited gas forms, invoices, quotes, smart scheduling, team management, renewal reminders and custom branding). Additional team seats are sold separately and may be purchased on the GasPilot website via Stripe.\n\n• Pro Monthly: £20 per month, billed every month. A 30-day free trial may be offered to first-time subscribers.\n• Pro Annual: £179.99 per year, billed every twelve months (approximately £14.99 per month).\n• Worker Seats (web only): £15 per seat per month, billed via Stripe at gaspilotapp.com/team. Each seat adds one worker slot to your company.\n\nSubscriptions purchased inside the iOS app are processed by Apple and are subject to the following terms required by the App Store:\n\n• Payment will be charged to your Apple ID account at confirmation of purchase.\n• Your subscription will automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period.\n• Your account will be charged for renewal within 24 hours prior to the end of the current period at the cost of the chosen plan.\n• You can manage your subscription and turn off auto-renewal at any time after purchase in your Apple ID Account Settings (Settings → [your name] → Subscriptions on iOS).\n• Any unused portion of a free trial period, if offered, is forfeited when you purchase a subscription to the same plan, where the trial is bundled with that subscription.\n\nAndroid purchases are processed by Google Play and follow Google's billing terms; subscriptions can be managed in the Google Play Store under "Subscriptions". Web purchases of worker seats are processed by Stripe and can be cancelled from your billing portal or by contacting support.\n\nRefunds for in-app subscriptions are handled by Apple or Google in accordance with their published policies. Refunds for web purchases follow our published refund and consumer-rights policies. Cancelling a subscription stops future renewals; access remains available until the end of the paid period. We are not obliged to provide a refund for unused time within a current paid period unless required by applicable law.`,
+  },
+  {
+    title: '12. Intellectual Property',
     body: `GasPilot, the app software, branding, interface, templates and related content remain our intellectual property or that of our licensors. You retain ownership of your own data and documents, subject to any rights needed for us to host, process, back up and transmit that data to provide the service.`,
   },
   {
-    title: '12. Disclaimers',
+    title: '13. Disclaimers',
     body: `GasPilot is provided on an "as is" and "as available" basis. To the maximum extent permitted by law, we disclaim all warranties, representations and conditions, whether express, implied or statutory, including warranties of accuracy, fitness for a particular purpose, non-infringement, merchantability and uninterrupted availability. We do not warrant that the service, templates, forms, calculations, reminders or outputs will be error-free, complete, compliant or suitable for your specific use case.`,
   },
   {
-    title: '13. Limitation of Liability',
+    title: '14. Limitation of Liability',
     body: `To the maximum extent permitted by law:\n\n• We are not liable for indirect, incidental, special, consequential, exemplary or punitive damages, or for loss of profits, revenue, business, contracts, goodwill, reputation, anticipated savings, data or opportunity.\n• We are not liable for losses arising from your entered data, your professional work, your compliance obligations, third-party services, external websites, delayed or failed communications, or reliance on generated documents, formulas, calculations, reminders or technical content.\n• Our aggregate liability in connection with the service shall not exceed the total amount paid by you for GasPilot in the 12 months before the event giving rise to the claim.\n• Nothing in these terms limits liability that cannot lawfully be limited or excluded.`,
   },
   {
-    title: '14. Indemnity',
+    title: '15. Indemnity',
     body: `You agree to indemnify and hold harmless GasPilot and its officers, directors, employees and affiliates from claims, liabilities, losses, damages, penalties, fines, costs and expenses arising out of or related to: your use of the service; your data; your forms, certificates, calculations or outputs; your breach of these terms; your breach of law, regulation or professional duty; or your infringement or misuse of another person's rights, credentials or branding.`,
   },
   {
-    title: '15. Suspension and Termination',
+    title: '16. Suspension and Termination',
     body: `You may stop using the app and delete your account at any time. We may suspend, restrict or terminate access where reasonably necessary to protect the service, comply with law, investigate misuse or enforce these terms.`,
   },
   {
-    title: '16. Changes to Terms',
+    title: '17. Changes to Terms',
     body: `We may update these terms from time to time, including to reflect new features, forms, legal requirements or service providers. Continued use of GasPilot after an update takes effect constitutes acceptance of the revised terms.`,
   },
   {
-    title: '17. Governing Law',
+    title: '18. Governing Law',
     body: `These terms are governed by the laws of England and Wales unless mandatory local law requires otherwise. The courts of England and Wales shall have exclusive jurisdiction except where applicable consumer or mandatory laws provide otherwise.`,
   },
   {
-    title: '18. Contact',
+    title: '19. Contact',
     body: `For questions about these terms, contact us through Settings or email support@gaspilot.app.`,
   },
 ]
@@ -89,7 +93,7 @@ export default function Terms() {
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-4">Governed by English Law</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-[var(--fg)] mb-3">Terms of Service</h1>
-          <p className="text-[var(--fg-muted)] text-sm">Last updated: 12 March 2026</p>
+          <p className="text-[var(--fg-muted)] text-sm">Last updated: 17 May 2026</p>
         </div>
       </div>
 

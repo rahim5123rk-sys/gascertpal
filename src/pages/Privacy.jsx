@@ -16,7 +16,7 @@ const SECTIONS = [
   },
   {
     title: '4. Data Sharing',
-    body: `We share personal data only where necessary to operate the service:\n\n• Supabase (database, authentication and file storage): Stores account data, structured records and generated document files.\n• Expo Push Notification Service: Processes device push tokens and notification payloads to deliver app notifications.\n• Resend (transactional email): Processes recipient email addresses, email content and attachments when you send documents or reminders by email through the app.\n• PDF and Email Recipients: Documents you send or share may contain personal data, technical readings and signatures. You control the recipients.\n• Third-Party Websites Opened by You: Toolbox resources such as boiler manual sites or supplier links are external services with their own terms and privacy policies.\n\nWe do not sell personal data and we do not use personal data for advertising or profiling.`,
+    body: `We share personal data only where necessary to operate the service:\n\n• Supabase (database, authentication and file storage): Stores account data, structured records and generated document files.\n• Expo Push Notification Service: Processes device push tokens and notification payloads to deliver app notifications.\n• Resend (transactional email): Processes recipient email addresses, email content and attachments when you send documents or reminders by email through the app.\n• RevenueCat (subscription management): Processes a pseudonymous app user ID, your in-app purchase receipt and subscription status so we can verify entitlements and reconcile your Pro subscription across devices. RevenueCat does not receive your name, address or customer data.\n• Apple App Store and Google Play (payment processing): Process your purchase, billing and renewal of in-app subscriptions in line with their own terms and privacy policies. We do not receive your full payment card details.\n• Stripe (web purchases of team seats): If you buy additional worker seats via the GasPilot website, Stripe processes your payment details and provides us with a customer reference, subscription status and seat tier.\n• Xero (optional accounting integration): If you connect Xero, customer, invoice and payment data you choose to sync is shared with Xero under your account.\n• PDF and Email Recipients: Documents you send or share may contain personal data, technical readings and signatures. You control the recipients.\n• Third-Party Websites Opened by You: Toolbox resources such as boiler manual sites or supplier links are external services with their own terms and privacy policies.\n\nWe do not sell personal data and we do not use personal data for advertising or profiling.`,
   },
   {
     title: '5. Data Retention',
@@ -61,7 +61,7 @@ export default function Privacy() {
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-4">GDPR Compliant</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-[var(--fg)] mb-3">Privacy Policy</h1>
-          <p className="text-[var(--fg-muted)] text-sm">Last updated: 12 March 2026</p>
+          <p className="text-[var(--fg-muted)] text-sm">Last updated: 17 May 2026</p>
         </div>
       </div>
 
