@@ -66,7 +66,7 @@ const whyItems = [
   { title: 'Gas Safe Compliant', desc: 'CP12 certificates meet all legal requirements under Gas Safety Regulations 1998.' },
   { title: 'GDPR Compliant', desc: 'Data encrypted, securely stored, exportable or deletable at any time.' },
   { title: 'Dead Simple', desc: 'No training needed. Set up in under 3 minutes.' },
-  { title: 'UK Focused', desc: 'Built for UK gas engineers. VAT, HMRC, Gas Safe — covered.' },
+  { title: 'UK Focused', desc: 'Built for UK gas engineers. VAT, HMRC, Gas Safe - covered.' },
 ]
 
 const delays = ['', 'animation-delay-75', 'animation-delay-150', 'animation-delay-200', 'animation-delay-300', 'animation-delay-400']
@@ -78,7 +78,7 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="About GasPilot — CP12 Certificates, Invoices & Job Management for Gas Engineers"
+        title="About GasPilot - CP12 Certificates, Invoices & Job Management for Gas Engineers"
         description="GasPilot was built by tradespeople, for tradespeople. Create CP12 gas safety certificates, professional invoices, manage jobs, schedule work, and run your gas engineering business from your phone."
         path="/about"
       />

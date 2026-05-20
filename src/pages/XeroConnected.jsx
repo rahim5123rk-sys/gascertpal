@@ -14,7 +14,7 @@ export default function XeroConnected() {
   return (
     <div className="min-h-screen pt-8 sm:pt-12">
       <SEO
-        title="Xero Connected — GasPilot"
+        title="Xero Connected - GasPilot"
         description="Xero has been connected to your GasPilot account."
         path="/xero-connected"
       />

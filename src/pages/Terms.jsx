@@ -84,7 +84,7 @@ export default function Terms() {
   return (
     <div className="min-h-screen pt-8 sm:pt-12">
       <SEO
-        title="Terms of Service — GasPilot Usage Terms"
+        title="Terms of Service - GasPilot Usage Terms"
         description="Terms of service for GasPilot. Covers acceptable use, certificate responsibilities, Gas Safe compliance, data handling, and liability."
         path="/terms"
       />

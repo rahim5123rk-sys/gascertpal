@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useInView } from '../hooks/useInView'
 
 const screens = [
-  { src: '/screen-dashboard.png', label: 'Dashboard', desc: 'Your schedule, quick actions and upcoming renewals — everything at a glance.' },
+  { src: '/screen-dashboard.png', label: 'Dashboard', desc: 'Your schedule, quick actions and upcoming renewals - everything at a glance.' },
   { src: '/screen-calendar.png', label: 'Calendar', desc: 'View your week, day or month. Track every job and never miss an appointment.' },
   { src: '/screen-forms.png', label: 'Gas Forms', desc: 'Gas safety certificates, warning notices, service records and more in minutes.' },
   { src: '/screen-gas-cert.png', label: 'Gas Certificate', desc: 'Professional landlord gas safety records with automatic renewal reminders.' },
@@ -31,7 +31,7 @@ export default function Screenshots() {
 
         <div className={`flex flex-col lg:flex-row items-center gap-16 lg:gap-20 ${inView ? 'opacity-0 animate-fade-up animation-delay-150' : 'opacity-0'}`}>
 
-          {/* Phone mockup — bigger */}
+          {/* Phone mockup - bigger */}
           <div className="flex-shrink-0 w-64 sm:w-72 lg:w-80">
             <div className="relative">
               <div className="relative bg-[var(--bg-elevated)] rounded-[2.5rem] p-2.5 ring-1 ring-[var(--border)]">
@@ -50,7 +50,7 @@ export default function Screenshots() {
             </div>
           </div>
 
-          {/* Tab list — bigger text, more spacing */}
+          {/* Tab list - bigger text, more spacing */}
           <div className="flex-1 w-full">
             <div className="flex flex-col gap-3">
               {screens.map((s, i) => (

@@ -5,7 +5,7 @@ export default function Legal() {
   return (
     <div className="min-h-screen pt-8 sm:pt-12">
       <SEO
-        title="Legal Information — GasPilot Privacy & Terms"
+        title="Legal Information - GasPilot Privacy & Terms"
         description="Legal hub for GasPilot. Access our privacy policy, terms of service, and GDPR compliance information for Gas Safe registered engineers."
         path="/legal"
       />

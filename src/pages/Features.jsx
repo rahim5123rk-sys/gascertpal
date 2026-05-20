@@ -74,7 +74,7 @@ const featureGroups = [
           </svg>
         ),
         title: 'Client Management',
-        description: 'Full customer database with contact details, service addresses, job history, and every certificate ever issued — all at your fingertips.',
+        description: 'Full customer database with contact details, service addresses, job history, and every certificate ever issued - all at your fingertips.',
       },
       {
         icon: (
@@ -117,7 +117,7 @@ const featureGroups = [
           </svg>
         ),
         title: 'Gas Toolbox',
-        description: 'Gas rate calculator, ventilation sizing, water hardness lookup, and boiler manuals — all built in. The tools you actually use, right where you need them.',
+        description: 'Gas rate calculator, ventilation sizing, water hardness lookup, and boiler manuals - all built in. The tools you actually use, right where you need them.',
       },
       {
         icon: (
@@ -144,7 +144,7 @@ export default function Features() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Features — GasPilot Gas Engineer App"
+        title="Features - GasPilot Gas Engineer App"
         description="Gas safety certificates, invoices, quotes, job tracking, scheduling, team management, digital signatures, and more. Add your own logo to every document. Works offline."
         path="/features"
       />
@@ -157,10 +157,15 @@ export default function Features() {
             Everything you need to run your gas business
           </h1>
           <p className="text-[var(--fg-muted)] text-base sm:text-lg max-w-xl mx-auto leading-relaxed mb-8">
-            Certificates, invoices, scheduling, team management — all in one app. Add your own logo, work offline, and look professional from day one.
+            Certificates, invoices, scheduling, team management - all in one app. Add your own logo, work offline, and look professional from day one.
           </p>
-          <a href="/#download" className="btn-primary btn-lg">
-            Join the Waitlist
+          <a
+            href="https://apps.apple.com/us/app/gaspilot/id6760321543"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary btn-lg"
+          >
+            Download on the App Store
           </a>
         </div>
       </div>
@@ -207,8 +212,13 @@ export default function Features() {
           <p className="text-[var(--fg-muted)] text-base mb-8 max-w-md mx-auto">
             Start your 30-day free trial. No credit card required.
           </p>
-          <a href="/#download" className="btn-primary btn-lg">
-            Join the Waitlist
+          <a
+            href="https://apps.apple.com/us/app/gaspilot/id6760321543"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary btn-lg"
+          >
+            Download on the App Store
           </a>
         </div>
       </section>

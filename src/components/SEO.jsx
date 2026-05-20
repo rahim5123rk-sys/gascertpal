@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-const SITE = 'https://gascertpal.com'
+const SITE = 'https://gaspilotapp.com'
 const DEFAULT_IMAGE = `${SITE}/og-image.png`
 
 export default function SEO({

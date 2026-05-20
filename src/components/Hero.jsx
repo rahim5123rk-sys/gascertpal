@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="text-center lg:text-left w-full lg:w-1/2 flex flex-col items-center lg:items-start">
 
             <p className="opacity-0 animate-fade-up text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-8">
-              Coming Soon
+              Now Available on the App Store
             </p>
 
             <h1 className="opacity-0 animate-fade-up animation-delay-75 text-[2.5rem] sm:text-[3.25rem] lg:text-[4rem] font-bold text-[var(--fg)] leading-[1.08] mb-8">
@@ -17,12 +17,17 @@ export default function Hero() {
             </h1>
 
             <p className="opacity-0 animate-fade-up animation-delay-150 text-[var(--fg-muted)] text-base sm:text-lg mb-12 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              No more paperwork. No more spreadsheets. Gas certificates, invoices, job scheduling, and client management — all from your phone. Dead simple, built for engineers.
+              No more paperwork. No more spreadsheets. Gas certificates, invoices, job scheduling, and client management - all from your phone. Dead simple, built for engineers.
             </p>
 
             <div className="opacity-0 animate-fade-up animation-delay-200 flex flex-col sm:flex-row items-center gap-4">
-              <a href="#download" className="btn-primary btn-lg btn-block-mobile">
-                Join the Waitlist
+              <a
+                href="https://apps.apple.com/us/app/gaspilot/id6760321543"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary btn-lg btn-block-mobile"
+              >
+                Download on the App Store
               </a>
               <a href="/features" className="btn-ghost btn-lg btn-block-mobile">
                 See Features

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gascertpal.com/sitemap.xml
+Sitemap: https://gaspilotapp.com/sitemap.xml

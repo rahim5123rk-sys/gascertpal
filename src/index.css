@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 ::-webkit-scrollbar-track { background: var(--bg-base); }
 ::-webkit-scrollbar-thumb { background: var(--bg-elevated); border-radius: 2px; }
 
-/* Animations — minimal, subtle */
+/* Animations - minimal, subtle */
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }

@@ -52,7 +52,7 @@ export default function Privacy() {
   return (
     <div className="min-h-screen pt-8 sm:pt-12">
       <SEO
-        title="Privacy Policy — GasPilot Data Protection"
+        title="Privacy Policy - GasPilot Data Protection"
         description="GasPilot privacy policy. Learn how we collect, use, and protect your personal data. GDPR compliant with full data export and deletion rights."
         path="/privacy"
       />

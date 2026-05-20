@@ -23,7 +23,7 @@ export default function Team() {
 
   const flashMsg = useMemo(() => {
     if (params.get('checkout') === 'success') {
-      return 'Payment successful — your team seats are being activated. This page will refresh shortly.'
+      return 'Payment successful - your team seats are being activated. This page will refresh shortly.'
     }
     if (params.get('checkout') === 'cancel') return 'Checkout cancelled.'
     return null
@@ -142,7 +142,7 @@ export default function Team() {
 
   async function checkout(tierId) {
     const priceId = getMonthlyPriceId(tierId)
-    if (!priceId) { setError('Plan not configured yet — please try again later.'); return }
+    if (!priceId) { setError('Plan not configured yet - please try again later.'); return }
     setActionBusy(tierId)
     try {
       const { url } = await callFunction('stripe-create-checkout', { price_id: priceId })
@@ -168,13 +168,13 @@ export default function Team() {
 
   return (
     <>
-      <SEO title="Manage Team — GasPilot" description="Add and manage worker seats for your GasPilot team." />
+      <SEO title="Manage Team - GasPilot" description="Add and manage worker seats for your GasPilot team." />
 
       <section className="max-w-3xl mx-auto px-6 py-20">
         <Link to="/" className="text-sm text-neutral-500 hover:text-neutral-800">&larr; Back to home</Link>
         <h1 className="text-4xl font-bold text-white mt-4 mb-2">Manage Your Team</h1>
         <p className="text-neutral-600 mb-8">
-          Add additional worker seats to your GasPilot company. Admin only. You keep your £20/month Pro subscription on iOS — this page adds team capacity on top of it.
+          Add additional worker seats to your GasPilot company. Admin only. You keep your £20/month Pro subscription on iOS - this page adds team capacity on top of it.
         </p>
 
         {flashMsg && (
@@ -241,7 +241,7 @@ export default function Team() {
               <p className="text-xs text-neutral-500 uppercase tracking-wide">Current team plan</p>
               <p className="text-lg font-semibold text-neutral-900 mt-1">
                 {company.stripe_seat_tier
-                  ? `${TEAM_PLANS.find((t) => t.id === company.stripe_seat_tier)?.name ?? company.stripe_seat_tier} — ${company.worker_seat_limit} worker seats`
+                  ? `${TEAM_PLANS.find((t) => t.id === company.stripe_seat_tier)?.name ?? company.stripe_seat_tier} - ${company.worker_seat_limit} worker seats`
                   : 'Solo (no extra worker seats)'}
               </p>
               {company.stripe_status && company.stripe_status !== 'active' && (
@@ -280,7 +280,7 @@ export default function Team() {
                 </div>
               )}
               {(company.worker_seat_limit ?? 0) > 0 && workers.length >= (company.worker_seat_limit ?? 0) && (
-                <p className="text-sm text-amber-700 mb-4">All seats in use — remove a worker or upgrade your plan below to add more.</p>
+                <p className="text-sm text-amber-700 mb-4">All seats in use - remove a worker or upgrade your plan below to add more.</p>
               )}
 
               {workers.length === 0 ? (
@@ -307,7 +307,7 @@ export default function Team() {
             </div>
 
             <h2 className="text-lg font-semibold text-white mb-1">{company.stripe_seat_tier ? 'Change plan' : 'Add worker seats'}</h2>
-            <p className="text-sm text-neutral-400 mb-4">Billed monthly. Cancel anytime. Additional workers only — the admin seat is included with £20/mo Pro on iOS.</p>
+            <p className="text-sm text-neutral-400 mb-4">Billed monthly. Cancel anytime. Additional workers only - the admin seat is included with £20/mo Pro on iOS.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {TEAM_PLANS.map((tier) => {

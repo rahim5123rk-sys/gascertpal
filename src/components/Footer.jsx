@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h4 className="text-[var(--fg)] font-medium mb-4 text-sm">Company</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="mailto:support@gascertpal.com" className="hover:text-[var(--fg)] transition-colors">support@gascertpal.com</a></li>
+              <li><a href="mailto:support@gaspilotapp.com" className="hover:text-[var(--fg)] transition-colors">support@gaspilotapp.com</a></li>
               <li><Link to="/legal" className="hover:text-[var(--fg)] transition-colors">Legal</Link></li>
               <li><Link to="/privacy" className="hover:text-[var(--fg)] transition-colors">Privacy</Link></li>
               <li><Link to="/terms" className="hover:text-[var(--fg)] transition-colors">Terms</Link></li>
