@@ -11,6 +11,8 @@ const Terms = lazy(() => import('./pages/Terms'))
 const FeaturesPage = lazy(() => import('./pages/Features'))
 const Legal = lazy(() => import('./pages/Legal'))
 const Team = lazy(() => import('./pages/Team'))
+const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
+const ResetPassword = lazy(() => import('./pages/ResetPassword'))
 const XeroConnected = lazy(() => import('./pages/XeroConnected'))
 
 // Simple loading indicator for suspense fallback
@@ -32,6 +34,8 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/xero-connected" element={<XeroConnected />} />
         </Route>
       </Routes>
