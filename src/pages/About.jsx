@@ -10,8 +10,8 @@ const capabilities = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
       </svg>
     ),
-    title: 'Gas Safety Certificates',
-    description: 'Generate fully compliant CP12 certificates on-site. Enter appliance data, capture readings, get a digital signature, email instantly.',
+    title: 'Gas Safety Records',
+    description: 'Generate fully compliant Gas Safety Records (CP12) on-site. Enter appliance data, capture readings, get a digital signature, email instantly.',
   },
   {
     icon: (
@@ -63,7 +63,7 @@ const capabilities = [
 const whyItems = [
   { title: 'Works Offline', desc: 'No signal? No problem. Works without internet and syncs when you\'re back online.' },
   { title: 'Free to Use', desc: 'Every feature, no subscriptions, no hidden charges.' },
-  { title: 'Gas Safe Compliant', desc: 'CP12 certificates meet all legal requirements under Gas Safety Regulations 1998.' },
+  { title: 'Gas Safe Compliant', desc: 'Gas Safety Records meet all legal requirements under Gas Safety Regulations 1998.' },
   { title: 'GDPR Compliant', desc: 'Data encrypted, securely stored, exportable or deletable at any time.' },
   { title: 'Dead Simple', desc: 'No training needed. Set up in under 3 minutes.' },
   { title: 'UK Focused', desc: 'Built for UK gas engineers. VAT, HMRC, Gas Safe - covered.' },
@@ -78,8 +78,8 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="About GasPilot - CP12 Certificates, Invoices & Job Management for Gas Engineers"
-        description="GasPilot was built by tradespeople, for tradespeople. Create CP12 gas safety certificates, professional invoices, manage jobs, schedule work, and run your gas engineering business from your phone."
+        title="About GasPilot - Gas Safety Records, Invoices & Job Management for Gas Engineers"
+        description="GasPilot was built by tradespeople, for tradespeople. Create Gas Safety Records, professional invoices, manage jobs, schedule work, and run your gas engineering business from your phone."
         path="/about"
       />
 
@@ -121,10 +121,10 @@ export default function About() {
             <div className="w-48 sm:w-56">
               <div className="bg-[var(--bg-elevated)] rounded-[2.2rem] p-2 ring-1 ring-[var(--border)]">
                 <div className="rounded-[1.8rem] overflow-hidden">
-                  <img src="/IMG_2633.PNG" alt="GasPilot CP12 certificate" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
+                  <img src="/IMG_2633.PNG" alt="GasPilot Gas Safety Record" className="w-full h-auto block" loading="lazy" width="550" height="1110" />
                 </div>
               </div>
-              <p className="text-center text-[var(--fg-dim)] text-xs font-medium mt-3">CP12 Certificate</p>
+              <p className="text-center text-[var(--fg-dim)] text-xs font-medium mt-3">Gas Safety Record</p>
             </div>
           </div>
         </div>
