@@ -50,7 +50,7 @@ export default function Download() {
           <h2 className={`text-3xl sm:text-[2.75rem] font-bold text-[var(--fg)] mb-6 leading-tight ${
             inView ? 'opacity-0 animate-fade-up animation-delay-75' : 'opacity-0'
           }`}>
-            Ditch the paperwork. Go digital.
+            Costs less than one CP12 a month.
           </h2>
           <p className={`text-[var(--fg-muted)] max-w-lg mx-auto text-base sm:text-lg leading-relaxed ${
             inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'

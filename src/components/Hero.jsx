@@ -27,12 +27,12 @@ export default function Hero() {
             </p>
 
             <h1 className="opacity-0 animate-fade-up animation-delay-75 text-[2.5rem] sm:text-[3.25rem] lg:text-[4rem] font-bold text-[var(--fg)] leading-[1.08] mb-8">
-              Gas certificates done<br />
-              <span className="text-gradient">before you leave the job.</span>
+              Less time on paperwork.<br />
+              <span className="text-gradient">More time on the tools.</span>
             </h1>
 
             <p className="opacity-0 animate-fade-up animation-delay-150 text-[var(--fg-muted)] text-base sm:text-lg mb-12 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              No more paperwork. No more late nights at the kitchen table. Gas Safety Records, invoices, quotes, scheduling and client management - all from your phone, even offline.
+              CP12s, invoices, quotes and bookings sorted from your phone in minutes - even with no signal. No more late nights catching up on paperwork at the kitchen table.
             </p>
 
             <div className="opacity-0 animate-fade-up animation-delay-200 flex flex-col sm:flex-row items-center gap-4">

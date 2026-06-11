@@ -19,7 +19,7 @@ const steps = [
   {
     num: '04',
     title: 'Scale Up',
-    description: 'Track revenue, manage your team, never miss a renewal. Your business, on autopilot.',
+    description: 'Track revenue, manage your team, never miss a renewal - without paying someone to do the admin.',
   },
 ]
 

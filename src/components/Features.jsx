@@ -76,7 +76,7 @@ export default function Features() {
           <p className={`text-[var(--fg-muted)] max-w-lg mx-auto text-base sm:text-lg leading-relaxed ${
             inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
           }`}>
-            Everything a gas engineer needs. No bloat, no learning curve.
+            Everything you actually use on site, nothing you don't. If you can fill out a paper cert, you can use GasPilot.
           </p>
         </div>
 

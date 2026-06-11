@@ -25,7 +25,7 @@ export default function Screenshots() {
             See it in action
           </h2>
           <p className={`text-[var(--fg-muted)] max-w-lg mx-auto text-base sm:text-lg leading-relaxed ${inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'}`}>
-            Designed to be intuitive from the first tap. No training needed.
+            If you can use WhatsApp, you can use GasPilot. No training, no manuals.
           </p>
         </div>
 
