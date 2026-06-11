@@ -10,8 +10,7 @@ test('team page uses explicit dark text styles inside white cards', async () => 
   assert.match(source, /placeholder:text-neutral-400/)
 })
 
-test('team sign-in uses login-only OTP flow and canonical web redirect', async () => {
+test('team sign-in uses email + password flow', async () => {
   const source = await readFile(filePath, 'utf8')
-  assert.match(source, /shouldCreateUser:\s*false/)
-  assert.match(source, /https:\/\/gaspilotapp\.com\/team|TEAM_WEB_URL/)
+  assert.match(source, /signInWithPassword/)
 })

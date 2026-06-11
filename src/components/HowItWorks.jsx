@@ -4,7 +4,7 @@ const steps = [
   {
     num: '01',
     title: 'Download',
-    description: 'Get GasPilot on the App Store or Google Play. Set up your account in under 3 minutes.',
+    description: 'Get GasPilot free on the App Store. Set up your account in under 3 minutes.',
   },
   {
     num: '02',
@@ -19,7 +19,7 @@ const steps = [
   {
     num: '04',
     title: 'Scale Up',
-    description: 'Track revenue, manage your team, never miss a renewal. Your business, on autopilot.',
+    description: 'Track revenue, manage your team, never miss a renewal - without paying someone to do the admin.',
   },
 ]
 
@@ -48,7 +48,7 @@ export default function HowItWorks() {
                 inView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
               }`}
             >
-              <span className="font-display text-sm font-bold text-[var(--fg-dim)] mb-4">{step.num}</span>
+              <span className="font-display text-sm font-bold text-[var(--accent)] mb-4">{step.num}</span>
               <h3 className="font-display text-xl font-semibold text-[var(--fg)] mb-3">{step.title}</h3>
               <p className="text-[var(--fg-muted)] text-base leading-relaxed">{step.description}</p>
             </div>

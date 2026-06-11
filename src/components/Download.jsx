@@ -19,8 +19,10 @@ const plans = [
     name: 'Pro',
     price: '20',
     period: '/month',
+    note: 'or £179.99/year - save 25%',
     description: 'Everything you need to run your business.',
     features: [
+      'All 7 gas form types',
       'Unlimited customers',
       'Invoices & quotes',
       'Smart scheduling & calendar',
@@ -48,7 +50,7 @@ export default function Download() {
           <h2 className={`text-3xl sm:text-[2.75rem] font-bold text-[var(--fg)] mb-6 leading-tight ${
             inView ? 'opacity-0 animate-fade-up animation-delay-75' : 'opacity-0'
           }`}>
-            Ditch the paperwork. Go digital.
+            Costs less than one gas cert a month.
           </h2>
           <p className={`text-[var(--fg-muted)] max-w-lg mx-auto text-base sm:text-lg leading-relaxed ${
             inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
@@ -63,35 +65,40 @@ export default function Download() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-2xl p-8 sm:p-10 border ${
+              className={`relative rounded-2xl p-8 sm:p-10 border ${
                 plan.highlight
-                  ? 'border-[var(--border-hover)] bg-[var(--bg-elevated)]'
+                  ? 'border-[var(--border-accent)] bg-[var(--bg-elevated)] shadow-[0_0_60px_-20px_rgba(14,165,233,0.35)]'
                   : 'border-[var(--border)] bg-[var(--bg-surface)]'
               }`}
             >
               {plan.highlight && (
-                <span className="inline-block text-[10px] font-semibold uppercase tracking-widest text-[var(--fg)] bg-[var(--bg-base)] px-3 py-1 rounded-full mb-4 border border-[var(--border-hover)]">
+                <span className="inline-block text-[10px] font-semibold uppercase tracking-widest text-[var(--accent)] bg-[var(--accent-soft)] px-3 py-1 rounded-full mb-4 border border-[var(--border-accent)]">
                   Most Popular
                 </span>
               )}
               <h3 className="font-display text-xl font-semibold text-[var(--fg)] mb-2">{plan.name}</h3>
               <p className="text-[var(--fg-muted)] text-sm mb-6">{plan.description}</p>
 
-              <div className="flex items-baseline gap-1 mb-6">
-                {plan.price === '0' ? (
-                  <span className="font-display text-4xl font-bold text-[var(--fg)]">Free</span>
-                ) : (
-                  <>
-                    <span className="font-display text-4xl font-bold text-[var(--fg)]">£{plan.price}</span>
-                    <span className="text-[var(--fg-muted)] text-sm font-medium">{plan.period}</span>
-                  </>
+              <div className="mb-6">
+                <div className="flex items-baseline gap-1">
+                  {plan.price === '0' ? (
+                    <span className="font-display text-4xl font-bold text-[var(--fg)]">Free</span>
+                  ) : (
+                    <>
+                      <span className="font-display text-4xl font-bold text-[var(--fg)]">£{plan.price}</span>
+                      <span className="text-[var(--fg-muted)] text-sm font-medium">{plan.period}</span>
+                    </>
+                  )}
+                </div>
+                {plan.note && (
+                  <p className="text-[var(--accent)] text-xs font-medium mt-2">{plan.note}</p>
                 )}
               </div>
 
               <ul className="space-y-3 mb-8">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-sm text-[var(--fg-muted)]">
-                    <svg className="w-4 h-4 mt-0.5 text-[var(--fg-dim)] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <svg className="w-4 h-4 mt-0.5 text-[var(--accent)] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                     {f}

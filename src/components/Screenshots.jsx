@@ -25,7 +25,7 @@ export default function Screenshots() {
             See it in action
           </h2>
           <p className={`text-[var(--fg-muted)] max-w-lg mx-auto text-base sm:text-lg leading-relaxed ${inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'}`}>
-            Designed to be intuitive from the first tap. No training needed.
+            If you can use WhatsApp, you can use GasPilot. No training, no manuals.
           </p>
         </div>
 
@@ -57,9 +57,9 @@ export default function Screenshots() {
                 <button
                   key={s.label}
                   onClick={() => setActive(i)}
-                  className={`text-left px-6 py-5 rounded-2xl border transition-all duration-200 ${
+                  className={`text-left px-6 py-5 rounded-2xl border transition-all duration-200 cursor-pointer ${
                     active === i
-                      ? 'border-[var(--border-hover)] bg-[var(--bg-elevated)]'
+                      ? 'border-[var(--border-accent)] bg-[var(--bg-elevated)]'
                       : 'border-transparent hover:border-[var(--border)] hover:bg-[var(--bg-elevated)]'
                   }`}
                 >

@@ -76,7 +76,7 @@ export default function Features() {
           <p className={`text-[var(--fg-muted)] max-w-lg mx-auto text-base sm:text-lg leading-relaxed ${
             inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
           }`}>
-            Everything a gas engineer needs. No bloat, no learning curve.
+            Everything you actually use on site, nothing you don't. If you can fill out a paper cert, you can use GasPilot.
           </p>
         </div>
 
@@ -88,7 +88,7 @@ export default function Features() {
                 inView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
               }`}
             >
-              <div className="w-12 h-12 rounded-xl bg-[var(--bg-elevated)] flex items-center justify-center text-[var(--fg-muted)] mb-6">
+              <div className="w-12 h-12 rounded-xl bg-[var(--accent-soft)] border border-[var(--border-accent)] flex items-center justify-center text-[var(--accent)] mb-6">
                 {f.icon}
               </div>
               <h3 className="font-display text-lg font-semibold text-[var(--fg)] mb-3">{f.title}</h3>

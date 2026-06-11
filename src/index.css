@@ -7,9 +7,12 @@
   --fg: #fafafa;
   --fg-muted: #a1a1aa;
   --fg-dim: #52525b;
-  --accent: #f4f4f5;
+  --accent: #38bdf8;
+  --accent-deep: #2563eb;
+  --accent-soft: rgba(56, 189, 248, 0.12);
   --border: rgba(255, 255, 255, 0.06);
   --border-hover: rgba(255, 255, 255, 0.12);
+  --border-accent: rgba(56, 189, 248, 0.35);
 }
 
 /* Tailwind v4 preflight handles margin/padding/box-sizing reset */
@@ -37,6 +40,11 @@ h1, h2, h3, h4, h5, h6, .font-display {
   letter-spacing: -0.03em;
 }
 
+::selection {
+  background: rgba(56, 189, 248, 0.3);
+  color: var(--fg);
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg-base); }
@@ -51,9 +59,19 @@ h1, h2, h3, h4, h5, h6, .font-display {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+@keyframes glow-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(4%, -4%) scale(1.08); }
+}
 
 .animate-fade-up { animation: fade-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
 .animate-fade-in { animation: fade-in 0.4s ease forwards; }
+.animate-pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+.animate-glow-drift { animation: glow-drift 12s ease-in-out infinite; }
 
 .animation-delay-75 { animation-delay: 75ms; }
 .animation-delay-100 { animation-delay: 100ms; }
@@ -63,14 +81,53 @@ h1, h2, h3, h4, h5, h6, .font-display {
 .animation-delay-400 { animation-delay: 400ms; }
 .animation-delay-500 { animation-delay: 500ms; }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-fade-up,
+  .animate-fade-in { animation-duration: 0.01ms; }
+  .animate-pulse-dot,
+  .animate-glow-drift { animation: none; }
+}
+
+/* Gradient text - matches the GasPilot droplet logo */
+.text-gradient {
+  background: linear-gradient(100deg, #60a5fa 0%, #38bdf8 45%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Ambient glow blob */
+.glow-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
 /* Card */
 .card {
   background: var(--bg-surface);
   border: 1px solid var(--border);
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .card:hover {
   border-color: var(--border-hover);
+}
+
+/* Badge pill */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: 1px solid var(--border-accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
 }
 
 /* Button base */
@@ -92,14 +149,17 @@ h1, h2, h3, h4, h5, h6, .font-display {
 }
 
 .btn-primary {
-  background: var(--fg);
-  color: var(--bg-base);
+  background: linear-gradient(100deg, #2563eb 0%, #0ea5e9 55%, #14b8a6 120%);
+  color: #fff;
   font-weight: 600;
   padding: 13px 26px;
-  transition: opacity 0.2s ease;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.25), 0 8px 32px -8px rgba(14, 165, 233, 0.5);
+  transition: filter 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 .btn-primary:hover {
-  opacity: 0.85;
+  filter: brightness(1.12);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4), 0 12px 40px -8px rgba(14, 165, 233, 0.65);
+  transform: translateY(-1px);
 }
 
 .btn-sm { padding: 10px 20px; font-size: 14px; }
@@ -115,7 +175,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
   transition: all 0.2s ease;
 }
 .btn-ghost:hover {
-  border-color: var(--fg-dim);
+  border-color: var(--accent);
   color: var(--fg);
 }
 
