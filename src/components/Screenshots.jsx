@@ -57,9 +57,9 @@ export default function Screenshots() {
                 <button
                   key={s.label}
                   onClick={() => setActive(i)}
-                  className={`text-left px-6 py-5 rounded-2xl border transition-all duration-200 ${
+                  className={`text-left px-6 py-5 rounded-2xl border transition-all duration-200 cursor-pointer ${
                     active === i
-                      ? 'border-[var(--border-hover)] bg-[var(--bg-elevated)]'
+                      ? 'border-[var(--border-accent)] bg-[var(--bg-elevated)]'
                       : 'border-transparent hover:border-[var(--border)] hover:bg-[var(--bg-elevated)]'
                   }`}
                 >

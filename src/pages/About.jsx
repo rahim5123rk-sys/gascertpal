@@ -62,7 +62,7 @@ const capabilities = [
 
 const whyItems = [
   { title: 'Works Offline', desc: 'No signal? No problem. Works without internet and syncs when you\'re back online.' },
-  { title: 'Free to Use', desc: 'Every feature, no subscriptions, no hidden charges.' },
+  { title: 'Free to Start', desc: 'Free Starter tier, and Pro comes with a 30-day free trial. Cancel anytime.' },
   { title: 'Gas Safe Compliant', desc: 'Gas Safety Records meet all legal requirements under Gas Safety Regulations 1998.' },
   { title: 'GDPR Compliant', desc: 'Data encrypted, securely stored, exportable or deletable at any time.' },
   { title: 'Dead Simple', desc: 'No training needed. Set up in under 3 minutes.' },

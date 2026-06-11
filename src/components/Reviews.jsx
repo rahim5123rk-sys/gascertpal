@@ -35,6 +35,16 @@ const reviews = [
 
 const delays = ['', 'animation-delay-75', 'animation-delay-150', 'animation-delay-200', 'animation-delay-300', 'animation-delay-400']
 
+const Stars = () => (
+  <span className="flex items-center gap-0.5 text-[#fbbf24] mb-4" aria-label="5 out of 5 stars">
+    {[...Array(5)].map((_, i) => (
+      <svg key={i} className="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118L2.077 10.1c-.783-.57-.38-1.81.588-1.81h4.915a1 1 0 00.95-.69l1.519-4.674z" />
+      </svg>
+    ))}
+  </span>
+)
+
 export default function Reviews() {
   const [ref, inView] = useInView()
 
@@ -46,7 +56,7 @@ export default function Reviews() {
           <h2 className={`text-3xl sm:text-4xl font-bold text-[var(--fg)] mb-4 leading-tight ${
             inView ? 'opacity-0 animate-fade-up' : 'opacity-0'
           }`}>
-            Rated 4.9/5
+            Rated <span className="text-gradient">4.9/5</span> by engineers
           </h2>
           <p className={`text-[var(--fg-muted)] text-base ${
             inView ? 'opacity-0 animate-fade-up animation-delay-100' : 'opacity-0'
@@ -63,6 +73,7 @@ export default function Reviews() {
                 inView ? `opacity-0 animate-fade-up ${delays[idx]}` : 'opacity-0'
               }`}
             >
+              <Stars />
               <p className="text-[var(--fg-muted)] text-sm leading-relaxed mb-6">&ldquo;{r.text}&rdquo;</p>
               <div>
                 <div className="font-medium text-[var(--fg)] text-sm">{r.name}</div>
