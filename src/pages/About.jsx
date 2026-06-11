@@ -11,7 +11,7 @@ const capabilities = [
       </svg>
     ),
     title: 'Gas Safety Records',
-    description: 'Generate fully compliant Gas Safety Records (CP12) on-site. Enter appliance data, capture readings, get a digital signature, email instantly.',
+    description: 'Generate fully compliant Gas Safety Records on-site. Enter appliance data, capture readings, get a digital signature, email instantly.',
   },
   {
     icon: (

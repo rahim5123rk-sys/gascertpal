@@ -37,8 +37,8 @@ Do this yourself at [business.facebook.com](https://business.facebook.com) - nev
 
 **Ad copy variants to test (use real app screenshots as creative):**
 
-1. *Pain hook:* "Still doing CP12s on a paper pad? Cert done and emailed before you've packed the van. Free on the App Store."
-2. *Money hook:* "£20/month. One CP12 pays for it. Invoices, quotes, certs and bookings - all from your phone."
+1. *Pain hook:* "Still doing gas certs on a paper pad? Cert done and emailed before you've packed the van. Free on the App Store."
+2. *Money hook:* "£20/month. One gas cert pays for it. Invoices, quotes, certs and bookings - all from your phone."
 3. *Evenings hook:* "Stop doing paperwork at the kitchen table at 10pm. GasPilot sorts your certs and invoices on site. 30 days free."
 
 **Creative tip:** film a 15-second vertical video of a real engineer filling in a cert in the app and hitting send. Phone-shot, on a real job. Authentic beats polished for trade audiences, every time.
@@ -52,9 +52,9 @@ Do this yourself at [business.facebook.com](https://business.facebook.com) - nev
 
 ## 3. Search: free intent traffic
 
-- The site already targets "CP12 app", "gas safety certificate app", "LGSR" etc.
-- Next step when ready: short guide pages (e.g. "What is a CP12?", "Landlord gas safety rules 2026") - these rank and funnel landlords *and* engineers to the brand.
-- Google Ads on exact phrases like "cp12 app" / "gas certificate app" are pennies because nobody bids on them - worth £5/day.
+- The site targets "gas safety record app", "gas safety certificate app", "LGSR" etc. Note: "CP12" is the legacy name and isn't used in GasPilot copy, but plenty of people still *search* it - it stays in the hidden meta keywords and one FAQ answer ("formerly known as a CP12") to catch that traffic.
+- Next step when ready: short guide pages (e.g. "What is a Landlord Gas Safety Record?", "Landlord gas safety rules 2026") - these rank and funnel landlords *and* engineers to the brand.
+- Google Ads on exact phrases like "cp12 app" / "gas certificate app" are pennies because nobody bids on them - worth £5/day. Bidding on a search term isn't the same as using it in your branding.
 
 ## 4. Product-powered loop (highest leverage, app-side)
 

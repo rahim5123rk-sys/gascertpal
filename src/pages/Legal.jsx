@@ -39,7 +39,7 @@ export default function Legal() {
             <p className="text-[var(--fg-dim)] text-xs font-medium uppercase tracking-widest mb-3">Last updated: 12 March 2026</p>
             <h2 className="text-lg font-semibold text-[var(--fg)] mb-2">Terms of Service</h2>
             <p className="text-[var(--fg-muted)] text-sm leading-relaxed mb-4">
-              Rules governing your use of GasPilot, including CP12 responsibilities and liability.
+              Rules governing your use of GasPilot, including Gas Safety Record responsibilities and liability.
             </p>
             <span className="text-[var(--fg-muted)] text-sm group-hover:text-[var(--fg)] transition-colors">
               Read Terms &rarr;

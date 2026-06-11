@@ -3,16 +3,16 @@ import { useInView } from '../hooks/useInView'
 
 const faqs = [
   {
-    q: 'What is a CP12 gas safety certificate?',
-    a: 'A CP12 (also known as a Landlord Gas Safety Record or LGSR) is a legal document that must be issued by a Gas Safe registered engineer after inspecting gas appliances in a rented property. Landlords are required by law to have gas appliances checked every 12 months.',
+    q: 'What is a Landlord Gas Safety Record?',
+    a: 'A Landlord Gas Safety Record (LGSR, formerly known as a CP12) is a legal document that must be issued by a Gas Safe registered engineer after inspecting gas appliances in a rented property. Landlords are required by law to have gas appliances checked every 12 months.',
   },
   {
     q: 'Is GasPilot free to use?',
-    a: 'GasPilot has a free Starter tier that includes CP12 gas safety certificates and basic job tracking. The Pro plan (£20/month or £179.99/year) unlocks all 7 gas form types, unlimited customers, invoices and quotes, smart scheduling, team management and renewal reminders. Pro includes a 30-day free trial for new subscribers.',
+    a: 'GasPilot has a free Starter tier that includes Landlord Gas Safety Records and basic job tracking. The Pro plan (£20/month or £179.99/year) unlocks all 7 gas form types, unlimited customers, invoices and quotes, smart scheduling, team management and renewal reminders. Pro includes a 30-day free trial for new subscribers.',
   },
   {
     q: 'Is GasPilot Gas Safe compliant?',
-    a: 'Yes. CP12 certificates generated through GasPilot meet all legal requirements under the Gas Safety (Installation and Use) Regulations 1998. The app is designed specifically for Gas Safe registered engineers in the UK.',
+    a: 'Yes. Gas Safety Records generated through GasPilot meet all legal requirements under the Gas Safety (Installation and Use) Regulations 1998. The app is designed specifically for Gas Safe registered engineers in the UK.',
   },
   {
     q: 'Can I use GasPilot offline?',

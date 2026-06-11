@@ -32,7 +32,7 @@ export default function Hero() {
             </h1>
 
             <p className="opacity-0 animate-fade-up animation-delay-150 text-[var(--fg-muted)] text-base sm:text-lg mb-12 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              CP12s, invoices, quotes and bookings sorted from your phone in minutes - even with no signal. No more late nights catching up on paperwork at the kitchen table.
+              Gas Safety Records, invoices, quotes and bookings sorted from your phone in minutes - even with no signal. No more late nights catching up on paperwork at the kitchen table.
             </p>
 
             <div className="opacity-0 animate-fade-up animation-delay-200 flex flex-col sm:flex-row items-center gap-4">

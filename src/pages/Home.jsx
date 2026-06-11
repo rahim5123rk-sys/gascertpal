@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <SEO
         title="GasPilot | Gas Safety Certificate App for Gas Engineers UK"
-        description="The CP12 app built for Gas Safe engineers. Create gas safety certificates in minutes, send professional invoices and quotes, schedule jobs and manage customers from your phone. Free Starter tier, Pro free for 30 days."
+        description="The Gas Safety Record app built for Gas Safe engineers. Create gas safety certificates in minutes, send professional invoices and quotes, schedule jobs and manage customers from your phone. Free Starter tier, Pro free for 30 days."
         path="/"
       />
       <Hero />

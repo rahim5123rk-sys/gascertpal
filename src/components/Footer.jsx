@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="font-display text-[15px] font-semibold text-[var(--fg)]">GasPilot</span>
             </Link>
             <p className="text-sm leading-relaxed max-w-[240px] mb-5">
-              The gas safety certificate app for Gas Safe registered engineers. CP12s, invoices, quotes and job management - all from your phone.
+              The gas safety certificate app for Gas Safe registered engineers. Gas Safety Records, invoices, quotes and job management - all from your phone.
             </p>
             <a
               href="https://apps.apple.com/us/app/gaspilot/id6760321543"
@@ -44,7 +44,7 @@ export default function Footer() {
           <div>
             <h4 className="text-[var(--fg)] font-medium mb-4 text-sm">Features</h4>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/features" className="hover:text-[var(--fg)] transition-colors">Gas Safety Certificates (CP12)</Link></li>
+              <li><Link to="/features" className="hover:text-[var(--fg)] transition-colors">Landlord Gas Safety Records</Link></li>
               <li><Link to="/features" className="hover:text-[var(--fg)] transition-colors">Invoices & Quotes</Link></li>
               <li><Link to="/features" className="hover:text-[var(--fg)] transition-colors">Job Tracking & Scheduling</Link></li>
               <li><Link to="/features" className="hover:text-[var(--fg)] transition-colors">Team Management</Link></li>

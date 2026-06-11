@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useInView } from '../hooks/useInView'
 
 const SHARE_URL = 'https://gaspilotapp.com/?utm_source=referral&utm_medium=share&utm_campaign=tell_a_mate'
-const SHARE_TEXT = `Mate, have a look at GasPilot - does your CP12s, invoices and bookings straight from your phone. Free on the App Store: ${SHARE_URL}`
+const SHARE_TEXT = `Mate, have a look at GasPilot - does your gas certs, invoices and bookings straight from your phone. Free on the App Store: ${SHARE_URL}`
 
 export default function CTA() {
   const [ref, inView] = useInView()
@@ -28,7 +28,7 @@ export default function CTA() {
 
           <div className="relative">
             <h2 className="text-3xl sm:text-[2.75rem] font-bold text-[var(--fg)] leading-tight mb-5">
-              Your next CP12 could take{' '}
+              Your next gas cert could take{' '}
               <span className="text-gradient">five minutes.</span>
             </h2>
             <p className="text-[var(--fg-muted)] text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">

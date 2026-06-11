@@ -4,7 +4,7 @@ const reviews = [
   {
     name: 'Danny R.',
     role: 'Gas Engineer, Manchester',
-    text: "Save at least an hour every day. Customers love getting their CP12 by email on the spot.",
+    text: "Save at least an hour every day. Customers love getting their gas cert by email on the spot.",
   },
   {
     name: 'Steve K.',
